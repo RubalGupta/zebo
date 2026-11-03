@@ -1,0 +1,3 @@
+# Optional Streamlit front end (free, open source, Apache 2.0).
+# Install inside a virtual environment:  pip install -r requirements-streamlit.txt
+streamlit>=1.50

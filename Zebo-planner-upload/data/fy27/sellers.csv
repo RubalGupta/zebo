@@ -1,0 +1,351 @@
+seller_id,seller_name,role,division_id,area_id,territory_id,manager_id,motion_focus,tenure_months,status,data_origin
+S0001,Gray Esterly,VP Sales,,,,,,6,Active,Synthetic
+S0002,Avery Underhill,Division Leader (RVP),NAW,,,S0001,,36,Active,Synthetic
+S0003,Logan Ashdown,Area Sales Manager,NAW,NAW-A01,,S0002,,9,Active,Synthetic
+S0004,Logan Ravensworth,Account Executive,NAW,NAW-A01,NAW-A01-D1,S0003,Deep,20,Active,Synthetic
+S0005,Tatum Everly,Account Executive,NAW,NAW-A01,NAW-A01-E1,S0003,Expansion,28,Active,Synthetic
+S0006,Taylor Everly,Account Executive,NAW,NAW-A01,NAW-A01-E2,S0003,Expansion,20,Active,Synthetic
+S0007,Quinn Crane,Account Executive,NAW,NAW-A01,NAW-A01-G1,S0003,Greenfield,60,Active,Synthetic
+S0008,Oakley Kerrigan,Account Executive,NAW,NAW-A01,NAW-A01-G2,S0003,Greenfield,28,Active,Synthetic
+S0009,Wren Okafor,Area Sales Manager,NAW,NAW-A02,,S0002,,36,Active,Synthetic
+S0010,Kai Esterly,Account Executive,NAW,NAW-A02,NAW-A02-D1,S0009,Deep,28,Active,Synthetic
+S0011,Uma Osei,Account Executive,NAW,NAW-A02,NAW-A02-E1,S0009,Expansion,6,Active,Synthetic
+S0012,Morgan Dunmore,Account Executive,NAW,NAW-A02,NAW-A02-E2,S0009,Expansion,28,Active,Synthetic
+S0013,Frankie Quayle,Account Executive,NAW,NAW-A02,NAW-A02-G1,S0009,Greenfield,60,Active,Synthetic
+S0014,Gray Ravensworth,Account Executive,NAW,NAW-A02,NAW-A02-G2,S0009,Greenfield,36,Active,Synthetic
+S0015,Zion Lockridge,Area Sales Manager,NAW,NAW-A03,,S0002,,6,Active,Synthetic
+S0016,Reese Montague,Account Executive,NAW,NAW-A03,NAW-A03-D1,S0015,Deep,6,Active,Synthetic
+S0017,Finley Osei,Account Executive,NAW,NAW-A03,NAW-A03-E1,S0015,Expansion,60,Active,Synthetic
+S0018,Jules Bellamy,Account Executive,NAW,NAW-A03,NAW-A03-E2,S0015,Expansion,6,Active,Synthetic
+S0019,Hollis Okafor,Account Executive,NAW,NAW-A03,NAW-A03-G1,S0015,Greenfield,14,Active,Synthetic
+S0020,Casey Hartigan,Area Sales Manager,NAW,NAW-A04,,S0002,,20,Active,Synthetic
+S0021,Jules Fairhurst,Account Executive,NAW,NAW-A04,NAW-A04-D1,S0020,Deep,60,Active,Synthetic
+S0022,Blake Montague,Account Executive,NAW,NAW-A04,NAW-A04-E1,S0020,Expansion,6,Active,Synthetic
+S0023,Tatum Ingram,Account Executive,NAW,NAW-A04,NAW-A04-E2,S0020,Expansion,28,Active,Synthetic
+S0024,Drew Abernet,Account Executive,NAW,NAW-A04,NAW-A04-G1,S0020,Greenfield,9,Active,Synthetic
+S0025,Blake Abernet,Area Sales Manager,NAW,NAW-A05,,S0002,,28,Active,Synthetic
+S0026,Jules Sallow,Account Executive,NAW,NAW-A05,NAW-A05-D1,S0025,Deep,60,Active,Synthetic
+S0027,Zion Fenwick,Account Executive,NAW,NAW-A05,NAW-A05-E1,S0025,Expansion,48,Active,Synthetic
+S0028,Noel Zamora,Account Executive,NAW,NAW-A05,NAW-A05-E2,S0025,Expansion,48,Active,Synthetic
+S0029,Logan Fenwick,Account Executive,NAW,NAW-A05,NAW-A05-G1,S0025,Greenfield,20,Active,Synthetic
+S0030,Parker Nakamura,Area Sales Manager,NAW,NAW-A06,,S0002,,3,Active,Synthetic
+S0031,Quinn Montague,Account Executive,NAW,NAW-A06,NAW-A06-D1,S0030,Deep,60,Active,Synthetic
+S0032,Jordan Northcott,Account Executive,NAW,NAW-A06,NAW-A06-E1,S0030,Expansion,28,Active,Synthetic
+S0033,Oakley Galloway,Account Executive,NAW,NAW-A06,NAW-A06-E2,S0030,Expansion,6,Active,Synthetic
+S0034,Taylor Grisham,Account Executive,NAW,NAW-A06,NAW-A06-G1,S0030,Greenfield,36,Active,Synthetic
+S0035,Indy Quayle,Account Executive,NAW,NAW-A06,NAW-A06-G2,S0030,Greenfield,48,Active,Synthetic
+S0036,Shay Crane,Area Sales Manager,NAW,NAW-A07,,S0002,,20,Active,Synthetic
+S0037,Parker Lockridge,Account Executive,NAW,NAW-A07,NAW-A07-D1,S0036,Deep,60,Active,Synthetic
+S0038,Brook Iverson,Account Executive,NAW,NAW-A07,NAW-A07-E1,S0036,Expansion,3,Active,Synthetic
+S0039,Morgan Esterly,Account Executive,NAW,NAW-A07,NAW-A07-E2,S0036,Expansion,9,Active,Synthetic
+S0040,Sage Kerrigan,Account Executive,NAW,NAW-A07,NAW-A07-G1,S0036,Greenfield,9,Active,Synthetic
+S0041,Arden Montague,Division Leader (RVP),NAE,,,S0001,,20,Active,Synthetic
+S0042,Noel Quayle,Area Sales Manager,NAE,NAE-A01,,S0041,,28,Active,Synthetic
+S0043,Morgan Osei,Account Executive,NAE,NAE-A01,NAE-A01-D1,S0042,Deep,36,Active,Synthetic
+S0044,Quinn Sallow,Account Executive,NAE,NAE-A01,NAE-A01-E1,S0042,Expansion,20,Active,Synthetic
+S0045,Morgan Galloway,Account Executive,NAE,NAE-A01,NAE-A01-E2,S0042,Expansion,6,Active,Synthetic
+S0046,Oakley Quayle,Account Executive,NAE,NAE-A01,NAE-A01-G1,S0042,Greenfield,36,Active,Synthetic
+S0047,Finley Abernet,Area Sales Manager,NAE,NAE-A02,,S0041,,48,Active,Synthetic
+S0048,Indy Abernet,Account Executive,NAE,NAE-A02,NAE-A02-D1,S0047,Deep,36,Active,Synthetic
+S0049,Remy Northcott,Account Executive,NAE,NAE-A02,NAE-A02-E1,S0047,Expansion,20,Active,Synthetic
+S0050,Nico Ravensworth,Account Executive,NAE,NAE-A02,NAE-A02-E2,S0047,Expansion,60,Active,Synthetic
+S0051,Arden Hartigan,Account Executive,NAE,NAE-A02,NAE-A02-G1,S0047,Greenfield,6,Active,Synthetic
+S0052,Lane Bellamy,Account Executive,NAE,NAE-A02,NAE-A02-G2,S0047,Greenfield,20,Active,Synthetic
+S0053,Ellis Marlowe,Area Sales Manager,NAE,NAE-A03,,S0041,,36,Active,Synthetic
+S0054,Uma Marlowe,Account Executive,NAE,NAE-A03,NAE-A03-D1,S0053,Deep,9,Active,Synthetic
+S0055,Kai Varga,Account Executive,NAE,NAE-A03,NAE-A03-E1,S0053,Expansion,36,Active,Synthetic
+S0056,Zion Ingram,Account Executive,NAE,NAE-A03,NAE-A03-E2,S0053,Expansion,3,Active,Synthetic
+S0057,Logan Abernet,Account Executive,NAE,NAE-A03,NAE-A03-G1,S0053,Greenfield,84,Active,Synthetic
+S0058,Drew Holloway,Account Executive,NAE,NAE-A03,NAE-A03-G2,S0053,Greenfield,28,Active,Synthetic
+S0059,Morgan Lindqvist,Area Sales Manager,NAE,NAE-A04,,S0041,,20,Active,Synthetic
+S0060,Emery Marlowe,Account Executive,NAE,NAE-A04,NAE-A04-D1,S0059,Deep,14,Active,Synthetic
+S0061,Ellis Varga,Account Executive,NAE,NAE-A04,NAE-A04-E1,S0059,Expansion,14,Active,Synthetic
+S0062,Gray Lindqvist,Account Executive,NAE,NAE-A04,NAE-A04-E2,S0059,Expansion,48,Active,Synthetic
+S0063,Nico Jessop,Account Executive,NAE,NAE-A04,NAE-A04-G1,S0059,Greenfield,60,Active,Synthetic
+S0064,Indy Grisham,Account Executive,NAE,NAE-A04,NAE-A04-G2,S0059,Greenfield,6,Active,Synthetic
+S0065,Zion Pemberton,Area Sales Manager,NAE,NAE-A05,,S0041,,60,Active,Synthetic
+S0066,Dana Esterly,Account Executive,NAE,NAE-A05,NAE-A05-D1,S0065,Deep,9,Active,Synthetic
+S0067,Frankie Marlowe,Account Executive,NAE,NAE-A05,NAE-A05-E1,S0065,Expansion,6,Active,Synthetic
+S0068,Noel Lockridge,Account Executive,NAE,NAE-A05,NAE-A05-E2,S0065,Expansion,20,Active,Synthetic
+S0069,Kendall Everly,Account Executive,NAE,NAE-A05,NAE-A05-G1,S0065,Greenfield,14,Active,Synthetic
+S0070,Emery Brightwell,Area Sales Manager,NAE,NAE-A06,,S0041,,9,Active,Synthetic
+S0071,Remy Lockridge,Account Executive,NAE,NAE-A06,NAE-A06-D1,S0070,Deep,20,Active,Synthetic
+S0072,Drew Dunmore,Account Executive,NAE,NAE-A06,NAE-A06-E1,S0070,Expansion,14,Active,Synthetic
+S0073,Zion Kerrigan,Account Executive,NAE,NAE-A06,NAE-A06-E2,S0070,Expansion,84,Active,Synthetic
+S0074,Remy Marlowe,Account Executive,NAE,NAE-A06,NAE-A06-G1,S0070,Greenfield,20,Active,Synthetic
+S0075,Finley Quayle,Account Executive,NAE,NAE-A06,NAE-A06-G2,S0070,Greenfield,3,Active,Synthetic
+S0076,Cam Jessop,Area Sales Manager,NAE,NAE-A07,,S0041,,84,Active,Synthetic
+S0077,Brook Fenwick,Account Executive,NAE,NAE-A07,NAE-A07-D1,S0076,Deep,20,Active,Synthetic
+S0078,Indy Kerrigan,Account Executive,NAE,NAE-A07,NAE-A07-E1,S0076,Expansion,9,Active,Synthetic
+S0079,Blake Dunmore,Account Executive,NAE,NAE-A07,NAE-A07-E2,S0076,Expansion,3,Active,Synthetic
+S0080,Kai Kingsley,Account Executive,NAE,NAE-A07,NAE-A07-G1,S0076,Greenfield,60,Active,Synthetic
+S0081,Gray Iverson,Account Executive,NAE,NAE-A07,NAE-A07-G2,S0076,Greenfield,9,Active,Synthetic
+S0082,Quinn Grisham,Area Sales Manager,NAE,NAE-A08,,S0041,,9,Active,Synthetic
+S0083,Yael Nakamura,Account Executive,NAE,NAE-A08,NAE-A08-D1,S0082,Deep,14,Active,Synthetic
+S0084,Uma Lindqvist,Account Executive,NAE,NAE-A08,NAE-A08-E1,S0082,Expansion,20,Active,Synthetic
+S0085,Drew Yardley,Account Executive,NAE,NAE-A08,NAE-A08-E2,S0082,Expansion,3,Active,Synthetic
+S0086,Ellis Whitlock,Account Executive,NAE,NAE-A08,NAE-A08-G1,S0082,Greenfield,20,Active,Synthetic
+S0087,Emery Esterly,Division Leader (RVP),CLA,,,S0001,,48,Active,Synthetic
+S0088,Casey Varga,Area Sales Manager,CLA,CLA-A01,,S0087,,9,Active,Synthetic
+S0089,Jules Northcott,Account Executive,CLA,CLA-A01,CLA-A01-D1,S0088,Deep,84,Active,Synthetic
+S0090,Emery Bellamy,Account Executive,CLA,CLA-A01,CLA-A01-E1,S0088,Expansion,28,Active,Synthetic
+S0091,Hollis Delacroix,Account Executive,CLA,CLA-A01,CLA-A01-E2,S0088,Expansion,20,Active,Synthetic
+S0092,Yael Varga,Account Executive,CLA,CLA-A01,CLA-A01-G1,S0088,Greenfield,84,Active,Synthetic
+S0093,Harper Fairhurst,Account Executive,CLA,CLA-A01,CLA-A01-G2,S0088,Greenfield,3,Active,Synthetic
+S0094,Finley Hartigan,Area Sales Manager,CLA,CLA-A02,,S0087,,48,Active,Synthetic
+S0095,Finley Iverson,Account Executive,CLA,CLA-A02,CLA-A02-D1,S0094,Deep,14,Active,Synthetic
+S0096,Hollis Fenwick,Account Executive,CLA,CLA-A02,CLA-A02-E1,S0094,Expansion,3,Active,Synthetic
+S0097,Ellis Iverson,Account Executive,CLA,CLA-A02,CLA-A02-E2,S0094,Expansion,9,Active,Synthetic
+S0098,Taylor Nakamura,Account Executive,CLA,CLA-A02,CLA-A02-G1,S0094,Greenfield,20,Active,Synthetic
+S0099,Arden Thorne,Area Sales Manager,CLA,CLA-A03,,S0087,,20,Active,Synthetic
+S0100,Ellis Yardley,Account Executive,CLA,CLA-A03,CLA-A03-D1,S0099,Deep,60,Active,Synthetic
+S0101,Marlo Crane,Account Executive,CLA,CLA-A03,CLA-A03-E1,S0099,Expansion,28,Active,Synthetic
+S0102,Arden Ashdown,Account Executive,CLA,CLA-A03,CLA-A03-E2,S0099,Expansion,20,Active,Synthetic
+S0103,Casey Ingram,Account Executive,CLA,CLA-A03,CLA-A03-G1,S0099,Greenfield,48,Active,Synthetic
+S0104,Wren Lockridge,Area Sales Manager,CLA,CLA-A04,,S0087,,6,Active,Synthetic
+S0105,Remy Nakamura,Account Executive,CLA,CLA-A04,CLA-A04-D1,S0104,Deep,3,Active,Synthetic
+S0106,Jules Crane,Account Executive,CLA,CLA-A04,CLA-A04-E1,S0104,Expansion,9,Active,Synthetic
+S0107,Blake Galloway,Account Executive,CLA,CLA-A04,CLA-A04-E2,S0104,Expansion,6,Active,Synthetic
+S0108,Kendall Kingsley,Account Executive,CLA,CLA-A04,CLA-A04-G1,S0104,Greenfield,9,Active,Synthetic
+S0109,Logan Iverson,Area Sales Manager,CLA,CLA-A05,,S0087,,14,Active,Synthetic
+S0110,Harper Grisham,Account Executive,CLA,CLA-A05,CLA-A05-D1,S0109,Deep,84,Active,Synthetic
+S0111,Gray Yardley,Account Executive,CLA,CLA-A05,CLA-A05-E1,S0109,Expansion,84,Active,Synthetic
+S0112,Blake Zamora,Account Executive,CLA,CLA-A05,CLA-A05-E2,S0109,Expansion,60,Active,Synthetic
+S0113,Avery Grisham,Account Executive,CLA,CLA-A05,CLA-A05-G1,S0109,Greenfield,9,Active,Synthetic
+S0114,Wren Delacroix,Account Executive,CLA,CLA-A05,CLA-A05-G2,S0109,Greenfield,28,Active,Synthetic
+S0115,Indy Fenwick,Area Sales Manager,CLA,CLA-A06,,S0087,,84,Active,Synthetic
+S0116,Hollis Lindqvist,Account Executive,CLA,CLA-A06,CLA-A06-D1,S0115,Deep,60,Active,Synthetic
+S0117,Harper Brightwell,Account Executive,CLA,CLA-A06,CLA-A06-E1,S0115,Expansion,48,Active,Synthetic
+S0118,Kendall Esterly,Account Executive,CLA,CLA-A06,CLA-A06-E2,S0115,Expansion,60,Active,Synthetic
+S0119,Morgan Lockridge,Account Executive,CLA,CLA-A06,CLA-A06-G1,S0115,Greenfield,36,Active,Synthetic
+S0120,Zion Ashdown,Account Executive,CLA,CLA-A06,CLA-A06-G2,S0115,Greenfield,48,Active,Synthetic
+S0121,Zion Underhill,Division Leader (RVP),EMEA,,,S0001,,28,Active,Synthetic
+S0122,Blake Kingsley,Area Sales Manager,EMEA,EMEA-A01,,S0121,,3,Active,Synthetic
+S0123,Kendall Ashdown,Account Executive,EMEA,EMEA-A01,EMEA-A01-D1,S0122,Deep,14,Active,Synthetic
+S0124,Parker Osei,Account Executive,EMEA,EMEA-A01,EMEA-A01-E1,S0122,Expansion,3,Active,Synthetic
+S0125,Frankie Fenwick,Account Executive,EMEA,EMEA-A01,EMEA-A01-E2,S0122,Expansion,48,Active,Synthetic
+S0126,Zion Galloway,Account Executive,EMEA,EMEA-A01,EMEA-A01-G1,S0122,Greenfield,60,Active,Synthetic
+S0127,Shay Lockridge,Account Executive,EMEA,EMEA-A01,EMEA-A01-G2,S0122,Greenfield,3,Active,Synthetic
+S0128,Hollis Montague,Area Sales Manager,EMEA,EMEA-A02,,S0121,,84,Active,Synthetic
+S0129,Blake Iverson,Account Executive,EMEA,EMEA-A02,EMEA-A02-D1,S0128,Deep,3,Active,Synthetic
+S0130,Zion Montague,Account Executive,EMEA,EMEA-A02,EMEA-A02-E1,S0128,Expansion,6,Active,Synthetic
+S0131,Marlo Galloway,Account Executive,EMEA,EMEA-A02,EMEA-A02-E2,S0128,Expansion,20,Active,Synthetic
+S0132,Jules Ingram,Account Executive,EMEA,EMEA-A02,EMEA-A02-G1,S0128,Greenfield,28,Active,Synthetic
+S0133,Jordan Ravensworth,Account Executive,EMEA,EMEA-A02,EMEA-A02-G2,S0128,Greenfield,9,Active,Synthetic
+S0134,Parker Delacroix,Area Sales Manager,EMEA,EMEA-A03,,S0121,,20,Active,Synthetic
+S0135,Oakley Yardley,Account Executive,EMEA,EMEA-A03,EMEA-A03-D1,S0134,Deep,14,Active,Synthetic
+S0136,Casey Underhill,Account Executive,EMEA,EMEA-A03,EMEA-A03-E1,S0134,Expansion,20,Active,Synthetic
+S0137,Blake Crane,Account Executive,EMEA,EMEA-A03,EMEA-A03-E2,S0134,Expansion,36,Active,Synthetic
+S0138,Yael Yardley,Account Executive,EMEA,EMEA-A03,EMEA-A03-G1,S0134,Greenfield,36,Active,Synthetic
+S0139,Kendall Sallow,Area Sales Manager,EMEA,EMEA-A04,,S0121,,28,Active,Synthetic
+S0140,Cam Nakamura,Account Executive,EMEA,EMEA-A04,EMEA-A04-D1,S0139,Deep,9,Active,Synthetic
+S0141,Cam Varga,Account Executive,EMEA,EMEA-A04,EMEA-A04-E1,S0139,Expansion,60,Active,Synthetic
+S0142,Zion Iverson,Account Executive,EMEA,EMEA-A04,EMEA-A04-E2,S0139,Expansion,20,Active,Synthetic
+S0143,Blake Grisham,Account Executive,EMEA,EMEA-A04,EMEA-A04-G1,S0139,Greenfield,48,Active,Synthetic
+S0144,Indy Ashdown,Area Sales Manager,EMEA,EMEA-A05,,S0121,,9,Active,Synthetic
+S0145,Sage Ingram,Account Executive,EMEA,EMEA-A05,EMEA-A05-D1,S0144,Deep,9,Active,Synthetic
+S0146,Remy Whitlock,Account Executive,EMEA,EMEA-A05,EMEA-A05-E1,S0144,Expansion,14,Active,Synthetic
+S0147,Avery Thorne,Account Executive,EMEA,EMEA-A05,EMEA-A05-E2,S0144,Expansion,84,Active,Synthetic
+S0148,Noel Galloway,Account Executive,EMEA,EMEA-A05,EMEA-A05-G1,S0144,Greenfield,3,Active,Synthetic
+S0149,Jordan Nakamura,Account Executive,EMEA,EMEA-A05,EMEA-A05-G2,S0144,Greenfield,14,Active,Synthetic
+S0150,Yael Hartigan,Area Sales Manager,EMEA,EMEA-A06,,S0121,,3,Active,Synthetic
+S0151,Dana Kingsley,Account Executive,EMEA,EMEA-A06,EMEA-A06-D1,S0150,Deep,9,Active,Synthetic
+S0152,Cam Ashdown,Account Executive,EMEA,EMEA-A06,EMEA-A06-E1,S0150,Expansion,20,Active,Synthetic
+S0153,Oakley Underhill,Account Executive,EMEA,EMEA-A06,EMEA-A06-E2,S0150,Expansion,60,Active,Synthetic
+S0154,Lane Osei,Account Executive,EMEA,EMEA-A06,EMEA-A06-G1,S0150,Greenfield,28,Active,Synthetic
+S0155,Hollis Ashdown,Account Executive,EMEA,EMEA-A06,EMEA-A06-G2,S0150,Greenfield,3,Active,Synthetic
+S0156,Sage Fairhurst,Area Sales Manager,EMEA,EMEA-A07,,S0121,,28,Active,Synthetic
+S0157,Frankie Pemberton,Account Executive,EMEA,EMEA-A07,EMEA-A07-D1,S0156,Deep,48,Active,Synthetic
+S0158,Remy Thorne,Account Executive,EMEA,EMEA-A07,EMEA-A07-E1,S0156,Expansion,28,Active,Synthetic
+S0159,Quinn Lockridge,Account Executive,EMEA,EMEA-A07,EMEA-A07-E2,S0156,Expansion,36,Active,Synthetic
+S0160,Nico Kerrigan,Account Executive,EMEA,EMEA-A07,EMEA-A07-G1,S0156,Greenfield,6,Active,Synthetic
+S0161,Arden Underhill,Division Leader (RVP),APAC,,,S0001,,84,Active,Synthetic
+S0162,Marlo Ashdown,Area Sales Manager,APAC,APAC-A01,,S0161,,6,Active,Synthetic
+S0163,Jules Montague,Account Executive,APAC,APAC-A01,APAC-A01-D1,S0162,Deep,48,Active,Synthetic
+S0164,Arden Okafor,Account Executive,APAC,APAC-A01,APAC-A01-E1,S0162,Expansion,3,Active,Synthetic
+S0165,Uma Abernet,Account Executive,APAC,APAC-A01,APAC-A01-E2,S0162,Expansion,6,Active,Synthetic
+S0166,Ellis Fairhurst,Account Executive,APAC,APAC-A01,APAC-A01-G1,S0162,Greenfield,14,Active,Synthetic
+S0167,Logan Crane,Account Executive,APAC,APAC-A01,APAC-A01-G2,S0162,Greenfield,84,Active,Synthetic
+S0168,Logan Holloway,Area Sales Manager,APAC,APAC-A02,,S0161,,6,Active,Synthetic
+S0169,Lane Varga,Account Executive,APAC,APAC-A02,APAC-A02-D1,S0168,Deep,6,Active,Synthetic
+S0170,Kai Underhill,Account Executive,APAC,APAC-A02,APAC-A02-E1,S0168,Expansion,6,Active,Synthetic
+S0171,Kendall Fairhurst,Account Executive,APAC,APAC-A02,APAC-A02-E2,S0168,Expansion,28,Active,Synthetic
+S0172,Frankie Grisham,Account Executive,APAC,APAC-A02,APAC-A02-G1,S0168,Greenfield,28,Active,Synthetic
+S0173,Parker Whitlock,Account Executive,APAC,APAC-A02,APAC-A02-G2,S0168,Greenfield,20,Active,Synthetic
+S0174,Uma Delacroix,Area Sales Manager,APAC,APAC-A03,,S0161,,20,Active,Synthetic
+S0175,Taylor Marlowe,Account Executive,APAC,APAC-A03,APAC-A03-D1,S0174,Deep,84,Active,Synthetic
+S0176,Dana Pemberton,Account Executive,APAC,APAC-A03,APAC-A03-E1,S0174,Expansion,14,Active,Synthetic
+S0177,Brook Montague,Account Executive,APAC,APAC-A03,APAC-A03-E2,S0174,Expansion,28,Active,Synthetic
+S0178,Oakley Iverson,Account Executive,APAC,APAC-A03,APAC-A03-G1,S0174,Greenfield,28,Active,Synthetic
+S0179,Indy Lindqvist,Account Executive,APAC,APAC-A03,APAC-A03-G2,S0174,Greenfield,20,Active,Synthetic
+S0180,Dana Northcott,Area Sales Manager,APAC,APAC-A04,,S0161,,6,Active,Synthetic
+S0181,Val Holloway,Account Executive,APAC,APAC-A04,APAC-A04-D1,S0180,Deep,14,Active,Synthetic
+S0182,Parker Everly,Account Executive,APAC,APAC-A04,APAC-A04-E1,S0180,Expansion,60,Active,Synthetic
+S0183,Sage Dunmore,Account Executive,APAC,APAC-A04,APAC-A04-E2,S0180,Expansion,48,Active,Synthetic
+S0184,Zion Jarrow,Account Executive,APAC,APAC-A04,APAC-A04-G1,S0180,Greenfield,20,Active,Synthetic
+S0185,Tatum Underhill,Account Executive,APAC,APAC-A04,APAC-A04-G2,S0180,Greenfield,36,Active,Synthetic
+S0186,Frankie Kingsley,Area Sales Manager,APAC,APAC-A05,,S0161,,60,Active,Synthetic
+S0187,Brook Kingsley,Account Executive,APAC,APAC-A05,APAC-A05-D1,S0186,Deep,60,Active,Synthetic
+S0188,Shay Fenwick,Account Executive,APAC,APAC-A05,APAC-A05-E1,S0186,Expansion,60,Active,Synthetic
+S0189,Parker Quayle,Account Executive,APAC,APAC-A05,APAC-A05-E2,S0186,Expansion,60,Active,Synthetic
+S0190,Casey Galloway,Account Executive,APAC,APAC-A05,APAC-A05-G1,S0186,Greenfield,60,Active,Synthetic
+S0191,Jules Everly,Area Sales Manager,APAC,APAC-A06,,S0161,,3,Active,Synthetic
+S0192,Marlo Ravensworth,Account Executive,APAC,APAC-A06,APAC-A06-D1,S0191,Deep,9,Active,Synthetic
+S0193,Nico Bellamy,Account Executive,APAC,APAC-A06,APAC-A06-E1,S0191,Expansion,3,Active,Synthetic
+S0194,Noel Underhill,Account Executive,APAC,APAC-A06,APAC-A06-E2,S0191,Expansion,14,Active,Synthetic
+S0195,Arden Everly,Account Executive,APAC,APAC-A06,APAC-A06-G1,S0191,Greenfield,20,Active,Synthetic
+S0196,Drew Ashdown,Account Executive,APAC,APAC-A06,APAC-A06-G2,S0191,Greenfield,6,Active,Synthetic
+S0197,Taylor Montague,Customer Success Manager,NAW,NAW-A01,,S0003,,14,Active,Synthetic
+S0198,Brook Nakamura,Customer Success Manager,NAW,NAW-A02,,S0009,,9,Active,Synthetic
+S0199,Yael Lockridge,Solutions Engineer,NAW,NAW-A03,,S0015,,28,Active,Synthetic
+S0200,Harper Okafor,Solutions Engineer,NAW,NAW-A04,,S0020,,36,Active,Synthetic
+S0201,Kai Northcott,Customer Success Manager,NAW,NAW-A05,,S0025,,36,Active,Synthetic
+S0202,Quinn Ingram,Customer Success Manager,NAW,NAW-A06,,S0030,,6,Active,Synthetic
+S0203,Arden Nakamura,Sales Development Rep,NAW,NAW-A07,,S0036,,6,Active,Synthetic
+S0204,Noel Pemberton,Sales Development Rep,NAE,NAE-A01,,S0042,,60,Active,Synthetic
+S0205,Yael Ingram,Sales Development Rep,NAE,NAE-A02,,S0047,,84,Active,Synthetic
+S0206,Nico Galloway,Solutions Engineer,NAE,NAE-A03,,S0053,,14,Active,Synthetic
+S0207,Gray Lockridge,Solutions Engineer,NAE,NAE-A04,,S0059,,48,Active,Synthetic
+S0208,Val Nakamura,Solutions Engineer,NAE,NAE-A05,,S0065,,20,Active,Synthetic
+S0209,Tatum Thorne,Customer Success Manager,NAE,NAE-A06,,S0070,,48,Active,Synthetic
+S0210,Arden Whitlock,Customer Success Manager,NAE,NAE-A07,,S0076,,84,Active,Synthetic
+S0211,Jordan Delacroix,Sales Development Rep,NAE,NAE-A08,,S0082,,20,Active,Synthetic
+S0212,Shay Jarrow,Solutions Engineer,CLA,CLA-A01,,S0088,,36,Active,Synthetic
+S0213,Ellis Hartigan,Solutions Engineer,CLA,CLA-A02,,S0094,,36,Active,Synthetic
+S0214,Avery Dunmore,Customer Success Manager,CLA,CLA-A03,,S0099,,60,Active,Synthetic
+S0215,Reese Kingsley,Sales Development Rep,CLA,CLA-A04,,S0104,,20,Active,Synthetic
+S0216,Marlo Quayle,Customer Success Manager,CLA,CLA-A05,,S0109,,20,Active,Synthetic
+S0217,Nico Kingsley,Customer Success Manager,CLA,CLA-A06,,S0115,,14,Active,Synthetic
+S0218,Avery Pemberton,Customer Success Manager,EMEA,EMEA-A01,,S0122,,14,Active,Synthetic
+S0219,Wren Marlowe,Solutions Engineer,EMEA,EMEA-A02,,S0128,,20,Active,Synthetic
+S0220,Wren Quayle,Solutions Engineer,EMEA,EMEA-A03,,S0134,,14,Active,Synthetic
+S0221,Dana Iverson,Solutions Engineer,EMEA,EMEA-A04,,S0139,,84,Active,Synthetic
+S0222,Jordan Marlowe,Solutions Engineer,EMEA,EMEA-A05,,S0144,,20,Active,Synthetic
+S0223,Oakley Fairhurst,Sales Development Rep,EMEA,EMEA-A06,,S0150,,3,Active,Synthetic
+S0224,Lane Okafor,Customer Success Manager,EMEA,EMEA-A07,,S0156,,36,Active,Synthetic
+S0225,Frankie Sallow,Solutions Engineer,APAC,APAC-A01,,S0162,,3,Active,Synthetic
+S0226,Indy Underhill,Sales Development Rep,APAC,APAC-A02,,S0168,,28,Active,Synthetic
+S0227,Drew Quayle,Sales Development Rep,APAC,APAC-A03,,S0174,,3,Active,Synthetic
+S0228,Shay Whitlock,Sales Development Rep,APAC,APAC-A04,,S0180,,36,Active,Synthetic
+S0229,Morgan Kingsley,Customer Success Manager,APAC,APAC-A05,,S0186,,36,Active,Synthetic
+S0230,Drew Kerrigan,Sales Development Rep,APAC,APAC-A06,,S0191,,20,Active,Synthetic
+S0231,Val Everly,Customer Success Manager,NAW,NAW-A01,,S0003,,28,Active,Synthetic
+S0232,Casey Whitlock,Customer Success Manager,NAW,NAW-A02,,S0009,,20,Active,Synthetic
+S0233,Uma Sallow,Solutions Engineer,NAW,NAW-A03,,S0015,,14,Active,Synthetic
+S0234,Kendall Galloway,Solutions Engineer,NAW,NAW-A04,,S0020,,9,Active,Synthetic
+S0235,Quinn Holloway,Customer Success Manager,NAW,NAW-A05,,S0025,,6,Active,Synthetic
+S0236,Drew Marlowe,Solutions Engineer,NAW,NAW-A06,,S0030,,9,Active,Synthetic
+S0237,Hollis Jessop,Sales Development Rep,NAW,NAW-A07,,S0036,,3,Active,Synthetic
+S0238,Avery Zamora,Customer Success Manager,NAE,NAE-A01,,S0042,,28,Active,Synthetic
+S0239,Avery Nakamura,Sales Development Rep,NAE,NAE-A02,,S0047,,28,Active,Synthetic
+S0240,Tatum Esterly,Customer Success Manager,NAE,NAE-A03,,S0053,,48,Active,Synthetic
+S0241,Cam Delacroix,Solutions Engineer,NAE,NAE-A04,,S0059,,20,Active,Synthetic
+S0242,Casey Thorne,Customer Success Manager,NAE,NAE-A05,,S0065,,3,Active,Synthetic
+S0243,Tatum Holloway,Customer Success Manager,NAE,NAE-A06,,S0070,,14,Active,Synthetic
+S0244,Morgan Sallow,Solutions Engineer,NAE,NAE-A07,,S0076,,28,Active,Synthetic
+S0245,Kai Crane,Customer Success Manager,NAE,NAE-A08,,S0082,,48,Active,Synthetic
+S0246,Kendall Castellan,Customer Success Manager,CLA,CLA-A01,,S0088,,9,Active,Synthetic
+S0247,Reese Ashdown,Customer Success Manager,CLA,CLA-A02,,S0094,,84,Active,Synthetic
+S0248,Uma Bellamy,Solutions Engineer,CLA,CLA-A03,,S0099,,20,Active,Synthetic
+S0249,Jules Lockridge,Customer Success Manager,CLA,CLA-A04,,S0104,,36,Active,Synthetic
+S0250,Remy Zamora,Solutions Engineer,CLA,CLA-A05,,S0109,,9,Active,Synthetic
+S0251,Noel Lindqvist,Customer Success Manager,CLA,CLA-A06,,S0115,,20,Active,Synthetic
+S0252,Ellis Lockridge,Solutions Engineer,EMEA,EMEA-A01,,S0122,,36,Active,Synthetic
+S0253,Yael Fenwick,Customer Success Manager,EMEA,EMEA-A02,,S0128,,14,Active,Synthetic
+S0254,Parker Pemberton,Solutions Engineer,EMEA,EMEA-A03,,S0134,,60,Active,Synthetic
+S0255,Oakley Bellamy,Sales Development Rep,EMEA,EMEA-A04,,S0139,,6,Active,Synthetic
+S0256,Logan Dunmore,Customer Success Manager,EMEA,EMEA-A05,,S0144,,84,Active,Synthetic
+S0257,Zion Yardley,Sales Development Rep,EMEA,EMEA-A06,,S0150,,60,Active,Synthetic
+S0258,Kendall Lindqvist,Sales Development Rep,EMEA,EMEA-A07,,S0156,,36,Active,Synthetic
+S0259,Sage Brightwell,Sales Development Rep,APAC,APAC-A01,,S0162,,48,Active,Synthetic
+S0260,Quinn Quayle,Customer Success Manager,APAC,APAC-A02,,S0168,,20,Active,Synthetic
+S0261,Tatum Grisham,Sales Development Rep,APAC,APAC-A03,,S0174,,36,Active,Synthetic
+S0262,Indy Yardley,Solutions Engineer,APAC,APAC-A04,,S0180,,9,Active,Synthetic
+S0263,Morgan Ashdown,Solutions Engineer,APAC,APAC-A05,,S0186,,9,Active,Synthetic
+S0264,Emery Sallow,Solutions Engineer,APAC,APAC-A06,,S0191,,28,Active,Synthetic
+S0265,Casey Dunmore,Sales Development Rep,NAW,NAW-A01,,S0003,,48,Active,Synthetic
+S0266,Marlo Esterly,Customer Success Manager,NAW,NAW-A02,,S0009,,3,Active,Synthetic
+S0267,Wren Fairhurst,Customer Success Manager,NAW,NAW-A03,,S0015,,6,Active,Synthetic
+S0268,Jules Hartigan,Sales Development Rep,NAW,NAW-A04,,S0020,,20,Active,Synthetic
+S0269,Harper Nakamura,Customer Success Manager,NAW,NAW-A05,,S0025,,48,Active,Synthetic
+S0270,Parker Crane,Customer Success Manager,NAW,NAW-A06,,S0030,,48,Active,Synthetic
+S0271,Quinn Osei,Solutions Engineer,NAW,NAW-A07,,S0036,,14,Active,Synthetic
+S0272,Cam Crane,Customer Success Manager,NAE,NAE-A01,,S0042,,84,Active,Synthetic
+S0273,Parker Lindqvist,Sales Development Rep,NAE,NAE-A02,,S0047,,60,Active,Synthetic
+S0274,Logan Kingsley,Customer Success Manager,NAE,NAE-A03,,S0053,,28,Active,Synthetic
+S0275,Wren Abernet,Customer Success Manager,NAE,NAE-A04,,S0059,,36,Active,Synthetic
+S0276,Finley Northcott,Solutions Engineer,NAE,NAE-A05,,S0065,,84,Active,Synthetic
+S0277,Emery Castellan,Solutions Engineer,NAE,NAE-A06,,S0070,,84,Active,Synthetic
+S0278,Nico Crane,Solutions Engineer,NAE,NAE-A07,,S0076,,14,Active,Synthetic
+S0279,Val Hartigan,Customer Success Manager,NAE,NAE-A08,,S0082,,84,Active,Synthetic
+S0280,Marlo Kingsley,Sales Development Rep,CLA,CLA-A01,,S0088,,20,Active,Synthetic
+S0281,Cam Dunmore,Customer Success Manager,CLA,CLA-A02,,S0094,,20,Active,Synthetic
+S0282,Oakley Abernet,Customer Success Manager,CLA,CLA-A03,,S0099,,48,Active,Synthetic
+S0283,Taylor Galloway,Solutions Engineer,CLA,CLA-A04,,S0104,,20,Active,Synthetic
+S0284,Uma Ashdown,Solutions Engineer,CLA,CLA-A05,,S0109,,60,Active,Synthetic
+S0285,Avery Abernet,Sales Development Rep,CLA,CLA-A06,,S0115,,84,Active,Synthetic
+S0286,Taylor Okafor,Solutions Engineer,EMEA,EMEA-A01,,S0122,,20,Active,Synthetic
+S0287,Indy Pemberton,Sales Development Rep,EMEA,EMEA-A02,,S0128,,9,Active,Synthetic
+S0288,Gray Kerrigan,Sales Development Rep,EMEA,EMEA-A03,,S0134,,3,Active,Synthetic
+S0289,Sage Grisham,Customer Success Manager,EMEA,EMEA-A04,,S0139,,60,Active,Synthetic
+S0290,Indy Jessop,Solutions Engineer,EMEA,EMEA-A05,,S0144,,84,Active,Synthetic
+S0291,Ellis Zamora,Solutions Engineer,EMEA,EMEA-A06,,S0150,,3,Active,Synthetic
+S0292,Zion Sallow,Customer Success Manager,EMEA,EMEA-A07,,S0156,,28,Active,Synthetic
+S0293,Taylor Lockridge,Solutions Engineer,APAC,APAC-A01,,S0162,,20,Active,Synthetic
+S0294,Parker Holloway,Customer Success Manager,APAC,APAC-A02,,S0168,,20,Active,Synthetic
+S0295,Shay Iverson,Solutions Engineer,APAC,APAC-A03,,S0174,,84,Active,Synthetic
+S0296,Marlo Ingram,Sales Development Rep,APAC,APAC-A04,,S0180,,84,Active,Synthetic
+S0297,Hollis Crane,Sales Development Rep,APAC,APAC-A05,,S0186,,28,Active,Synthetic
+S0298,Reese Abernet,Customer Success Manager,APAC,APAC-A06,,S0191,,60,Active,Synthetic
+S0299,Lane Whitlock,Sales Development Rep,NAW,NAW-A01,,S0003,,28,Active,Synthetic
+S0300,Jules Kingsley,Customer Success Manager,NAW,NAW-A02,,S0009,,36,Active,Synthetic
+S0301,Emery Jessop,Sales Development Rep,NAW,NAW-A03,,S0015,,3,Active,Synthetic
+S0302,Avery Delacroix,Solutions Engineer,NAW,NAW-A04,,S0020,,14,Active,Synthetic
+S0303,Lane Iverson,Solutions Engineer,NAW,NAW-A05,,S0025,,36,Active,Synthetic
+S0304,Kendall Underhill,Sales Development Rep,NAW,NAW-A06,,S0030,,14,Active,Synthetic
+S0305,Val Ravensworth,Customer Success Manager,NAW,NAW-A07,,S0036,,9,Active,Synthetic
+S0306,Frankie Nakamura,Sales Development Rep,NAE,NAE-A01,,S0042,,84,Active,Synthetic
+S0307,Harper Iverson,Customer Success Manager,NAE,NAE-A02,,S0047,,48,Active,Synthetic
+S0308,Shay Bellamy,Sales Development Rep,NAE,NAE-A03,,S0053,,14,Active,Synthetic
+S0309,Morgan Ingram,Sales Development Rep,NAE,NAE-A04,,S0059,,36,Active,Synthetic
+S0310,Avery Marlowe,Solutions Engineer,NAE,NAE-A05,,S0065,,20,Active,Synthetic
+S0311,Oakley Thorne,Sales Development Rep,NAE,NAE-A06,,S0070,,9,Active,Synthetic
+S0312,Shay Zamora,Solutions Engineer,NAE,NAE-A07,,S0076,,48,Active,Synthetic
+S0313,Zion Lindqvist,Sales Development Rep,NAE,NAE-A08,,S0082,,3,Active,Synthetic
+S0314,Logan Varga,Solutions Engineer,CLA,CLA-A01,,S0088,,28,Active,Synthetic
+S0315,Tatum Kingsley,Sales Development Rep,CLA,CLA-A02,,S0094,,36,Active,Synthetic
+S0316,Val Abernet,Solutions Engineer,CLA,CLA-A03,,S0099,,28,Active,Synthetic
+S0317,Avery Ashdown,Customer Success Manager,CLA,CLA-A04,,S0104,,36,Active,Synthetic
+S0318,Shay Brightwell,Solutions Engineer,CLA,CLA-A05,,S0109,,36,Active,Synthetic
+S0319,Reese Underhill,Customer Success Manager,CLA,CLA-A06,,S0115,,28,Active,Synthetic
+S0320,Parker Zamora,Customer Success Manager,EMEA,EMEA-A01,,S0122,,36,Active,Synthetic
+S0321,Cam Marlowe,Sales Development Rep,EMEA,EMEA-A02,,S0128,,3,Active,Synthetic
+S0322,Kendall Pemberton,Customer Success Manager,EMEA,EMEA-A03,,S0134,,36,Active,Synthetic
+S0323,Morgan Fenwick,Sales Development Rep,EMEA,EMEA-A04,,S0139,,60,Active,Synthetic
+S0324,Taylor Quayle,Solutions Engineer,EMEA,EMEA-A05,,S0144,,20,Active,Synthetic
+S0325,Blake Esterly,Solutions Engineer,EMEA,EMEA-A06,,S0150,,84,Active,Synthetic
+S0326,Noel Northcott,Solutions Engineer,EMEA,EMEA-A07,,S0156,,48,Active,Synthetic
+S0327,Harper Underhill,Sales Development Rep,APAC,APAC-A01,,S0162,,9,Active,Synthetic
+S0328,Tatum Lindqvist,Customer Success Manager,APAC,APAC-A02,,S0168,,60,Active,Synthetic
+S0329,Casey Northcott,Sales Development Rep,APAC,APAC-A03,,S0174,,20,Active,Synthetic
+S0330,Gray Bellamy,Sales Development Rep,APAC,APAC-A04,,S0180,,84,Active,Synthetic
+S0331,Casey Iverson,Customer Success Manager,APAC,APAC-A05,,S0186,,20,Active,Synthetic
+S0332,Blake Yardley,Solutions Engineer,APAC,APAC-A06,,S0191,,60,Active,Synthetic
+S0333,Brook Hartigan,Solutions Engineer,NAW,NAW-A01,,S0003,,14,Active,Synthetic
+S0334,Ellis Montague,Customer Success Manager,NAW,NAW-A02,,S0009,,9,Active,Synthetic
+S0335,Indy Varga,Customer Success Manager,NAW,NAW-A03,,S0015,,60,Active,Synthetic
+S0336,Casey Grisham,Sales Development Rep,NAW,NAW-A04,,S0020,,14,Active,Synthetic
+S0337,Oakley Montague,Sales Development Rep,NAW,NAW-A05,,S0025,,3,Active,Synthetic
+S0338,Blake Whitlock,Sales Development Rep,NAW,NAW-A06,,S0030,,14,Active,Synthetic
+S0339,Zion Ravensworth,Sales Development Rep,NAW,NAW-A07,,S0036,,60,Active,Synthetic
+S0340,Zion Kingsley,Solutions Engineer,NAE,NAE-A01,,S0042,,84,Active,Synthetic
+S0341,Val Iverson,Solutions Engineer,NAE,NAE-A02,,S0047,,84,Active,Synthetic
+S0342,Marlo Underhill,Solutions Engineer,NAE,NAE-A03,,S0053,,3,Active,Synthetic
+S0343,Kai Holloway,Solutions Engineer,NAE,NAE-A04,,S0059,,9,Active,Synthetic
+S0344,Frankie Jarrow,Customer Success Manager,NAE,NAE-A05,,S0065,,20,Active,Synthetic
+S0345,Parker Galloway,Customer Success Manager,NAE,NAE-A06,,S0070,,36,Active,Synthetic
+S0346,Nico Osei,Solutions Engineer,NAE,NAE-A07,,S0076,,84,Active,Synthetic
+S0347,Avery Crane,Solutions Engineer,NAE,NAE-A08,,S0082,,36,Active,Synthetic
+S0348,Indy Northcott,Solutions Engineer,CLA,CLA-A01,,S0088,,48,Active,Synthetic
+S0349,Ellis Brightwell,Customer Success Manager,CLA,CLA-A02,,S0094,,6,Active,Synthetic
+S0350,Cam Holloway,Sales Development Rep,CLA,CLA-A03,,S0099,,28,Active,Synthetic

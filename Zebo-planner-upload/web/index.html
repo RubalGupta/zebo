@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sales Planning Advisor</title>
+  <meta name="description" content="Norbae AI Annual Sales Planning Advisor — synthetic-data portfolio prototype.">
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <div>
+          <div class="brand-name">Norbae AI</div>
+          <div class="brand-product">Annual Sales Planning Advisor</div>
+        </div>
+      </div>
+      <div class="badges">
+        <span class="badge badge-demo" title="All records are fictional and generated for demonstration">Synthetic demo data</span>
+        <span class="badge badge-mode" id="mode-badge">Loading mode…</span>
+      </div>
+    </div>
+    <nav class="tabs" aria-label="Sections">
+      <div class="tabs-inner" role="tablist">
+        <button role="tab" data-tab="overview" aria-selected="true">Overview</button>
+        <button role="tab" data-tab="exceptions">Planning Exceptions</button>
+        <button role="tab" data-tab="advisor">Ask the Advisor</button>
+        <button role="tab" data-tab="review">Scenario Review</button>
+        <button role="tab" data-tab="eval">Evaluation Lab</button>
+        <button role="tab" data-tab="architecture">Architecture &amp; Governance</button>
+        <button role="tab" data-tab="casestudy">Case Study</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div id="global-error" class="alert alert-crit" hidden></div>
+
+    <!-- A. OVERVIEW -->
+    <section id="tab-overview" class="tab-panel" role="tabpanel" aria-labelledby="overview">
+      <div class="page-head">
+        <h1>Plan overview</h1>
+        <p class="lede">Company target versus proposed quota, calculated from the project CSV files each time this page loads.</p>
+      </div>
+      <div id="overview-warning"></div>
+      <div class="kpis" id="kpis" aria-live="polite"><div class="loading">Loading plan totals…</div></div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-head">
+            <h2>Variance by territory</h2>
+            <span class="hint" id="chart-threshold-note"></span>
+          </div>
+          <div id="variance-chart" class="chart" role="img" aria-label="Bar chart of quota variance percentage by territory"></div>
+          <p class="footnote" id="threshold-footnote"></p>
+        </div>
+        <div class="card">
+          <h2>Data status</h2>
+          <div id="data-status"></div>
+          <h3 class="mt">Source data integrity</h3>
+          <div id="overview-integrity"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- B. EXCEPTIONS -->
+    <section id="tab-exceptions" class="tab-panel" role="tabpanel" hidden>
+      <div class="page-head">
+        <h1>Planning exceptions</h1>
+        <p class="lede">Territories that meet an explicit review rule. A flag means <em>review this input</em>, not <em>this quota is wrong</em>.</p>
+      </div>
+      <details class="card thresholds" id="threshold-panel">
+        <summary><strong>Illustrative demo thresholds</strong> <span class="hint">— not industry standards; require business-owner validation. Changes apply to this browser session only and never alter the data.</span></summary>
+        <form id="threshold-form" class="threshold-grid">
+          <label>Variance at or above (%)<input type="number" step="0.1" min="0.1" name="variance_pct"></label>
+          <label>Quota/rep ÷ historical revenue/rep at or above (×)<input type="number" step="0.05" min="0.05" name="quota_to_hist_per_rep_ratio"></label>
+          <label>Opportunity index min<input type="number" step="0.05" min="0" name="opportunity_index_min"></label>
+          <label>Opportunity index max<input type="number" step="0.05" min="0" name="opportunity_index_max"></label>
+          <label>Roster reconciliation note at (%)<input type="number" step="0.1" min="0" name="reconciliation_pct"></label>
+          <div class="threshold-actions">
+            <button type="submit" class="btn btn-primary">Apply thresholds</button>
+            <button type="button" class="btn" id="threshold-reset">Reset to defaults</button>
+          </div>
+        </form>
+        <div id="threshold-error" class="form-error" role="alert"></div>
+      </details>
+      <div class="filters card">
+        <label>Show
+          <select id="f-scope"><option value="flagged">Flagged only</option><option value="all">All territories</option></select>
+        </label>
+        <label>Region <select id="f-region"><option value="">All regions</option></select></label>
+        <label>Rule <select id="f-rule"><option value="">Any rule</option></select></label>
+        <label class="grow">Search <input id="f-search" type="search" placeholder="Territory ID or name"></label>
+      </div>
+      <div class="card table-card">
+        <div class="table-wrap">
+          <table class="data" id="exceptions-table">
+            <caption class="sr-only">Territories and review flags</caption>
+            <thead><tr>
+              <th scope="col">Territory</th><th scope="col" class="num">Target</th><th scope="col" class="num">Proposed quota</th>
+              <th scope="col" class="num">Variance $</th><th scope="col" class="num">Variance %</th><th scope="col" class="num">Rep capacity</th>
+              <th scope="col" class="num">Quota / rep</th><th scope="col" class="num">Hist. rev / rep</th><th scope="col" class="num">Opp. index</th>
+              <th scope="col">Reason(s) flagged</th><th scope="col">Review</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div id="exceptions-empty" class="empty" hidden>No territories match these filters.</div>
+      </div>
+      <div class="card" id="detail-card">
+        <div class="card-head">
+          <h2>Territory detail</h2>
+          <label class="inline">Territory <select id="detail-select"></select></label>
+        </div>
+        <div id="territory-detail"><p class="muted">Select a territory to see its source data and calculation logic.</p></div>
+      </div>
+      <div class="card">
+        <h2>Cross-file data checks <span class="hint">(informational — do not change exception flags)</span></h2>
+        <div id="consistency"></div>
+      </div>
+    </section>
+
+    <!-- C. ADVISOR -->
+    <section id="tab-advisor" class="tab-panel" role="tabpanel" hidden>
+      <div class="page-head">
+        <h1>Ask the Planning Advisor</h1>
+        <p class="lede" id="advisor-mode-text"></p>
+      </div>
+      <div class="card">
+        <div class="examples" id="examples" aria-label="Example questions"></div>
+        <form id="ask-form" class="ask">
+          <label for="question" class="sr-only">Your question</label>
+          <textarea id="question" rows="2" maxlength="2000" placeholder="Ask about the plan, exceptions, a territory (e.g. T05), missing information, or a draft review request…"></textarea>
+          <button class="btn btn-primary" type="submit" id="ask-btn">Ask</button>
+        </form>
+        <p class="footnote">Answers are built only from allowlisted, read-only tool results (max <span id="max-calls">3</span> tool calls per question). Every $ and % figure is checked against tool output.</p>
+      </div>
+      <div id="conversation" aria-live="polite"></div>
+    </section>
+
+    <!-- D. SCENARIO REVIEW -->
+    <section id="tab-review" class="tab-panel" role="tabpanel" hidden>
+      <div class="page-head">
+        <h1>Scenario review &amp; human approval</h1>
+        <p class="lede">Create <strong>draft-only</strong> change requests. Demo-only workflow simulation: nothing here changes the quota plan, territories, CRM, or any system.</p>
+      </div>
+      <div id="review-integrity"></div>
+      <div class="grid-2 review-grid">
+        <form class="card" id="cr-form" novalidate>
+          <h2>New draft change request</h2>
+          <label>Territory <select name="territory_id" id="cr-territory" required></select></label>
+          <div class="kv" id="cr-current"></div>
+          <label>Suggested alternative quota (optional, USD)
+            <input type="number" name="suggested_quota_usd" id="cr-alt" min="1" step="1000" inputmode="numeric" placeholder="e.g. leave blank for review only">
+          </label>
+          <button type="button" class="btn" id="cr-preview">Preview what-if (not applied)</button>
+          <div id="cr-preview-out"></div>
+          <label>Reason / business rationale <span class="req">required</span>
+            <textarea name="rationale" rows="3" maxlength="1000" required></textarea>
+          </label>
+          <label>Assumptions (one per line)
+            <textarea name="assumptions" rows="3" maxlength="1000"></textarea>
+          </label>
+          <div>
+            <div class="label-like">Data evidence (generated from tool output)</div>
+            <ul class="evidence" id="cr-evidence"></ul>
+          </div>
+          <label>Additional evidence notes (optional, one per line)
+            <textarea name="additional_evidence" rows="2" maxlength="1000"></textarea>
+          </label>
+          <label>Reviewer name / role (optional)
+            <input name="reviewer" maxlength="80" placeholder="e.g. Regional planning lead">
+          </label>
+          <div id="cr-error" class="form-error" role="alert"></div>
+          <button class="btn btn-primary" type="submit">Create draft (PENDING HUMAN APPROVAL)</button>
+        </form>
+        <div class="card">
+          <div class="card-head"><h2>Local demo review queue</h2><span class="hint" id="queue-count"></span></div>
+          <div id="queue"><div class="loading">Loading…</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- E. EVALUATION LAB -->
+    <section id="tab-eval" class="tab-panel" role="tabpanel" hidden>
+      <div class="page-head">
+        <h1>Evaluation lab</h1>
+        <p class="lede">Cases from <code>tests/evaluation_cases.csv</code>. A case is shown as passed only if its automated check actually ran and passed. Model-response cases stay <em>Manual evaluation required</em> until a human records a result.</p>
+      </div>
+      <div class="card eval-actions">
+        <button class="btn btn-primary" id="run-evals">Run automated checks</button>
+        <button class="btn" id="run-tests">Run unit test suite</button>
+        <span id="eval-status" class="hint" aria-live="polite"></span>
+      </div>
+      <div class="kpis small" id="eval-summary"></div>
+      <div class="card table-card">
+        <div class="table-wrap">
+          <table class="data" id="eval-table">
+            <thead><tr><th>ID</th><th>Category</th><th>Description</th><th>Expected</th><th>Actual</th><th>Result</th><th>Severity</th><th>Last run</th></tr></thead>
+            <tbody><tr><td colspan="8" class="muted">Not run yet in this session. Select “Run automated checks”.</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card" id="test-output-card" hidden>
+        <h2>Unit test suite</h2>
+        <div id="test-output"></div>
+      </div>
+    </section>
+
+    <!-- F. ARCHITECTURE -->
+    <section id="tab-architecture" class="tab-panel" role="tabpanel" hidden>
+      <div class="page-head">
+        <h1>Architecture &amp; governance</h1>
+        <p class="lede">Deterministic code does the calculations. The advisor chooses tools and explains results. A human decides.</p>
+      </div>
+      <div class="card">
+        <h2>Workflow</h2>
+        <ol class="flow" id="flow">
+          <li><span class="step">User question</span><span class="sub">Plain language</span></li>
+          <li><span class="step">Intent router / optional model</span><span class="sub">Rule-based by default</span></li>
+          <li><span class="step">Allowlisted read-only tool</span><span class="sub">Validated args · max 3 calls</span></li>
+          <li><span class="step">Deterministic calculation</span><span class="sub">Python, from CSVs</span></li>
+          <li><span class="step">Evidence-grounded response</span><span class="sub">Figures checked vs tool output</span></li>
+          <li><span class="step">Human review</span><span class="sub">Planner decides</span></li>
+          <li><span class="step">Draft-only change request</span><span class="sub">PENDING_HUMAN_APPROVAL · executed: false</span></li>
+        </ol>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h2>Boundaries</h2>
+          <ul class="checklist">
+            <li>Synthetic data only.</li>
+            <li>Read-only analysis; no writes to business systems, CRM, email, or external services.</li>
+            <li>Human approval required for consequential decisions; drafts are never applied.</li>
+            <li>Numeric claims must be traceable to data/tool results (automated grounding check).</li>
+            <li>No employee ranking, termination, or individual performance decisions; rep data shown only in aggregate.</li>
+            <li>No unsupported claims about savings, accuracy, or production readiness.</li>
+            <li>Tool calls and review decisions are logged locally without questions, secrets, or personal data.</li>
+            <li>Thresholds are illustrative demo thresholds requiring business-owner validation.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Prohibited actions (enforced in code)</h2>
+          <ul class="checklist neg" id="prohibited"></ul>
+        </div>
+      </div>
+      <div class="card table-card">
+        <h2 class="pad">Tool allowlist</h2>
+        <div class="table-wrap"><table class="data" id="tools-table"><thead><tr><th>Tool</th><th>Kind</th><th>Purpose</th><th>Arguments</th></tr></thead><tbody></tbody></table></div>
+      </div>
+      <div class="card table-card">
+        <div class="card-head pad"><h2>Local demo audit log</h2><button class="btn btn-small" id="refresh-audit">Refresh</button></div>
+        <div class="table-wrap"><table class="data" id="audit-table"><thead><tr><th>Time (UTC)</th><th>Event</th><th>Details</th></tr></thead><tbody></tbody></table></div>
+      </div>
+    </section>
+
+    <!-- G. CASE STUDY -->
+    <section id="tab-casestudy" class="tab-panel" role="tabpanel" hidden>
+      <div class="page-head row">
+        <div>
+          <h1>Portfolio case study</h1>
+          <p class="lede">Follows the structure of <code>docs/case_study_template.md</code>; figures are calculated live. Test results appear only after they have actually been run.</p>
+        </div>
+        <a class="btn" href="/api/case-study.md" download>Download Markdown</a>
+      </div>
+      <article class="card prose" id="case-study"><div class="loading">Loading…</div></article>
+    </section>
+  </main>
+  <footer class="foot">
+    Norbae AI helps businesses improve complex workflows with practical AI, measurable evaluation, and human oversight.
+    · Portfolio prototype on fictional data · Not a production planning system.
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>

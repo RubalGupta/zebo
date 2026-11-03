@@ -1,0 +1,41 @@
+level,id,name,parent_id,leader_id
+bu,BU1,Enterprise Solutions,,S0001
+division,NAW,North America West,BU1,S0002
+area,NAW-A01,Bay Area,NAW,S0003
+area,NAW-A02,Pacific Northwest,NAW,S0009
+area,NAW-A03,Southern California,NAW,S0015
+area,NAW-A04,Mountain,NAW,S0020
+area,NAW-A05,Southwest,NAW,S0025
+area,NAW-A06,Northern California,NAW,S0030
+area,NAW-A07,Hawaii & Alaska,NAW,S0036
+division,NAE,North America East,BU1,S0041
+area,NAE-A01,New York Metro,NAE,S0042
+area,NAE-A02,New England,NAE,S0047
+area,NAE-A03,Mid-Atlantic,NAE,S0053
+area,NAE-A04,Southeast,NAE,S0059
+area,NAE-A05,Florida,NAE,S0065
+area,NAE-A06,Carolinas,NAE,S0070
+area,NAE-A07,Ohio Valley,NAE,S0076
+area,NAE-A08,Great Lakes,NAE,S0082
+division,CLA,Central & LATAM,BU1,S0087
+area,CLA-A01,Texas,CLA,S0088
+area,CLA-A02,Plains,CLA,S0094
+area,CLA-A03,Midwest,CLA,S0099
+area,CLA-A04,Mexico,CLA,S0104
+area,CLA-A05,Brazil,CLA,S0109
+area,CLA-A06,Andean,CLA,S0115
+division,EMEA,EMEA,BU1,S0121
+area,EMEA-A01,UK & Ireland,EMEA,S0122
+area,EMEA-A02,DACH,EMEA,S0128
+area,EMEA-A03,France & Benelux,EMEA,S0134
+area,EMEA-A04,Nordics,EMEA,S0139
+area,EMEA-A05,Southern Europe,EMEA,S0144
+area,EMEA-A06,Middle East & Africa,EMEA,S0150
+area,EMEA-A07,Central & Eastern Europe,EMEA,S0156
+division,APAC,APAC,BU1,S0161
+area,APAC-A01,ANZ,APAC,S0162
+area,APAC-A02,Japan,APAC,S0168
+area,APAC-A03,Greater China,APAC,S0174
+area,APAC-A04,India,APAC,S0180
+area,APAC-A05,Southeast Asia,APAC,S0186
+area,APAC-A06,Korea,APAC,S0191

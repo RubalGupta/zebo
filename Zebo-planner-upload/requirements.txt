@@ -1,0 +1,6 @@
+# Zebo Planner (Norbae AI) — FY27 planning cockpit.
+# Used by Streamlit Community Cloud and by:  pip install -r requirements.txt
+# (The classic stdlib dashboard, server.py, and its tests need nothing installed.)
+streamlit>=1.50
+pandas>=2.0
+altair>=5.0

@@ -1,0 +1,157 @@
+territory_id,territory_name,area_id,division_id,bu_id,motion,owner_id
+NAW-A01-D1,Bay Area Deep 1,NAW-A01,NAW,BU1,Deep,S0004
+NAW-A01-E1,Bay Area Expansion 1,NAW-A01,NAW,BU1,Expansion,S0005
+NAW-A01-E2,Bay Area Expansion 2,NAW-A01,NAW,BU1,Expansion,S0006
+NAW-A01-G1,Bay Area Greenfield 1,NAW-A01,NAW,BU1,Greenfield,S0007
+NAW-A01-G2,Bay Area Greenfield 2,NAW-A01,NAW,BU1,Greenfield,S0008
+NAW-A02-D1,Pacific Northwest Deep 1,NAW-A02,NAW,BU1,Deep,S0010
+NAW-A02-E1,Pacific Northwest Expansion 1,NAW-A02,NAW,BU1,Expansion,S0011
+NAW-A02-E2,Pacific Northwest Expansion 2,NAW-A02,NAW,BU1,Expansion,S0012
+NAW-A02-G1,Pacific Northwest Greenfield 1,NAW-A02,NAW,BU1,Greenfield,S0013
+NAW-A02-G2,Pacific Northwest Greenfield 2,NAW-A02,NAW,BU1,Greenfield,S0014
+NAW-A03-D1,Southern California Deep 1,NAW-A03,NAW,BU1,Deep,S0016
+NAW-A03-E1,Southern California Expansion 1,NAW-A03,NAW,BU1,Expansion,S0017
+NAW-A03-E2,Southern California Expansion 2,NAW-A03,NAW,BU1,Expansion,S0018
+NAW-A03-G1,Southern California Greenfield 1,NAW-A03,NAW,BU1,Greenfield,S0019
+NAW-A04-D1,Mountain Deep 1,NAW-A04,NAW,BU1,Deep,S0021
+NAW-A04-E1,Mountain Expansion 1,NAW-A04,NAW,BU1,Expansion,S0022
+NAW-A04-E2,Mountain Expansion 2,NAW-A04,NAW,BU1,Expansion,S0023
+NAW-A04-G1,Mountain Greenfield 1,NAW-A04,NAW,BU1,Greenfield,S0024
+NAW-A05-D1,Southwest Deep 1,NAW-A05,NAW,BU1,Deep,S0026
+NAW-A05-E1,Southwest Expansion 1,NAW-A05,NAW,BU1,Expansion,S0027
+NAW-A05-E2,Southwest Expansion 2,NAW-A05,NAW,BU1,Expansion,S0028
+NAW-A05-G1,Southwest Greenfield 1,NAW-A05,NAW,BU1,Greenfield,S0029
+NAW-A06-D1,Northern California Deep 1,NAW-A06,NAW,BU1,Deep,S0031
+NAW-A06-E1,Northern California Expansion 1,NAW-A06,NAW,BU1,Expansion,S0032
+NAW-A06-E2,Northern California Expansion 2,NAW-A06,NAW,BU1,Expansion,S0033
+NAW-A06-G1,Northern California Greenfield 1,NAW-A06,NAW,BU1,Greenfield,S0034
+NAW-A06-G2,Northern California Greenfield 2,NAW-A06,NAW,BU1,Greenfield,S0035
+NAW-A07-D1,Hawaii & Alaska Deep 1,NAW-A07,NAW,BU1,Deep,S0037
+NAW-A07-E1,Hawaii & Alaska Expansion 1,NAW-A07,NAW,BU1,Expansion,S0038
+NAW-A07-E2,Hawaii & Alaska Expansion 2,NAW-A07,NAW,BU1,Expansion,S0039
+NAW-A07-G1,Hawaii & Alaska Greenfield 1,NAW-A07,NAW,BU1,Greenfield,S0040
+NAE-A01-D1,New York Metro Deep 1,NAE-A01,NAE,BU1,Deep,S0043
+NAE-A01-E1,New York Metro Expansion 1,NAE-A01,NAE,BU1,Expansion,S0044
+NAE-A01-E2,New York Metro Expansion 2,NAE-A01,NAE,BU1,Expansion,S0045
+NAE-A01-G1,New York Metro Greenfield 1,NAE-A01,NAE,BU1,Greenfield,S0046
+NAE-A02-D1,New England Deep 1,NAE-A02,NAE,BU1,Deep,S0048
+NAE-A02-E1,New England Expansion 1,NAE-A02,NAE,BU1,Expansion,S0049
+NAE-A02-E2,New England Expansion 2,NAE-A02,NAE,BU1,Expansion,S0050
+NAE-A02-G1,New England Greenfield 1,NAE-A02,NAE,BU1,Greenfield,S0051
+NAE-A02-G2,New England Greenfield 2,NAE-A02,NAE,BU1,Greenfield,S0052
+NAE-A03-D1,Mid-Atlantic Deep 1,NAE-A03,NAE,BU1,Deep,S0054
+NAE-A03-E1,Mid-Atlantic Expansion 1,NAE-A03,NAE,BU1,Expansion,S0055
+NAE-A03-E2,Mid-Atlantic Expansion 2,NAE-A03,NAE,BU1,Expansion,S0056
+NAE-A03-G1,Mid-Atlantic Greenfield 1,NAE-A03,NAE,BU1,Greenfield,S0057
+NAE-A03-G2,Mid-Atlantic Greenfield 2,NAE-A03,NAE,BU1,Greenfield,S0058
+NAE-A04-D1,Southeast Deep 1,NAE-A04,NAE,BU1,Deep,S0060
+NAE-A04-E1,Southeast Expansion 1,NAE-A04,NAE,BU1,Expansion,S0061
+NAE-A04-E2,Southeast Expansion 2,NAE-A04,NAE,BU1,Expansion,S0062
+NAE-A04-G1,Southeast Greenfield 1,NAE-A04,NAE,BU1,Greenfield,S0063
+NAE-A04-G2,Southeast Greenfield 2,NAE-A04,NAE,BU1,Greenfield,S0064
+NAE-A05-D1,Florida Deep 1,NAE-A05,NAE,BU1,Deep,S0066
+NAE-A05-E1,Florida Expansion 1,NAE-A05,NAE,BU1,Expansion,S0067
+NAE-A05-E2,Florida Expansion 2,NAE-A05,NAE,BU1,Expansion,S0068
+NAE-A05-G1,Florida Greenfield 1,NAE-A05,NAE,BU1,Greenfield,S0069
+NAE-A06-D1,Carolinas Deep 1,NAE-A06,NAE,BU1,Deep,S0071
+NAE-A06-E1,Carolinas Expansion 1,NAE-A06,NAE,BU1,Expansion,S0072
+NAE-A06-E2,Carolinas Expansion 2,NAE-A06,NAE,BU1,Expansion,S0073
+NAE-A06-G1,Carolinas Greenfield 1,NAE-A06,NAE,BU1,Greenfield,S0074
+NAE-A06-G2,Carolinas Greenfield 2,NAE-A06,NAE,BU1,Greenfield,S0075
+NAE-A07-D1,Ohio Valley Deep 1,NAE-A07,NAE,BU1,Deep,S0077
+NAE-A07-E1,Ohio Valley Expansion 1,NAE-A07,NAE,BU1,Expansion,S0078
+NAE-A07-E2,Ohio Valley Expansion 2,NAE-A07,NAE,BU1,Expansion,S0079
+NAE-A07-G1,Ohio Valley Greenfield 1,NAE-A07,NAE,BU1,Greenfield,S0080
+NAE-A07-G2,Ohio Valley Greenfield 2,NAE-A07,NAE,BU1,Greenfield,S0081
+NAE-A08-D1,Great Lakes Deep 1,NAE-A08,NAE,BU1,Deep,S0083
+NAE-A08-E1,Great Lakes Expansion 1,NAE-A08,NAE,BU1,Expansion,S0084
+NAE-A08-E2,Great Lakes Expansion 2,NAE-A08,NAE,BU1,Expansion,S0085
+NAE-A08-G1,Great Lakes Greenfield 1,NAE-A08,NAE,BU1,Greenfield,S0086
+CLA-A01-D1,Texas Deep 1,CLA-A01,CLA,BU1,Deep,S0089
+CLA-A01-E1,Texas Expansion 1,CLA-A01,CLA,BU1,Expansion,S0090
+CLA-A01-E2,Texas Expansion 2,CLA-A01,CLA,BU1,Expansion,S0091
+CLA-A01-G1,Texas Greenfield 1,CLA-A01,CLA,BU1,Greenfield,S0092
+CLA-A01-G2,Texas Greenfield 2,CLA-A01,CLA,BU1,Greenfield,S0093
+CLA-A02-D1,Plains Deep 1,CLA-A02,CLA,BU1,Deep,S0095
+CLA-A02-E1,Plains Expansion 1,CLA-A02,CLA,BU1,Expansion,S0096
+CLA-A02-E2,Plains Expansion 2,CLA-A02,CLA,BU1,Expansion,S0097
+CLA-A02-G1,Plains Greenfield 1,CLA-A02,CLA,BU1,Greenfield,S0098
+CLA-A03-D1,Midwest Deep 1,CLA-A03,CLA,BU1,Deep,S0100
+CLA-A03-E1,Midwest Expansion 1,CLA-A03,CLA,BU1,Expansion,S0101
+CLA-A03-E2,Midwest Expansion 2,CLA-A03,CLA,BU1,Expansion,S0102
+CLA-A03-G1,Midwest Greenfield 1,CLA-A03,CLA,BU1,Greenfield,S0103
+CLA-A04-D1,Mexico Deep 1,CLA-A04,CLA,BU1,Deep,S0105
+CLA-A04-E1,Mexico Expansion 1,CLA-A04,CLA,BU1,Expansion,S0106
+CLA-A04-E2,Mexico Expansion 2,CLA-A04,CLA,BU1,Expansion,S0107
+CLA-A04-G1,Mexico Greenfield 1,CLA-A04,CLA,BU1,Greenfield,S0108
+CLA-A05-D1,Brazil Deep 1,CLA-A05,CLA,BU1,Deep,S0110
+CLA-A05-E1,Brazil Expansion 1,CLA-A05,CLA,BU1,Expansion,S0111
+CLA-A05-E2,Brazil Expansion 2,CLA-A05,CLA,BU1,Expansion,S0112
+CLA-A05-G1,Brazil Greenfield 1,CLA-A05,CLA,BU1,Greenfield,S0113
+CLA-A05-G2,Brazil Greenfield 2,CLA-A05,CLA,BU1,Greenfield,S0114
+CLA-A06-D1,Andean Deep 1,CLA-A06,CLA,BU1,Deep,S0116
+CLA-A06-E1,Andean Expansion 1,CLA-A06,CLA,BU1,Expansion,S0117
+CLA-A06-E2,Andean Expansion 2,CLA-A06,CLA,BU1,Expansion,S0118
+CLA-A06-G1,Andean Greenfield 1,CLA-A06,CLA,BU1,Greenfield,S0119
+CLA-A06-G2,Andean Greenfield 2,CLA-A06,CLA,BU1,Greenfield,S0120
+EMEA-A01-D1,UK & Ireland Deep 1,EMEA-A01,EMEA,BU1,Deep,S0123
+EMEA-A01-E1,UK & Ireland Expansion 1,EMEA-A01,EMEA,BU1,Expansion,S0124
+EMEA-A01-E2,UK & Ireland Expansion 2,EMEA-A01,EMEA,BU1,Expansion,S0125
+EMEA-A01-G1,UK & Ireland Greenfield 1,EMEA-A01,EMEA,BU1,Greenfield,S0126
+EMEA-A01-G2,UK & Ireland Greenfield 2,EMEA-A01,EMEA,BU1,Greenfield,S0127
+EMEA-A02-D1,DACH Deep 1,EMEA-A02,EMEA,BU1,Deep,S0129
+EMEA-A02-E1,DACH Expansion 1,EMEA-A02,EMEA,BU1,Expansion,S0130
+EMEA-A02-E2,DACH Expansion 2,EMEA-A02,EMEA,BU1,Expansion,S0131
+EMEA-A02-G1,DACH Greenfield 1,EMEA-A02,EMEA,BU1,Greenfield,S0132
+EMEA-A02-G2,DACH Greenfield 2,EMEA-A02,EMEA,BU1,Greenfield,S0133
+EMEA-A03-D1,France & Benelux Deep 1,EMEA-A03,EMEA,BU1,Deep,S0135
+EMEA-A03-E1,France & Benelux Expansion 1,EMEA-A03,EMEA,BU1,Expansion,S0136
+EMEA-A03-E2,France & Benelux Expansion 2,EMEA-A03,EMEA,BU1,Expansion,S0137
+EMEA-A03-G1,France & Benelux Greenfield 1,EMEA-A03,EMEA,BU1,Greenfield,S0138
+EMEA-A04-D1,Nordics Deep 1,EMEA-A04,EMEA,BU1,Deep,S0140
+EMEA-A04-E1,Nordics Expansion 1,EMEA-A04,EMEA,BU1,Expansion,S0141
+EMEA-A04-E2,Nordics Expansion 2,EMEA-A04,EMEA,BU1,Expansion,S0142
+EMEA-A04-G1,Nordics Greenfield 1,EMEA-A04,EMEA,BU1,Greenfield,S0143
+EMEA-A05-D1,Southern Europe Deep 1,EMEA-A05,EMEA,BU1,Deep,S0145
+EMEA-A05-E1,Southern Europe Expansion 1,EMEA-A05,EMEA,BU1,Expansion,S0146
+EMEA-A05-E2,Southern Europe Expansion 2,EMEA-A05,EMEA,BU1,Expansion,S0147
+EMEA-A05-G1,Southern Europe Greenfield 1,EMEA-A05,EMEA,BU1,Greenfield,S0148
+EMEA-A05-G2,Southern Europe Greenfield 2,EMEA-A05,EMEA,BU1,Greenfield,S0149
+EMEA-A06-D1,Middle East & Africa Deep 1,EMEA-A06,EMEA,BU1,Deep,S0151
+EMEA-A06-E1,Middle East & Africa Expansion 1,EMEA-A06,EMEA,BU1,Expansion,S0152
+EMEA-A06-E2,Middle East & Africa Expansion 2,EMEA-A06,EMEA,BU1,Expansion,S0153
+EMEA-A06-G1,Middle East & Africa Greenfield 1,EMEA-A06,EMEA,BU1,Greenfield,S0154
+EMEA-A06-G2,Middle East & Africa Greenfield 2,EMEA-A06,EMEA,BU1,Greenfield,S0155
+EMEA-A07-D1,Central & Eastern Europe Deep 1,EMEA-A07,EMEA,BU1,Deep,S0157
+EMEA-A07-E1,Central & Eastern Europe Expansion 1,EMEA-A07,EMEA,BU1,Expansion,S0158
+EMEA-A07-E2,Central & Eastern Europe Expansion 2,EMEA-A07,EMEA,BU1,Expansion,S0159
+EMEA-A07-G1,Central & Eastern Europe Greenfield 1,EMEA-A07,EMEA,BU1,Greenfield,S0160
+APAC-A01-D1,ANZ Deep 1,APAC-A01,APAC,BU1,Deep,S0163
+APAC-A01-E1,ANZ Expansion 1,APAC-A01,APAC,BU1,Expansion,S0164
+APAC-A01-E2,ANZ Expansion 2,APAC-A01,APAC,BU1,Expansion,S0165
+APAC-A01-G1,ANZ Greenfield 1,APAC-A01,APAC,BU1,Greenfield,S0166
+APAC-A01-G2,ANZ Greenfield 2,APAC-A01,APAC,BU1,Greenfield,S0167
+APAC-A02-D1,Japan Deep 1,APAC-A02,APAC,BU1,Deep,S0169
+APAC-A02-E1,Japan Expansion 1,APAC-A02,APAC,BU1,Expansion,S0170
+APAC-A02-E2,Japan Expansion 2,APAC-A02,APAC,BU1,Expansion,S0171
+APAC-A02-G1,Japan Greenfield 1,APAC-A02,APAC,BU1,Greenfield,S0172
+APAC-A02-G2,Japan Greenfield 2,APAC-A02,APAC,BU1,Greenfield,S0173
+APAC-A03-D1,Greater China Deep 1,APAC-A03,APAC,BU1,Deep,S0175
+APAC-A03-E1,Greater China Expansion 1,APAC-A03,APAC,BU1,Expansion,S0176
+APAC-A03-E2,Greater China Expansion 2,APAC-A03,APAC,BU1,Expansion,S0177
+APAC-A03-G1,Greater China Greenfield 1,APAC-A03,APAC,BU1,Greenfield,S0178
+APAC-A03-G2,Greater China Greenfield 2,APAC-A03,APAC,BU1,Greenfield,S0179
+APAC-A04-D1,India Deep 1,APAC-A04,APAC,BU1,Deep,S0181
+APAC-A04-E1,India Expansion 1,APAC-A04,APAC,BU1,Expansion,S0182
+APAC-A04-E2,India Expansion 2,APAC-A04,APAC,BU1,Expansion,S0183
+APAC-A04-G1,India Greenfield 1,APAC-A04,APAC,BU1,Greenfield,S0184
+APAC-A04-G2,India Greenfield 2,APAC-A04,APAC,BU1,Greenfield,S0185
+APAC-A05-D1,Southeast Asia Deep 1,APAC-A05,APAC,BU1,Deep,S0187
+APAC-A05-E1,Southeast Asia Expansion 1,APAC-A05,APAC,BU1,Expansion,S0188
+APAC-A05-E2,Southeast Asia Expansion 2,APAC-A05,APAC,BU1,Expansion,S0189
+APAC-A05-G1,Southeast Asia Greenfield 1,APAC-A05,APAC,BU1,Greenfield,S0190
+APAC-A06-D1,Korea Deep 1,APAC-A06,APAC,BU1,Deep,S0192
+APAC-A06-E1,Korea Expansion 1,APAC-A06,APAC,BU1,Expansion,S0193
+APAC-A06-E2,Korea Expansion 2,APAC-A06,APAC,BU1,Expansion,S0194
+APAC-A06-G1,Korea Greenfield 1,APAC-A06,APAC,BU1,Greenfield,S0195
+APAC-A06-G2,Korea Greenfield 2,APAC-A06,APAC,BU1,Greenfield,S0196

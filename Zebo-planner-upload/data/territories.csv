@@ -1,0 +1,11 @@
+territory_id,region,territory_name,rep_capacity,historical_revenue_usd,opportunity_index
+T01,West,West Coast,12,12000000,1.0
+T02,West,Mountain,10,9000000,0.95
+T03,Central,Texas,11,10000000,1.05
+T04,Central,Midwest,9,8000000,0.9
+T05,East,Northeast,13,13000000,1.1
+T06,East,Mid-Atlantic,10,9500000,1.0
+T07,East,Southeast,12,10500000,0.92
+T08,Central,Great Lakes,8,7000000,0.88
+T09,West,Pacific Northwest,7,6000000,0.85
+T10,Central,South Central,8,5000000,0.8

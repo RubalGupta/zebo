@@ -1,0 +1,801 @@
+account_id,account_name,industry,employee_band,motion,territory_id,owner_id,area_id,division_id,bu_id,data_origin
+A0001,Jorwick Health,Healthcare,"5,000-10,000",Deep,NAW-A06-D1,S0031,NAW-A06,NAW,BU1,Synthetic
+A0002,Wynstone Capital,Financial Services,"5,000-10,000",Deep,APAC-A06-D1,S0192,APAC-A06,APAC,BU1,Synthetic
+A0003,Dorcore Financial,Financial Services,"10,000+",Deep,NAW-A02-D1,S0010,NAW-A02,NAW,BU1,Synthetic
+A0004,Daldex Financial,Financial Services,"5,000-10,000",Deep,NAE-A01-D1,S0043,NAE-A01,NAE,BU1,Synthetic
+A0005,Raldex Labs,Technology,"10,000+",Deep,APAC-A03-D1,S0175,APAC-A03,APAC,BU1,Synthetic
+A0006,Isbrook Health,Healthcare,"10,000+",Deep,APAC-A02-D1,S0169,APAC-A02,APAC,BU1,Synthetic
+A0007,Beltris Care,Healthcare,"5,000-10,000",Deep,NAE-A08-D1,S0083,NAE-A08,NAE,BU1,Synthetic
+A0008,Torfield Agency,Public Sector,"10,000+",Deep,NAE-A08-D1,S0083,NAE-A08,NAE,BU1,Synthetic
+A0009,Marton Transport,Logistics,"5,000-10,000",Deep,NAW-A06-D1,S0031,NAW-A06,NAW,BU1,Synthetic
+A0010,Belgate Freight,Logistics,"10,000+",Deep,CLA-A04-D1,S0105,CLA-A04,CLA,BU1,Synthetic
+A0011,Galridge Health,Healthcare,"5,000-10,000",Deep,EMEA-A07-E2,S0159,EMEA-A07,EMEA,BU1,Synthetic
+A0012,Brisphere Agency,Public Sector,"10,000+",Deep,EMEA-A06-D1,S0151,EMEA-A06,EMEA,BU1,Synthetic
+A0013,Corgate Industries,Manufacturing,"10,000+",Deep,NAW-A01-D1,S0004,NAW-A01,NAW,BU1,Synthetic
+A0014,Tormont Retail,Retail,"5,000-10,000",Deep,APAC-A04-D1,S0181,APAC-A04,APAC,BU1,Synthetic
+A0015,Kelwren Transport,Logistics,"10,000+",Deep,NAE-A01-D1,S0043,NAE-A01,NAE,BU1,Synthetic
+A0016,Dalwren Studios,Media,"5,000-10,000",Deep,CLA-A04-D1,S0105,CLA-A04,CLA,BU1,Synthetic
+A0017,Elvane Media,Media,"5,000-10,000",Deep,EMEA-A07-D1,S0157,EMEA-A07,EMEA,BU1,Synthetic
+A0018,Pellyn Health,Healthcare,"10,000+",Deep,APAC-A01-D1,S0163,APAC-A01,APAC,BU1,Synthetic
+A0019,Fencore Works,Manufacturing,"10,000+",Deep,EMEA-A01-D1,S0123,EMEA-A01,EMEA,BU1,Synthetic
+A0020,Isora Agency,Public Sector,"5,000-10,000",Deep,NAE-A02-D1,S0048,NAE-A02,NAE,BU1,Synthetic
+A0021,Orlyn Care,Healthcare,"5,000-10,000",Deep,NAW-A05-D1,S0026,NAW-A05,NAW,BU1,Synthetic
+A0022,Quinvane Logistics,Logistics,"10,000+",Deep,NAW-A05-D1,S0026,NAW-A05,NAW,BU1,Synthetic
+A0023,Jorbrook University,Education,"10,000+",Deep,CLA-A01-D1,S0089,CLA-A01,CLA,BU1,Synthetic
+A0024,Calwren Studios,Media,"5,000-10,000",Deep,NAW-A02-G2,S0014,NAW-A02,NAW,BU1,Synthetic
+A0025,Torvale Utilities,Energy,"5,000-10,000",Deep,APAC-A05-D1,S0187,APAC-A05,APAC,BU1,Synthetic
+A0026,Ashton Bancorp,Financial Services,"10,000+",Deep,NAW-A02-G1,S0013,NAW-A02,NAW,BU1,Synthetic
+A0027,Verora Financial,Financial Services,"5,000-10,000",Deep,CLA-A05-D1,S0110,CLA-A05,CLA,BU1,Synthetic
+A0028,Ultris Medical,Healthcare,"10,000+",Deep,EMEA-A07-D1,S0157,EMEA-A07,EMEA,BU1,Synthetic
+A0029,Calnova Media,Media,"10,000+",Deep,NAE-A03-D1,S0054,NAE-A03,NAE,BU1,Synthetic
+A0030,Selnova Academy,Education,"10,000+",Deep,NAE-A07-E1,S0078,NAE-A07,NAE,BU1,Synthetic
+A0031,Dalridge Medical,Healthcare,"10,000+",Deep,NAE-A01-D1,S0043,NAE-A01,NAE,BU1,Synthetic
+A0032,Calwick Freight,Logistics,"5,000-10,000",Deep,NAE-A07-D1,S0077,NAE-A07,NAE,BU1,Synthetic
+A0033,Marton Media,Media,"5,000-10,000",Deep,CLA-A04-D1,S0105,CLA-A04,CLA,BU1,Synthetic
+A0034,Calstone Manufacturing,Manufacturing,"10,000+",Deep,APAC-A06-D1,S0192,APAC-A06,APAC,BU1,Synthetic
+A0035,Belcore Labs,Technology,"10,000+",Deep,APAC-A04-D1,S0181,APAC-A04,APAC,BU1,Synthetic
+A0036,Cornova Power,Energy,"10,000+",Deep,CLA-A01-D1,S0089,CLA-A01,CLA,BU1,Synthetic
+A0037,Yorvale Systems,Technology,"10,000+",Deep,APAC-A01-D1,S0163,APAC-A01,APAC,BU1,Synthetic
+A0038,Daldex Retail,Retail,"5,000-10,000",Deep,APAC-A01-D1,S0163,APAC-A01,APAC,BU1,Synthetic
+A0039,Peltris Learning,Education,"10,000+",Deep,CLA-A01-D1,S0089,CLA-A01,CLA,BU1,Synthetic
+A0040,Belora Brands,Retail,"10,000+",Deep,NAE-A06-D1,S0071,NAE-A06,NAE,BU1,Synthetic
+A0041,Fenridge Industries,Manufacturing,"10,000+",Deep,CLA-A02-D1,S0095,CLA-A02,CLA,BU1,Synthetic
+A0042,Marwick Retail,Retail,"10,000+",Deep,APAC-A02-D1,S0169,APAC-A02,APAC,BU1,Synthetic
+A0043,Torsphere Freight,Logistics,"5,000-10,000",Deep,NAE-A06-D1,S0071,NAE-A06,NAE,BU1,Synthetic
+A0044,Briora Labs,Technology,"10,000+",Deep,NAW-A02-D1,S0010,NAW-A02,NAW,BU1,Synthetic
+A0045,Elcore Utilities,Energy,"10,000+",Deep,NAW-A02-D1,S0010,NAW-A02,NAW,BU1,Synthetic
+A0046,Versphere Stores,Retail,"10,000+",Deep,NAE-A06-D1,S0071,NAE-A06,NAE,BU1,Synthetic
+A0047,Calton Software,Technology,"10,000+",Deep,EMEA-A01-D1,S0123,EMEA-A01,EMEA,BU1,Synthetic
+A0048,Dorstone Labs,Technology,"5,000-10,000",Deep,APAC-A05-D1,S0187,APAC-A05,APAC,BU1,Synthetic
+A0049,Calcore Agency,Public Sector,"5,000-10,000",Deep,CLA-A03-D1,S0100,CLA-A03,CLA,BU1,Synthetic
+A0050,Jordex Financial,Financial Services,"10,000+",Deep,APAC-A03-D1,S0175,APAC-A03,APAC,BU1,Synthetic
+A0051,Xanridge Utilities,Energy,"5,000-10,000",Deep,NAE-A08-E2,S0085,NAE-A08,NAE,BU1,Synthetic
+A0052,Quintris Learning,Education,"10,000+",Deep,CLA-A05-D1,S0110,CLA-A05,CLA,BU1,Synthetic
+A0053,Yorcore Stores,Retail,"5,000-10,000",Deep,APAC-A06-D1,S0192,APAC-A06,APAC,BU1,Synthetic
+A0054,Jorlyn Authority,Public Sector,"5,000-10,000",Deep,CLA-A04-D1,S0105,CLA-A04,CLA,BU1,Synthetic
+A0055,Elbrook Manufacturing,Manufacturing,"10,000+",Deep,NAE-A03-D1,S0054,NAE-A03,NAE,BU1,Synthetic
+A0056,Ismere Stores,Retail,"10,000+",Deep,APAC-A05-D1,S0187,APAC-A05,APAC,BU1,Synthetic
+A0057,Dalbrook Manufacturing,Manufacturing,"5,000-10,000",Deep,NAW-A02-D1,S0010,NAW-A02,NAW,BU1,Synthetic
+A0058,Pelquist Industries,Manufacturing,"5,000-10,000",Deep,APAC-A04-D1,S0181,APAC-A04,APAC,BU1,Synthetic
+A0059,Fenbrook Systems,Technology,"5,000-10,000",Deep,APAC-A01-D1,S0163,APAC-A01,APAC,BU1,Synthetic
+A0060,Norton Software,Technology,"10,000+",Deep,CLA-A04-D1,S0105,CLA-A04,CLA,BU1,Synthetic
+A0061,Almont Academy,Education,"10,000+",Deep,NAE-A07-D1,S0077,NAE-A07,NAE,BU1,Synthetic
+A0062,Halora Stores,Retail,"5,000-10,000",Deep,NAE-A04-D1,S0060,NAE-A04,NAE,BU1,Synthetic
+A0063,Ultris Financial,Financial Services,"10,000+",Deep,CLA-A04-D1,S0105,CLA-A04,CLA,BU1,Synthetic
+A0064,Kelcore Software,Technology,"5,000-10,000",Deep,CLA-A05-D1,S0110,CLA-A05,CLA,BU1,Synthetic
+A0065,Marfield University,Education,"10,000+",Deep,EMEA-A01-D1,S0123,EMEA-A01,EMEA,BU1,Synthetic
+A0066,Marlyn Authority,Public Sector,"5,000-10,000",Deep,APAC-A06-D1,S0192,APAC-A06,APAC,BU1,Synthetic
+A0067,Zeldex Energy,Energy,"5,000-10,000",Deep,APAC-A06-D1,S0192,APAC-A06,APAC,BU1,Synthetic
+A0068,Fenwren Health,Healthcare,"5,000-10,000",Deep,NAW-A07-D1,S0037,NAW-A07,NAW,BU1,Synthetic
+A0069,Kelquist Logistics,Logistics,"5,000-10,000",Deep,CLA-A02-D1,S0095,CLA-A02,CLA,BU1,Synthetic
+A0070,Halgate Utilities,Energy,"5,000-10,000",Deep,APAC-A02-D1,S0169,APAC-A02,APAC,BU1,Synthetic
+A0071,Xanton Labs,Technology,"10,000+",Deep,NAW-A06-G1,S0034,NAW-A06,NAW,BU1,Synthetic
+A0072,Lumtris Academy,Education,"10,000+",Deep,NAE-A08-D1,S0083,NAE-A08,NAE,BU1,Synthetic
+A0073,Selstone Logistics,Logistics,"5,000-10,000",Deep,EMEA-A06-D1,S0151,EMEA-A06,EMEA,BU1,Synthetic
+A0074,Jordex Retail,Retail,"10,000+",Deep,APAC-A03-D1,S0175,APAC-A03,APAC,BU1,Synthetic
+A0075,Calmont Software,Technology,"10,000+",Deep,NAW-A05-D1,S0026,NAW-A05,NAW,BU1,Synthetic
+A0076,Kelstone Academy,Education,"5,000-10,000",Deep,NAW-A01-D1,S0004,NAW-A01,NAW,BU1,Synthetic
+A0077,Xanwick Media,Media,"5,000-10,000",Deep,CLA-A05-D1,S0110,CLA-A05,CLA,BU1,Synthetic
+A0078,Dalgate Media,Media,"10,000+",Deep,EMEA-A06-D1,S0151,EMEA-A06,EMEA,BU1,Synthetic
+A0079,Kelcore Medical,Healthcare,"10,000+",Deep,APAC-A03-D1,S0175,APAC-A03,APAC,BU1,Synthetic
+A0080,Belfield Labs,Technology,"10,000+",Deep,EMEA-A07-D1,S0157,EMEA-A07,EMEA,BU1,Synthetic
+A0081,Allyn Media,Media,"10,000+",Deep,APAC-A03-D1,S0175,APAC-A03,APAC,BU1,Synthetic
+A0082,Corwick Works,Manufacturing,"10,000+",Deep,EMEA-A03-D1,S0135,EMEA-A03,EMEA,BU1,Synthetic
+A0083,Issphere Brands,Retail,"10,000+",Deep,CLA-A01-D1,S0089,CLA-A01,CLA,BU1,Synthetic
+A0084,Norbrook Learning,Education,"5,000-10,000",Deep,CLA-A05-D1,S0110,CLA-A05,CLA,BU1,Synthetic
+A0085,Ulsphere Systems,Technology,"10,000+",Deep,NAW-A03-D1,S0016,NAW-A03,NAW,BU1,Synthetic
+A0086,Galwren Studios,Media,"10,000+",Deep,NAE-A02-D1,S0048,NAE-A02,NAE,BU1,Synthetic
+A0087,Norvale Care,Healthcare,"10,000+",Deep,CLA-A06-D1,S0116,CLA-A06,CLA,BU1,Synthetic
+A0088,Ashvane Health,Healthcare,"5,000-10,000",Deep,NAE-A03-D1,S0054,NAE-A03,NAE,BU1,Synthetic
+A0089,Ralfield Academy,Education,"10,000+",Deep,APAC-A02-D1,S0169,APAC-A02,APAC,BU1,Synthetic
+A0090,Cordex Power,Energy,"10,000+",Deep,NAE-A03-D1,S0054,NAE-A03,NAE,BU1,Synthetic
+A0091,Selridge Energy,Energy,"5,000-10,000",Deep,NAW-A03-G1,S0019,NAW-A03,NAW,BU1,Synthetic
+A0092,Kelora Academy,Education,"10,000+",Deep,EMEA-A03-D1,S0135,EMEA-A03,EMEA,BU1,Synthetic
+A0093,Tormere University,Education,"10,000+",Deep,APAC-A04-D1,S0181,APAC-A04,APAC,BU1,Synthetic
+A0094,Ulsphere Authority,Public Sector,"10,000+",Deep,NAW-A04-D1,S0021,NAW-A04,NAW,BU1,Synthetic
+A0095,Belfield Systems,Technology,"5,000-10,000",Deep,APAC-A02-D1,S0169,APAC-A02,APAC,BU1,Synthetic
+A0096,Isvane Industries,Manufacturing,"5,000-10,000",Deep,EMEA-A07-D1,S0157,EMEA-A07,EMEA,BU1,Synthetic
+A0097,Yorquist Systems,Technology,"5,000-10,000",Deep,NAE-A08-D1,S0083,NAE-A08,NAE,BU1,Synthetic
+A0098,Raldex Networks,Media,"10,000+",Deep,APAC-A01-D1,S0163,APAC-A01,APAC,BU1,Synthetic
+A0099,Kelwren Capital,Financial Services,"10,000+",Deep,CLA-A01-D1,S0089,CLA-A01,CLA,BU1,Synthetic
+A0100,Wynridge Authority,Public Sector,"5,000-10,000",Deep,NAW-A06-D1,S0031,NAW-A06,NAW,BU1,Synthetic
+A0101,Alwick Works,Manufacturing,"5,000-10,000",Deep,NAE-A07-D1,S0077,NAE-A07,NAE,BU1,Synthetic
+A0102,Dormont Freight,Logistics,"10,000+",Deep,NAW-A04-E2,S0023,NAW-A04,NAW,BU1,Synthetic
+A0103,Quinwick Retail,Retail,"5,000-10,000",Deep,NAE-A05-D1,S0066,NAE-A05,NAE,BU1,Synthetic
+A0104,Dorsphere Services,Public Sector,"10,000+",Deep,EMEA-A02-D1,S0129,EMEA-A02,EMEA,BU1,Synthetic
+A0105,Brilyn Freight,Logistics,"5,000-10,000",Deep,APAC-A02-D1,S0169,APAC-A02,APAC,BU1,Synthetic
+A0106,Ashsphere Health,Healthcare,"5,000-10,000",Deep,APAC-A03-D1,S0175,APAC-A03,APAC,BU1,Synthetic
+A0107,Halwren Manufacturing,Manufacturing,"10,000+",Deep,CLA-A01-D1,S0089,CLA-A01,CLA,BU1,Synthetic
+A0108,Verton Services,Public Sector,"5,000-10,000",Deep,APAC-A03-D1,S0175,APAC-A03,APAC,BU1,Synthetic
+A0109,Lummere Power,Energy,"10,000+",Deep,NAE-A08-D1,S0083,NAE-A08,NAE,BU1,Synthetic
+A0110,Galridge Networks,Media,"5,000-10,000",Deep,CLA-A03-D1,S0100,CLA-A03,CLA,BU1,Synthetic
+A0111,Iston Stores,Retail,"1,000-5,000",Expansion,NAE-A02-E2,S0050,NAE-A02,NAE,BU1,Synthetic
+A0112,Verridge Retail,Retail,"1,000-5,000",Expansion,CLA-A05-E2,S0112,CLA-A05,CLA,BU1,Synthetic
+A0113,Wynridge University,Education,"1,000-5,000",Expansion,NAW-A02-E2,S0012,NAW-A02,NAW,BU1,Synthetic
+A0114,Margate Agency,Public Sector,"1,000-5,000",Expansion,NAW-A07-E2,S0039,NAW-A07,NAW,BU1,Synthetic
+A0115,Elstone Studios,Media,"5,000-10,000",Expansion,NAE-A04-E1,S0061,NAE-A04,NAE,BU1,Synthetic
+A0116,Wynbrook Logistics,Logistics,"1,000-5,000",Expansion,NAE-A03-E1,S0055,NAE-A03,NAE,BU1,Synthetic
+A0117,Quinlyn Brands,Retail,"5,000-10,000",Expansion,NAW-A04-E1,S0022,NAW-A04,NAW,BU1,Synthetic
+A0118,Corstone University,Education,"5,000-10,000",Expansion,NAE-A01-E1,S0044,NAE-A01,NAE,BU1,Synthetic
+A0119,Yorvane Networks,Media,"5,000-10,000",Expansion,APAC-A03-E1,S0176,APAC-A03,APAC,BU1,Synthetic
+A0120,Dorfield Learning,Education,"500-1,000",Expansion,CLA-A01-E1,S0090,CLA-A01,CLA,BU1,Synthetic
+A0121,Ismere Bancorp,Financial Services,"1,000-5,000",Expansion,NAE-A02-E2,S0050,NAE-A02,NAE,BU1,Synthetic
+A0122,Torbrook Manufacturing,Manufacturing,"1,000-5,000",Expansion,NAW-A07-E1,S0038,NAW-A07,NAW,BU1,Synthetic
+A0123,Galbrook Media,Media,"500-1,000",Expansion,NAW-A05-D1,S0026,NAW-A05,NAW,BU1,Synthetic
+A0124,Dallyn Manufacturing,Manufacturing,"5,000-10,000",Expansion,NAW-A02-G1,S0013,NAW-A02,NAW,BU1,Synthetic
+A0125,Dorbrook Freight,Logistics,"1,000-5,000",Expansion,CLA-A01-E1,S0090,CLA-A01,CLA,BU1,Synthetic
+A0126,Ashbrook Capital,Financial Services,"1,000-5,000",Expansion,NAE-A05-E1,S0067,NAE-A05,NAE,BU1,Synthetic
+A0127,Jorsphere Logistics,Logistics,"500-1,000",Expansion,EMEA-A03-E1,S0136,EMEA-A03,EMEA,BU1,Synthetic
+A0128,Jorsphere Financial,Financial Services,"1,000-5,000",Expansion,NAW-A04-E2,S0023,NAW-A04,NAW,BU1,Synthetic
+A0129,Pellyn Services,Public Sector,"500-1,000",Expansion,NAW-A05-E1,S0027,NAW-A05,NAW,BU1,Synthetic
+A0130,Orridge Retail,Retail,"5,000-10,000",Expansion,NAW-A06-E2,S0033,NAW-A06,NAW,BU1,Synthetic
+A0131,Halfield Authority,Public Sector,"5,000-10,000",Expansion,NAE-A02-E1,S0049,NAE-A02,NAE,BU1,Synthetic
+A0132,Alsphere University,Education,"1,000-5,000",Expansion,EMEA-A01-E2,S0125,EMEA-A01,EMEA,BU1,Synthetic
+A0133,Corgate Freight,Logistics,"5,000-10,000",Expansion,APAC-A02-E1,S0170,APAC-A02,APAC,BU1,Synthetic
+A0134,Belton Manufacturing,Manufacturing,"500-1,000",Expansion,CLA-A04-E1,S0106,CLA-A04,CLA,BU1,Synthetic
+A0135,Lumvale Bancorp,Financial Services,"1,000-5,000",Expansion,NAW-A06-G1,S0034,NAW-A06,NAW,BU1,Synthetic
+A0136,Cortris Retail,Retail,"5,000-10,000",Expansion,NAE-A05-E1,S0067,NAE-A05,NAE,BU1,Synthetic
+A0137,Pelnova Medical,Healthcare,"500-1,000",Expansion,NAE-A04-E1,S0061,NAE-A04,NAE,BU1,Synthetic
+A0138,Dalwick Retail,Retail,"1,000-5,000",Expansion,CLA-A06-E2,S0118,CLA-A06,CLA,BU1,Synthetic
+A0139,Alvale Power,Energy,"1,000-5,000",Expansion,NAW-A06-E2,S0033,NAW-A06,NAW,BU1,Synthetic
+A0140,Wynstone Agency,Public Sector,"1,000-5,000",Expansion,APAC-A01-E2,S0165,APAC-A01,APAC,BU1,Synthetic
+A0141,Belfield Freight,Logistics,"1,000-5,000",Expansion,NAW-A03-E2,S0018,NAW-A03,NAW,BU1,Synthetic
+A0142,Dorridge Bancorp,Financial Services,"500-1,000",Expansion,EMEA-A04-E2,S0142,EMEA-A04,EMEA,BU1,Synthetic
+A0143,Ulora Authority,Public Sector,"1,000-5,000",Expansion,APAC-A01-E1,S0164,APAC-A01,APAC,BU1,Synthetic
+A0144,Alwick Learning,Education,"1,000-5,000",Expansion,NAW-A07-E2,S0039,NAW-A07,NAW,BU1,Synthetic
+A0145,Verora Health,Healthcare,"500-1,000",Expansion,NAE-A05-E1,S0067,NAE-A05,NAE,BU1,Synthetic
+A0146,Ralton Networks,Media,"500-1,000",Expansion,NAW-A07-E2,S0039,NAW-A07,NAW,BU1,Synthetic
+A0147,Iscore Labs,Technology,"1,000-5,000",Expansion,CLA-A05-E1,S0111,CLA-A05,CLA,BU1,Synthetic
+A0148,Albrook Logistics,Logistics,"5,000-10,000",Expansion,APAC-A01-E1,S0164,APAC-A01,APAC,BU1,Synthetic
+A0149,Lumwick Academy,Education,"500-1,000",Expansion,NAE-A05-E1,S0067,NAE-A05,NAE,BU1,Synthetic
+A0150,Lumridge Power,Energy,"5,000-10,000",Expansion,NAW-A03-E2,S0018,NAW-A03,NAW,BU1,Synthetic
+A0151,Marmont Freight,Logistics,"5,000-10,000",Expansion,NAW-A01-E1,S0005,NAW-A01,NAW,BU1,Synthetic
+A0152,Ralfield Learning,Education,"1,000-5,000",Expansion,APAC-A06-E2,S0194,APAC-A06,APAC,BU1,Synthetic
+A0153,Peldex Learning,Education,"1,000-5,000",Expansion,NAE-A07-E2,S0079,NAE-A07,NAE,BU1,Synthetic
+A0154,Cordex Studios,Media,"5,000-10,000",Expansion,CLA-A03-E2,S0102,CLA-A03,CLA,BU1,Synthetic
+A0155,Alfield Media,Media,"500-1,000",Expansion,CLA-A03-E1,S0101,CLA-A03,CLA,BU1,Synthetic
+A0156,Yorton University,Education,"500-1,000",Expansion,NAE-A04-E1,S0061,NAE-A04,NAE,BU1,Synthetic
+A0157,Wyngate Networks,Media,"5,000-10,000",Expansion,CLA-A04-E1,S0106,CLA-A04,CLA,BU1,Synthetic
+A0158,Yorfield Studios,Media,"500-1,000",Expansion,NAE-A02-E1,S0049,NAE-A02,NAE,BU1,Synthetic
+A0159,Ralsphere Manufacturing,Manufacturing,"5,000-10,000",Expansion,CLA-A04-E1,S0106,CLA-A04,CLA,BU1,Synthetic
+A0160,Alora Care,Healthcare,"1,000-5,000",Expansion,EMEA-A07-E2,S0159,EMEA-A07,EMEA,BU1,Synthetic
+A0161,Halnova University,Education,"500-1,000",Expansion,NAE-A07-E2,S0079,NAE-A07,NAE,BU1,Synthetic
+A0162,Algate Systems,Technology,"5,000-10,000",Expansion,CLA-A05-E2,S0112,CLA-A05,CLA,BU1,Synthetic
+A0163,Isvane Agency,Public Sector,"500-1,000",Expansion,NAE-A01-E1,S0044,NAE-A01,NAE,BU1,Synthetic
+A0164,Ulora Freight,Logistics,"500-1,000",Expansion,NAE-A02-E1,S0049,NAE-A02,NAE,BU1,Synthetic
+A0165,Yorwren Power,Energy,"1,000-5,000",Expansion,NAW-A02-E1,S0011,NAW-A02,NAW,BU1,Synthetic
+A0166,Zelstone Studios,Media,"1,000-5,000",Expansion,NAE-A08-E2,S0085,NAE-A08,NAE,BU1,Synthetic
+A0167,Marnova Logistics,Logistics,"500-1,000",Expansion,NAE-A01-D1,S0043,NAE-A01,NAE,BU1,Synthetic
+A0168,Ormont Capital,Financial Services,"1,000-5,000",Expansion,APAC-A04-G2,S0185,APAC-A04,APAC,BU1,Synthetic
+A0169,Corfield Medical,Healthcare,"5,000-10,000",Expansion,NAW-A06-D1,S0031,NAW-A06,NAW,BU1,Synthetic
+A0170,Alwick Authority,Public Sector,"5,000-10,000",Expansion,NAE-A03-E2,S0056,NAE-A03,NAE,BU1,Synthetic
+A0171,Pelmont Capital,Financial Services,"5,000-10,000",Expansion,NAE-A03-E1,S0055,NAE-A03,NAE,BU1,Synthetic
+A0172,Alnova Academy,Education,"1,000-5,000",Expansion,CLA-A01-E2,S0091,CLA-A01,CLA,BU1,Synthetic
+A0173,Ultris Systems,Technology,"1,000-5,000",Expansion,APAC-A06-E1,S0193,APAC-A06,APAC,BU1,Synthetic
+A0174,Beldex Labs,Technology,"500-1,000",Expansion,NAW-A03-E1,S0017,NAW-A03,NAW,BU1,Synthetic
+A0175,Norora Utilities,Energy,"1,000-5,000",Expansion,NAE-A06-E2,S0073,NAE-A06,NAE,BU1,Synthetic
+A0176,Orton Networks,Media,"5,000-10,000",Expansion,NAE-A02-E2,S0050,NAE-A02,NAE,BU1,Synthetic
+A0177,Orlyn Works,Manufacturing,"1,000-5,000",Expansion,EMEA-A06-E1,S0152,EMEA-A06,EMEA,BU1,Synthetic
+A0178,Ulora Logistics,Logistics,"500-1,000",Expansion,CLA-A04-E2,S0107,CLA-A04,CLA,BU1,Synthetic
+A0179,Isdex Transport,Logistics,"500-1,000",Expansion,APAC-A02-E2,S0171,APAC-A02,APAC,BU1,Synthetic
+A0180,Briton Energy,Energy,"1,000-5,000",Expansion,EMEA-A02-E1,S0130,EMEA-A02,EMEA,BU1,Synthetic
+A0181,Yormere Systems,Technology,"1,000-5,000",Expansion,NAE-A02-E2,S0050,NAE-A02,NAE,BU1,Synthetic
+A0182,Zelcore Transport,Logistics,"1,000-5,000",Expansion,NAW-A06-E1,S0032,NAW-A06,NAW,BU1,Synthetic
+A0183,Norwren Retail,Retail,"500-1,000",Expansion,EMEA-A07-E2,S0159,EMEA-A07,EMEA,BU1,Synthetic
+A0184,Seltris Systems,Technology,"1,000-5,000",Expansion,CLA-A01-E1,S0090,CLA-A01,CLA,BU1,Synthetic
+A0185,Verwren Medical,Healthcare,"500-1,000",Expansion,NAE-A04-E2,S0062,NAE-A04,NAE,BU1,Synthetic
+A0186,Selsphere Bancorp,Financial Services,"1,000-5,000",Expansion,APAC-A03-E2,S0177,APAC-A03,APAC,BU1,Synthetic
+A0187,Torvane Labs,Technology,"500-1,000",Expansion,CLA-A05-E2,S0112,CLA-A05,CLA,BU1,Synthetic
+A0188,Xanvane Medical,Healthcare,"500-1,000",Expansion,EMEA-A02-E2,S0131,EMEA-A02,EMEA,BU1,Synthetic
+A0189,Lumridge Health,Healthcare,"1,000-5,000",Expansion,CLA-A03-E2,S0102,CLA-A03,CLA,BU1,Synthetic
+A0190,Kelquist Capital,Financial Services,"500-1,000",Expansion,CLA-A04-E2,S0107,CLA-A04,CLA,BU1,Synthetic
+A0191,Torfield Networks,Media,"1,000-5,000",Expansion,EMEA-A06-E2,S0153,EMEA-A06,EMEA,BU1,Synthetic
+A0192,Quinstone Financial,Financial Services,"500-1,000",Expansion,NAW-A01-E2,S0006,NAW-A01,NAW,BU1,Synthetic
+A0193,Pelmere Agency,Public Sector,"5,000-10,000",Expansion,EMEA-A05-E1,S0146,EMEA-A05,EMEA,BU1,Synthetic
+A0194,Belwick Financial,Financial Services,"5,000-10,000",Expansion,NAW-A06-E2,S0033,NAW-A06,NAW,BU1,Synthetic
+A0195,Norvane Power,Energy,"1,000-5,000",Expansion,EMEA-A03-E1,S0136,EMEA-A03,EMEA,BU1,Synthetic
+A0196,Alwick Manufacturing,Manufacturing,"500-1,000",Expansion,EMEA-A02-E2,S0131,EMEA-A02,EMEA,BU1,Synthetic
+A0197,Xangate Networks,Media,"500-1,000",Expansion,NAW-A07-E2,S0039,NAW-A07,NAW,BU1,Synthetic
+A0198,Verdex Capital,Financial Services,"500-1,000",Expansion,NAW-A04-E2,S0023,NAW-A04,NAW,BU1,Synthetic
+A0199,Dalton Agency,Public Sector,"500-1,000",Expansion,NAW-A04-E1,S0022,NAW-A04,NAW,BU1,Synthetic
+A0200,Selora Health,Healthcare,"5,000-10,000",Expansion,CLA-A04-E1,S0106,CLA-A04,CLA,BU1,Synthetic
+A0201,Verton Financial,Financial Services,"500-1,000",Expansion,EMEA-A03-E2,S0137,EMEA-A03,EMEA,BU1,Synthetic
+A0202,Zelvale Manufacturing,Manufacturing,"5,000-10,000",Expansion,NAE-A06-E1,S0072,NAE-A06,NAE,BU1,Synthetic
+A0203,Ralbrook University,Education,"1,000-5,000",Expansion,NAE-A01-E1,S0044,NAE-A01,NAE,BU1,Synthetic
+A0204,Quinora Stores,Retail,"5,000-10,000",Expansion,NAE-A05-E1,S0067,NAE-A05,NAE,BU1,Synthetic
+A0205,Selfield Authority,Public Sector,"1,000-5,000",Expansion,NAE-A01-E1,S0044,NAE-A01,NAE,BU1,Synthetic
+A0206,Yorwick Works,Manufacturing,"1,000-5,000",Expansion,APAC-A03-E2,S0177,APAC-A03,APAC,BU1,Synthetic
+A0207,Zelton Stores,Retail,"1,000-5,000",Expansion,NAW-A06-E1,S0032,NAW-A06,NAW,BU1,Synthetic
+A0208,Ulstone Retail,Retail,"1,000-5,000",Expansion,EMEA-A03-E2,S0137,EMEA-A03,EMEA,BU1,Synthetic
+A0209,Dorgate Software,Technology,"5,000-10,000",Expansion,NAE-A04-E1,S0061,NAE-A04,NAE,BU1,Synthetic
+A0210,Ashwick Software,Technology,"5,000-10,000",Expansion,NAW-A05-E2,S0028,NAW-A05,NAW,BU1,Synthetic
+A0211,Quinvane Transport,Logistics,"500-1,000",Expansion,APAC-A05-E2,S0189,APAC-A05,APAC,BU1,Synthetic
+A0212,Corcore Freight,Logistics,"1,000-5,000",Expansion,NAE-A04-E2,S0062,NAE-A04,NAE,BU1,Synthetic
+A0213,Selmere Agency,Public Sector,"1,000-5,000",Expansion,NAE-A02-E2,S0050,NAE-A02,NAE,BU1,Synthetic
+A0214,Alvale Care,Healthcare,"5,000-10,000",Expansion,EMEA-A02-E1,S0130,EMEA-A02,EMEA,BU1,Synthetic
+A0215,Martris Medical,Healthcare,"5,000-10,000",Expansion,APAC-A04-E2,S0183,APAC-A04,APAC,BU1,Synthetic
+A0216,Halquist Services,Public Sector,"5,000-10,000",Expansion,CLA-A02-E1,S0096,CLA-A02,CLA,BU1,Synthetic
+A0217,Marlyn Manufacturing,Manufacturing,"1,000-5,000",Expansion,CLA-A06-E1,S0117,CLA-A06,CLA,BU1,Synthetic
+A0218,Xanridge Manufacturing,Manufacturing,"1,000-5,000",Expansion,NAE-A02-E2,S0050,NAE-A02,NAE,BU1,Synthetic
+A0219,Quinquist Retail,Retail,"1,000-5,000",Expansion,NAW-A06-E2,S0033,NAW-A06,NAW,BU1,Synthetic
+A0220,Alnova Care,Healthcare,"5,000-10,000",Expansion,NAW-A03-E2,S0018,NAW-A03,NAW,BU1,Synthetic
+A0221,Belvane Financial,Financial Services,"500-1,000",Expansion,EMEA-A06-E2,S0153,EMEA-A06,EMEA,BU1,Synthetic
+A0222,Ulgate Agency,Public Sector,"5,000-10,000",Expansion,APAC-A04-E1,S0182,APAC-A04,APAC,BU1,Synthetic
+A0223,Fenora Care,Healthcare,"5,000-10,000",Expansion,NAW-A05-E1,S0027,NAW-A05,NAW,BU1,Synthetic
+A0224,Quinvane Energy,Energy,"500-1,000",Expansion,NAE-A02-E2,S0050,NAE-A02,NAE,BU1,Synthetic
+A0225,Wynmere Studios,Media,"500-1,000",Expansion,EMEA-A02-E2,S0131,EMEA-A02,EMEA,BU1,Synthetic
+A0226,Belgate Stores,Retail,"500-1,000",Expansion,NAW-A04-E2,S0023,NAW-A04,NAW,BU1,Synthetic
+A0227,Norora Freight,Logistics,"500-1,000",Expansion,EMEA-A05-E2,S0147,EMEA-A05,EMEA,BU1,Synthetic
+A0228,Vergate Financial,Financial Services,"1,000-5,000",Expansion,NAW-A06-E1,S0032,NAW-A06,NAW,BU1,Synthetic
+A0229,Norton Capital,Financial Services,"500-1,000",Expansion,CLA-A01-E2,S0091,CLA-A01,CLA,BU1,Synthetic
+A0230,Dorvale Labs,Technology,"1,000-5,000",Expansion,APAC-A04-E2,S0183,APAC-A04,APAC,BU1,Synthetic
+A0231,Dalwren Labs,Technology,"500-1,000",Expansion,CLA-A06-E2,S0118,CLA-A06,CLA,BU1,Synthetic
+A0232,Ulridge Bancorp,Financial Services,"1,000-5,000",Expansion,APAC-A06-E1,S0193,APAC-A06,APAC,BU1,Synthetic
+A0233,Belgate Capital,Financial Services,"5,000-10,000",Expansion,CLA-A04-E1,S0106,CLA-A04,CLA,BU1,Synthetic
+A0234,Selcore Transport,Logistics,"5,000-10,000",Expansion,NAW-A01-E2,S0006,NAW-A01,NAW,BU1,Synthetic
+A0235,Ulnova Capital,Financial Services,"1,000-5,000",Expansion,NAE-A04-E1,S0061,NAE-A04,NAE,BU1,Synthetic
+A0236,Belvane Learning,Education,"500-1,000",Expansion,NAE-A08-E2,S0085,NAE-A08,NAE,BU1,Synthetic
+A0237,Marwren Energy,Energy,"500-1,000",Expansion,NAW-A05-E1,S0027,NAW-A05,NAW,BU1,Synthetic
+A0238,Norgate Care,Healthcare,"5,000-10,000",Expansion,NAW-A05-E1,S0027,NAW-A05,NAW,BU1,Synthetic
+A0239,Sellyn Agency,Public Sector,"500-1,000",Expansion,EMEA-A07-E1,S0158,EMEA-A07,EMEA,BU1,Synthetic
+A0240,Raltris University,Education,"1,000-5,000",Expansion,NAW-A05-E2,S0028,NAW-A05,NAW,BU1,Synthetic
+A0241,Fenbrook Manufacturing,Manufacturing,"1,000-5,000",Expansion,APAC-A04-E2,S0183,APAC-A04,APAC,BU1,Synthetic
+A0242,Issphere Media,Media,"1,000-5,000",Expansion,NAW-A05-E1,S0027,NAW-A05,NAW,BU1,Synthetic
+A0243,Ulwren Power,Energy,"1,000-5,000",Expansion,EMEA-A06-E2,S0153,EMEA-A06,EMEA,BU1,Synthetic
+A0244,Ralwick Logistics,Logistics,"500-1,000",Expansion,EMEA-A02-E2,S0131,EMEA-A02,EMEA,BU1,Synthetic
+A0245,Ashtris Financial,Financial Services,"5,000-10,000",Expansion,APAC-A04-E1,S0182,APAC-A04,APAC,BU1,Synthetic
+A0246,Pelmere Energy,Energy,"500-1,000",Expansion,NAE-A06-E1,S0072,NAE-A06,NAE,BU1,Synthetic
+A0247,Altris Health,Healthcare,"5,000-10,000",Expansion,EMEA-A07-E1,S0158,EMEA-A07,EMEA,BU1,Synthetic
+A0248,Jorwren Agency,Public Sector,"1,000-5,000",Expansion,EMEA-A02-E2,S0131,EMEA-A02,EMEA,BU1,Synthetic
+A0249,Fenquist Capital,Financial Services,"1,000-5,000",Expansion,EMEA-A01-E1,S0124,EMEA-A01,EMEA,BU1,Synthetic
+A0250,Elwick Studios,Media,"5,000-10,000",Expansion,APAC-A05-E1,S0188,APAC-A05,APAC,BU1,Synthetic
+A0251,Ulbrook Brands,Retail,"1,000-5,000",Expansion,APAC-A01-E2,S0165,APAC-A01,APAC,BU1,Synthetic
+A0252,Xanvane Agency,Public Sector,"500-1,000",Expansion,CLA-A02-E1,S0096,CLA-A02,CLA,BU1,Synthetic
+A0253,Fenvane Media,Media,"1,000-5,000",Expansion,NAW-A03-E2,S0018,NAW-A03,NAW,BU1,Synthetic
+A0254,Mardex Bancorp,Financial Services,"1,000-5,000",Expansion,NAW-A04-E1,S0022,NAW-A04,NAW,BU1,Synthetic
+A0255,Corbrook Care,Healthcare,"5,000-10,000",Expansion,NAW-A05-E2,S0028,NAW-A05,NAW,BU1,Synthetic
+A0256,Uldex Academy,Education,"500-1,000",Expansion,EMEA-A06-E1,S0152,EMEA-A06,EMEA,BU1,Synthetic
+A0257,Dalton Bancorp,Financial Services,"1,000-5,000",Expansion,APAC-A04-E1,S0182,APAC-A04,APAC,BU1,Synthetic
+A0258,Dalsphere Logistics,Logistics,"5,000-10,000",Expansion,APAC-A03-E1,S0176,APAC-A03,APAC,BU1,Synthetic
+A0259,Iston University,Education,"5,000-10,000",Expansion,CLA-A02-E2,S0097,CLA-A02,CLA,BU1,Synthetic
+A0260,Norgate Academy,Education,"1,000-5,000",Expansion,CLA-A05-E2,S0112,CLA-A05,CLA,BU1,Synthetic
+A0261,Dorvale University,Education,"1,000-5,000",Expansion,NAE-A05-E2,S0068,NAE-A05,NAE,BU1,Synthetic
+A0262,Dalnova Freight,Logistics,"1,000-5,000",Expansion,NAW-A02-E2,S0012,NAW-A02,NAW,BU1,Synthetic
+A0263,Ralmont Brands,Retail,"5,000-10,000",Expansion,CLA-A01-E2,S0091,CLA-A01,CLA,BU1,Synthetic
+A0264,Norquist Works,Manufacturing,"5,000-10,000",Expansion,CLA-A04-E1,S0106,CLA-A04,CLA,BU1,Synthetic
+A0265,Belnova Works,Manufacturing,"1,000-5,000",Expansion,NAE-A03-E2,S0056,NAE-A03,NAE,BU1,Synthetic
+A0266,Yorwren Financial,Financial Services,"1,000-5,000",Expansion,EMEA-A01-E1,S0124,EMEA-A01,EMEA,BU1,Synthetic
+A0267,Isridge Energy,Energy,"5,000-10,000",Expansion,APAC-A06-E1,S0193,APAC-A06,APAC,BU1,Synthetic
+A0268,Marvane Networks,Media,"1,000-5,000",Expansion,NAE-A05-E2,S0068,NAE-A05,NAE,BU1,Synthetic
+A0269,Vernova Logistics,Logistics,"1,000-5,000",Expansion,CLA-A06-E2,S0118,CLA-A06,CLA,BU1,Synthetic
+A0270,Alquist Logistics,Logistics,"500-1,000",Expansion,APAC-A02-E2,S0171,APAC-A02,APAC,BU1,Synthetic
+A0271,Ellyn Studios,Media,"5,000-10,000",Expansion,NAE-A07-E2,S0079,NAE-A07,NAE,BU1,Synthetic
+A0272,Xantris Power,Energy,"500-1,000",Expansion,EMEA-A03-E1,S0136,EMEA-A03,EMEA,BU1,Synthetic
+A0273,Lummere Logistics,Logistics,"500-1,000",Expansion,NAE-A03-E1,S0055,NAE-A03,NAE,BU1,Synthetic
+A0274,Lumtris Logistics,Logistics,"500-1,000",Expansion,NAW-A03-E1,S0017,NAW-A03,NAW,BU1,Synthetic
+A0275,Wynbrook Utilities,Energy,"5,000-10,000",Expansion,EMEA-A03-E1,S0136,EMEA-A03,EMEA,BU1,Synthetic
+A0276,Alstone Transport,Logistics,"500-1,000",Expansion,APAC-A04-E2,S0183,APAC-A04,APAC,BU1,Synthetic
+A0277,Halwick Authority,Public Sector,"1,000-5,000",Expansion,EMEA-A02-E1,S0130,EMEA-A02,EMEA,BU1,Synthetic
+A0278,Yorsphere Utilities,Energy,"1,000-5,000",Expansion,CLA-A06-E1,S0117,CLA-A06,CLA,BU1,Synthetic
+A0279,Orvane Retail,Retail,"1,000-5,000",Expansion,NAE-A02-E1,S0049,NAE-A02,NAE,BU1,Synthetic
+A0280,Quindex Logistics,Logistics,"500-1,000",Expansion,CLA-A04-E1,S0106,CLA-A04,CLA,BU1,Synthetic
+A0281,Aldex Freight,Logistics,"500-1,000",Expansion,APAC-A03-E1,S0176,APAC-A03,APAC,BU1,Synthetic
+A0282,Corlyn Retail,Retail,"5,000-10,000",Expansion,CLA-A03-E1,S0101,CLA-A03,CLA,BU1,Synthetic
+A0283,Ralora Care,Healthcare,"500-1,000",Expansion,APAC-A05-E1,S0188,APAC-A05,APAC,BU1,Synthetic
+A0284,Norcore Financial,Financial Services,"500-1,000",Expansion,NAE-A07-E1,S0078,NAE-A07,NAE,BU1,Synthetic
+A0285,Quincore Care,Healthcare,"1,000-5,000",Expansion,APAC-A02-E1,S0170,APAC-A02,APAC,BU1,Synthetic
+A0286,Elvane Financial,Financial Services,"500-1,000",Expansion,EMEA-A03-E1,S0136,EMEA-A03,EMEA,BU1,Synthetic
+A0287,Nornova Care,Healthcare,"5,000-10,000",Expansion,NAE-A03-E2,S0056,NAE-A03,NAE,BU1,Synthetic
+A0288,Selmere Authority,Public Sector,"500-1,000",Expansion,APAC-A06-E1,S0193,APAC-A06,APAC,BU1,Synthetic
+A0289,Ashwick Medical,Healthcare,"500-1,000",Expansion,NAE-A06-E2,S0073,NAE-A06,NAE,BU1,Synthetic
+A0290,Jorbrook Authority,Public Sector,"1,000-5,000",Expansion,EMEA-A06-E2,S0153,EMEA-A06,EMEA,BU1,Synthetic
+A0291,Lumstone Stores,Retail,"500-1,000",Expansion,EMEA-A06-E1,S0152,EMEA-A06,EMEA,BU1,Synthetic
+A0292,Marsphere Agency,Public Sector,"1,000-5,000",Expansion,APAC-A03-E2,S0177,APAC-A03,APAC,BU1,Synthetic
+A0293,Pelwick Energy,Energy,"1,000-5,000",Expansion,APAC-A02-E2,S0171,APAC-A02,APAC,BU1,Synthetic
+A0294,Dorstone Capital,Financial Services,"5,000-10,000",Expansion,NAW-A03-E1,S0017,NAW-A03,NAW,BU1,Synthetic
+A0295,Wynmere Media,Media,"5,000-10,000",Expansion,NAE-A05-E1,S0067,NAE-A05,NAE,BU1,Synthetic
+A0296,Ulbrook Labs,Technology,"5,000-10,000",Expansion,APAC-A06-E2,S0194,APAC-A06,APAC,BU1,Synthetic
+A0297,Halfield Capital,Financial Services,"5,000-10,000",Expansion,NAW-A03-E2,S0018,NAW-A03,NAW,BU1,Synthetic
+A0298,Alfield Care,Healthcare,"500-1,000",Expansion,APAC-A03-E2,S0177,APAC-A03,APAC,BU1,Synthetic
+A0299,Zelstone Works,Manufacturing,"5,000-10,000",Expansion,CLA-A02-E1,S0096,CLA-A02,CLA,BU1,Synthetic
+A0300,Ullyn Brands,Retail,"1,000-5,000",Expansion,CLA-A02-E2,S0097,CLA-A02,CLA,BU1,Synthetic
+A0301,Xanstone Logistics,Logistics,"5,000-10,000",Expansion,APAC-A02-E2,S0171,APAC-A02,APAC,BU1,Synthetic
+A0302,Briridge Power,Energy,"500-1,000",Expansion,NAE-A08-E2,S0085,NAE-A08,NAE,BU1,Synthetic
+A0303,Quinfield Brands,Retail,"500-1,000",Expansion,EMEA-A02-E2,S0131,EMEA-A02,EMEA,BU1,Synthetic
+A0304,Xanwren Transport,Logistics,"5,000-10,000",Expansion,CLA-A04-E1,S0106,CLA-A04,CLA,BU1,Synthetic
+A0305,Pelstone University,Education,"1,000-5,000",Expansion,NAW-A06-E1,S0032,NAW-A06,NAW,BU1,Synthetic
+A0306,Caldex Systems,Technology,"500-1,000",Expansion,NAE-A02-E2,S0050,NAE-A02,NAE,BU1,Synthetic
+A0307,Elora Networks,Media,"500-1,000",Expansion,NAE-A03-E2,S0056,NAE-A03,NAE,BU1,Synthetic
+A0308,Sellyn Systems,Technology,"1,000-5,000",Expansion,NAE-A02-E1,S0049,NAE-A02,NAE,BU1,Synthetic
+A0309,Nortris University,Education,"1,000-5,000",Expansion,NAE-A01-E1,S0044,NAE-A01,NAE,BU1,Synthetic
+A0310,Uldex Retail,Retail,"5,000-10,000",Expansion,NAW-A05-E2,S0028,NAW-A05,NAW,BU1,Synthetic
+A0311,Dorvale Medical,Healthcare,"5,000-10,000",Expansion,NAE-A04-E1,S0061,NAE-A04,NAE,BU1,Synthetic
+A0312,Alora Transport,Logistics,"5,000-10,000",Expansion,APAC-A01-E1,S0164,APAC-A01,APAC,BU1,Synthetic
+A0313,Isora Financial,Financial Services,"5,000-10,000",Expansion,CLA-A02-E1,S0096,CLA-A02,CLA,BU1,Synthetic
+A0314,Fenridge Power,Energy,"5,000-10,000",Expansion,CLA-A02-E2,S0097,CLA-A02,CLA,BU1,Synthetic
+A0315,Jorsphere Retail,Retail,"500-1,000",Expansion,APAC-A01-E1,S0164,APAC-A01,APAC,BU1,Synthetic
+A0316,Ulgate Power,Energy,"500-1,000",Expansion,NAE-A03-E1,S0055,NAE-A03,NAE,BU1,Synthetic
+A0317,Selwick Medical,Healthcare,"5,000-10,000",Expansion,EMEA-A07-E2,S0159,EMEA-A07,EMEA,BU1,Synthetic
+A0318,Ashsphere Financial,Financial Services,"5,000-10,000",Expansion,APAC-A01-G1,S0166,APAC-A01,APAC,BU1,Synthetic
+A0319,Selmont Stores,Retail,"500-1,000",Expansion,NAE-A02-E1,S0049,NAE-A02,NAE,BU1,Synthetic
+A0320,Pelsphere Media,Media,"500-1,000",Expansion,CLA-A05-E1,S0111,CLA-A05,CLA,BU1,Synthetic
+A0321,Alnova Brands,Retail,"500-1,000",Expansion,NAW-A06-E2,S0033,NAW-A06,NAW,BU1,Synthetic
+A0322,Daltris Studios,Media,"1,000-5,000",Expansion,NAE-A06-E2,S0073,NAE-A06,NAE,BU1,Synthetic
+A0323,Bridex Freight,Logistics,"1,000-5,000",Expansion,APAC-A06-E2,S0194,APAC-A06,APAC,BU1,Synthetic
+A0324,Dormont Systems,Technology,"5,000-10,000",Expansion,CLA-A01-E1,S0090,CLA-A01,CLA,BU1,Synthetic
+A0325,Islyn Industries,Manufacturing,"500-1,000",Expansion,APAC-A01-E1,S0164,APAC-A01,APAC,BU1,Synthetic
+A0326,Norquist Industries,Manufacturing,"1,000-5,000",Expansion,NAW-A02-E2,S0012,NAW-A02,NAW,BU1,Synthetic
+A0327,Calora Financial,Financial Services,"5,000-10,000",Expansion,EMEA-A03-E1,S0136,EMEA-A03,EMEA,BU1,Synthetic
+A0328,Ulwren Brands,Retail,"5,000-10,000",Expansion,APAC-A03-E1,S0176,APAC-A03,APAC,BU1,Synthetic
+A0329,Orquist Software,Technology,"1,000-5,000",Expansion,EMEA-A06-E1,S0152,EMEA-A06,EMEA,BU1,Synthetic
+A0330,Kelnova Care,Healthcare,"5,000-10,000",Expansion,APAC-A06-E2,S0194,APAC-A06,APAC,BU1,Synthetic
+A0331,Norwick Labs,Technology,"1,000-5,000",Expansion,NAE-A06-E1,S0072,NAE-A06,NAE,BU1,Synthetic
+A0332,Raldex Energy,Energy,"500-1,000",Expansion,NAE-A07-E2,S0079,NAE-A07,NAE,BU1,Synthetic
+A0333,Fendex Authority,Public Sector,"5,000-10,000",Expansion,CLA-A06-E1,S0117,CLA-A06,CLA,BU1,Synthetic
+A0334,Fenwick Academy,Education,"500-1,000",Expansion,NAW-A04-E1,S0022,NAW-A04,NAW,BU1,Synthetic
+A0335,Jorbrook Health,Healthcare,"5,000-10,000",Expansion,NAW-A05-E1,S0027,NAW-A05,NAW,BU1,Synthetic
+A0336,Xanmere Capital,Financial Services,"500-1,000",Expansion,NAW-A06-E2,S0033,NAW-A06,NAW,BU1,Synthetic
+A0337,Calmere Energy,Energy,"500-1,000",Expansion,CLA-A05-E2,S0112,CLA-A05,CLA,BU1,Synthetic
+A0338,Alwick Logistics,Logistics,"5,000-10,000",Expansion,EMEA-A07-E2,S0159,EMEA-A07,EMEA,BU1,Synthetic
+A0339,Wynwick Networks,Media,"5,000-10,000",Expansion,CLA-A01-E2,S0091,CLA-A01,CLA,BU1,Synthetic
+A0340,Halmont Care,Healthcare,"500-1,000",Expansion,NAE-A04-E1,S0061,NAE-A04,NAE,BU1,Synthetic
+A0341,Ralvale Academy,Education,"5,000-10,000",Expansion,NAW-A05-E1,S0027,NAW-A05,NAW,BU1,Synthetic
+A0342,Brifield Financial,Financial Services,"5,000-10,000",Expansion,CLA-A01-E1,S0090,CLA-A01,CLA,BU1,Synthetic
+A0343,Norvane Academy,Education,"500-1,000",Expansion,CLA-A03-E2,S0102,CLA-A03,CLA,BU1,Synthetic
+A0344,Lumfield Services,Public Sector,"500-1,000",Expansion,NAE-A08-E1,S0084,NAE-A08,NAE,BU1,Synthetic
+A0345,Orridge Stores,Retail,"5,000-10,000",Expansion,APAC-A03-E1,S0176,APAC-A03,APAC,BU1,Synthetic
+A0346,Galwren Academy,Education,"5,000-10,000",Expansion,NAW-A05-E1,S0027,NAW-A05,NAW,BU1,Synthetic
+A0347,Fentris Power,Energy,"500-1,000",Expansion,CLA-A05-E1,S0111,CLA-A05,CLA,BU1,Synthetic
+A0348,Torsphere Authority,Public Sector,"1,000-5,000",Expansion,NAE-A07-E1,S0078,NAE-A07,NAE,BU1,Synthetic
+A0349,Seltris Health,Healthcare,"1,000-5,000",Expansion,CLA-A05-E2,S0112,CLA-A05,CLA,BU1,Synthetic
+A0350,Dorlyn Services,Public Sector,"5,000-10,000",Expansion,APAC-A01-E1,S0164,APAC-A01,APAC,BU1,Synthetic
+A0351,Yorwren Labs,Technology,"5,000-10,000",Expansion,APAC-A01-E2,S0165,APAC-A01,APAC,BU1,Synthetic
+A0352,Yormere Agency,Public Sector,"500-1,000",Expansion,NAW-A06-E1,S0032,NAW-A06,NAW,BU1,Synthetic
+A0353,Xanmere Networks,Media,"500-1,000",Expansion,APAC-A03-E1,S0176,APAC-A03,APAC,BU1,Synthetic
+A0354,Xanwick Freight,Logistics,"500-1,000",Expansion,EMEA-A06-E1,S0152,EMEA-A06,EMEA,BU1,Synthetic
+A0355,Norwick Networks,Media,"5,000-10,000",Expansion,CLA-A06-E2,S0118,CLA-A06,CLA,BU1,Synthetic
+A0356,Ashora Brands,Retail,"500-1,000",Expansion,CLA-A01-E2,S0091,CLA-A01,CLA,BU1,Synthetic
+A0357,Bellyn Software,Technology,"1,000-5,000",Expansion,NAE-A02-E2,S0050,NAE-A02,NAE,BU1,Synthetic
+A0358,Lumgate Medical,Healthcare,"5,000-10,000",Expansion,NAW-A03-G1,S0019,NAW-A03,NAW,BU1,Synthetic
+A0359,Pelgate Media,Media,"500-1,000",Expansion,APAC-A02-E2,S0171,APAC-A02,APAC,BU1,Synthetic
+A0360,Marfield Industries,Manufacturing,"1,000-5,000",Expansion,APAC-A06-E2,S0194,APAC-A06,APAC,BU1,Synthetic
+A0361,Wyngate Financial,Financial Services,"1,000-5,000",Expansion,APAC-A06-E2,S0194,APAC-A06,APAC,BU1,Synthetic
+A0362,Isridge Capital,Financial Services,"500-1,000",Expansion,NAE-A03-E1,S0055,NAE-A03,NAE,BU1,Synthetic
+A0363,Norridge Retail,Retail,"1,000-5,000",Expansion,NAW-A02-E1,S0011,NAW-A02,NAW,BU1,Synthetic
+A0364,Ralcore Transport,Logistics,"1,000-5,000",Expansion,NAW-A04-E1,S0022,NAW-A04,NAW,BU1,Synthetic
+A0365,Dorquist Learning,Education,"1,000-5,000",Expansion,NAE-A01-E1,S0044,NAE-A01,NAE,BU1,Synthetic
+A0366,Kelbrook Agency,Public Sector,"1,000-5,000",Expansion,EMEA-A07-E2,S0159,EMEA-A07,EMEA,BU1,Synthetic
+A0367,Briton Authority,Public Sector,"500-1,000",Expansion,CLA-A05-G2,S0114,CLA-A05,CLA,BU1,Synthetic
+A0368,Brisphere Transport,Logistics,"5,000-10,000",Expansion,NAE-A08-E2,S0085,NAE-A08,NAE,BU1,Synthetic
+A0369,Selstone Energy,Energy,"1,000-5,000",Expansion,APAC-A02-E1,S0170,APAC-A02,APAC,BU1,Synthetic
+A0370,Ulwick Software,Technology,"1,000-5,000",Expansion,CLA-A02-E2,S0097,CLA-A02,CLA,BU1,Synthetic
+A0371,Dalwren Industries,Manufacturing,"1,000-5,000",Expansion,EMEA-A06-E2,S0153,EMEA-A06,EMEA,BU1,Synthetic
+A0372,Cornova Software,Technology,"500-1,000",Expansion,NAW-A02-E1,S0011,NAW-A02,NAW,BU1,Synthetic
+A0373,Callyn Brands,Retail,"5,000-10,000",Expansion,NAE-A05-E2,S0068,NAE-A05,NAE,BU1,Synthetic
+A0374,Quinnova Agency,Public Sector,"5,000-10,000",Expansion,NAE-A06-D1,S0071,NAE-A06,NAE,BU1,Synthetic
+A0375,Versphere Logistics,Logistics,"1,000-5,000",Expansion,EMEA-A02-E1,S0130,EMEA-A02,EMEA,BU1,Synthetic
+A0376,Galnova Labs,Technology,"5,000-10,000",Expansion,CLA-A05-E1,S0111,CLA-A05,CLA,BU1,Synthetic
+A0377,Dorfield Retail,Retail,"1,000-5,000",Expansion,NAW-A02-E1,S0011,NAW-A02,NAW,BU1,Synthetic
+A0378,Zelbrook Care,Healthcare,"1,000-5,000",Expansion,EMEA-A07-E2,S0159,EMEA-A07,EMEA,BU1,Synthetic
+A0379,Orora Media,Media,"1,000-5,000",Expansion,NAE-A04-D1,S0060,NAE-A04,NAE,BU1,Synthetic
+A0380,Quinton Works,Manufacturing,"5,000-10,000",Expansion,APAC-A04-E2,S0183,APAC-A04,APAC,BU1,Synthetic
+A0381,Bristone Logistics,Logistics,"5,000-10,000",Expansion,NAW-A02-E1,S0011,NAW-A02,NAW,BU1,Synthetic
+A0382,Elgate Power,Energy,"5,000-10,000",Expansion,EMEA-A04-E1,S0141,EMEA-A04,EMEA,BU1,Synthetic
+A0383,Verora Agency,Public Sector,"1,000-5,000",Expansion,APAC-A02-E2,S0171,APAC-A02,APAC,BU1,Synthetic
+A0384,Fenwick Labs,Technology,"5,000-10,000",Expansion,CLA-A04-E2,S0107,CLA-A04,CLA,BU1,Synthetic
+A0385,Raltris Networks,Media,"1,000-5,000",Expansion,CLA-A04-E2,S0107,CLA-A04,CLA,BU1,Synthetic
+A0386,Quintris Networks,Media,"1,000-5,000",Expansion,NAW-A06-E1,S0032,NAW-A06,NAW,BU1,Synthetic
+A0387,Keltris Manufacturing,Manufacturing,"5,000-10,000",Expansion,EMEA-A06-E1,S0152,EMEA-A06,EMEA,BU1,Synthetic
+A0388,Tormont Systems,Technology,"1,000-5,000",Expansion,APAC-A06-E1,S0193,APAC-A06,APAC,BU1,Synthetic
+A0389,Elora Bancorp,Financial Services,"5,000-10,000",Expansion,CLA-A04-E2,S0107,CLA-A04,CLA,BU1,Synthetic
+A0390,Cornova Brands,Retail,"5,000-10,000",Expansion,NAE-A07-E1,S0078,NAE-A07,NAE,BU1,Synthetic
+A0391,Marsphere Media,Media,"5,000-10,000",Expansion,NAW-A07-E1,S0038,NAW-A07,NAW,BU1,Synthetic
+A0392,Torwren Systems,Technology,"5,000-10,000",Expansion,APAC-A06-E2,S0194,APAC-A06,APAC,BU1,Synthetic
+A0393,Brigate Logistics,Logistics,"1,000-5,000",Expansion,NAW-A06-D1,S0031,NAW-A06,NAW,BU1,Synthetic
+A0394,Quinwick Industries,Manufacturing,"500-1,000",Expansion,EMEA-A04-E2,S0142,EMEA-A04,EMEA,BU1,Synthetic
+A0395,Jorwick Power,Energy,"5,000-10,000",Expansion,NAE-A03-E2,S0056,NAE-A03,NAE,BU1,Synthetic
+A0396,Ashdex Bancorp,Financial Services,"1,000-5,000",Expansion,CLA-A01-E1,S0090,CLA-A01,CLA,BU1,Synthetic
+A0397,Halvale Industries,Manufacturing,"5,000-10,000",Expansion,NAW-A02-G2,S0014,NAW-A02,NAW,BU1,Synthetic
+A0398,Xanfield Financial,Financial Services,"1,000-5,000",Expansion,APAC-A01-G2,S0167,APAC-A01,APAC,BU1,Synthetic
+A0399,Brimont Financial,Financial Services,"1,000-5,000",Expansion,CLA-A04-D1,S0105,CLA-A04,CLA,BU1,Synthetic
+A0400,Quinmere Labs,Technology,"500-1,000",Expansion,EMEA-A05-E1,S0146,EMEA-A05,EMEA,BU1,Synthetic
+A0401,Mardex Utilities,Energy,"5,000-10,000",Expansion,APAC-A03-D1,S0175,APAC-A03,APAC,BU1,Synthetic
+A0402,Iscore Bancorp,Financial Services,"5,000-10,000",Expansion,NAW-A07-D1,S0037,NAW-A07,NAW,BU1,Synthetic
+A0403,Ralgate Academy,Education,"500-1,000",Expansion,NAE-A01-E2,S0045,NAE-A01,NAE,BU1,Synthetic
+A0404,Xangate Power,Energy,"5,000-10,000",Expansion,NAE-A05-E1,S0067,NAE-A05,NAE,BU1,Synthetic
+A0405,Dalbrook Retail,Retail,"5,000-10,000",Expansion,NAW-A01-G1,S0007,NAW-A01,NAW,BU1,Synthetic
+A0406,Selridge Health,Healthcare,"500-1,000",Expansion,CLA-A04-E1,S0106,CLA-A04,CLA,BU1,Synthetic
+A0407,Zelnova Studios,Media,"5,000-10,000",Expansion,NAE-A07-E2,S0079,NAE-A07,NAE,BU1,Synthetic
+A0408,Peltris Utilities,Energy,"1,000-5,000",Expansion,EMEA-A07-G1,S0160,EMEA-A07,EMEA,BU1,Synthetic
+A0409,Calsphere Medical,Healthcare,"1,000-5,000",Expansion,NAW-A03-E2,S0018,NAW-A03,NAW,BU1,Synthetic
+A0410,Iswren Works,Manufacturing,"500-1,000",Expansion,EMEA-A02-E2,S0131,EMEA-A02,EMEA,BU1,Synthetic
+A0411,Xandex Authority,Public Sector,"5,000-10,000",Expansion,NAW-A04-E1,S0022,NAW-A04,NAW,BU1,Synthetic
+A0412,Wynton Works,Manufacturing,"500-1,000",Expansion,NAW-A01-E2,S0006,NAW-A01,NAW,BU1,Synthetic
+A0413,Bribrook Services,Public Sector,"1,000-5,000",Expansion,APAC-A04-E2,S0183,APAC-A04,APAC,BU1,Synthetic
+A0414,Belfield Stores,Retail,"1,000-5,000",Expansion,APAC-A04-G2,S0185,APAC-A04,APAC,BU1,Synthetic
+A0415,Lumgate Academy,Education,"1,000-5,000",Expansion,APAC-A03-E1,S0176,APAC-A03,APAC,BU1,Synthetic
+A0416,Galwick Transport,Logistics,"1,000-5,000",Expansion,CLA-A03-E2,S0102,CLA-A03,CLA,BU1,Synthetic
+A0417,Halwick Capital,Financial Services,"5,000-10,000",Expansion,NAW-A05-E2,S0028,NAW-A05,NAW,BU1,Synthetic
+A0418,Yorwren Care,Healthcare,"500-1,000",Expansion,NAW-A02-E2,S0012,NAW-A02,NAW,BU1,Synthetic
+A0419,Zelstone Bancorp,Financial Services,"5,000-10,000",Expansion,NAE-A06-D1,S0071,NAE-A06,NAE,BU1,Synthetic
+A0420,Ralfield Bancorp,Financial Services,"500-1,000",Expansion,NAE-A05-G1,S0069,NAE-A05,NAE,BU1,Synthetic
+A0421,Elvale Manufacturing,Manufacturing,"1,000-5,000",Expansion,APAC-A04-E2,S0183,APAC-A04,APAC,BU1,Synthetic
+A0422,Isridge Services,Public Sector,"1,000-5,000",Expansion,NAE-A08-E1,S0084,NAE-A08,NAE,BU1,Synthetic
+A0423,Versphere Services,Public Sector,"500-1,000",Expansion,EMEA-A05-E1,S0146,EMEA-A05,EMEA,BU1,Synthetic
+A0424,Orvane Works,Manufacturing,"500-1,000",Expansion,APAC-A06-E2,S0194,APAC-A06,APAC,BU1,Synthetic
+A0425,Corquist Health,Healthcare,"1,000-5,000",Expansion,NAW-A05-E1,S0027,NAW-A05,NAW,BU1,Synthetic
+A0426,Fenmont Transport,Logistics,"500-1,000",Expansion,EMEA-A02-E2,S0131,EMEA-A02,EMEA,BU1,Synthetic
+A0427,Orwren University,Education,"1,000-5,000",Expansion,APAC-A04-E1,S0182,APAC-A04,APAC,BU1,Synthetic
+A0428,Galbrook Capital,Financial Services,"1,000-5,000",Expansion,APAC-A02-E1,S0170,APAC-A02,APAC,BU1,Synthetic
+A0429,Hallyn Manufacturing,Manufacturing,"1,000-5,000",Expansion,NAE-A04-E2,S0062,NAE-A04,NAE,BU1,Synthetic
+A0430,Quinvale Freight,Logistics,"5,000-10,000",Expansion,NAW-A05-E1,S0027,NAW-A05,NAW,BU1,Synthetic
+A0431,Yorsphere Transport,Logistics,"5,000-10,000",Expansion,CLA-A03-D1,S0100,CLA-A03,CLA,BU1,Synthetic
+A0432,Corvane Software,Technology,"1,000-5,000",Expansion,EMEA-A07-E2,S0159,EMEA-A07,EMEA,BU1,Synthetic
+A0433,Normont Capital,Financial Services,"500-1,000",Expansion,APAC-A02-E1,S0170,APAC-A02,APAC,BU1,Synthetic
+A0434,Raldex Financial,Financial Services,"1,000-5,000",Expansion,CLA-A02-E2,S0097,CLA-A02,CLA,BU1,Synthetic
+A0435,Halsphere Freight,Logistics,"500-1,000",Expansion,APAC-A05-E2,S0189,APAC-A05,APAC,BU1,Synthetic
+A0436,Callyn Media,Media,"500-1,000",Expansion,NAE-A07-E1,S0078,NAE-A07,NAE,BU1,Synthetic
+A0437,Alton Industries,Manufacturing,"500-1,000",Expansion,CLA-A03-E2,S0102,CLA-A03,CLA,BU1,Synthetic
+A0438,Xanvale Systems,Technology,"500-1,000",Expansion,EMEA-A01-E1,S0124,EMEA-A01,EMEA,BU1,Synthetic
+A0439,Kelsphere Freight,Logistics,"5,000-10,000",Expansion,NAE-A04-E2,S0062,NAE-A04,NAE,BU1,Synthetic
+A0440,Lumora Energy,Energy,"500-1,000",Expansion,NAW-A05-G1,S0029,NAW-A05,NAW,BU1,Synthetic
+A0441,Kelora Financial,Financial Services,"500-1,000",Greenfield,EMEA-A03-G1,S0138,EMEA-A03,EMEA,BU1,Synthetic
+A0442,Dalbrook Health,Healthcare,"1,000-5,000",Greenfield,NAW-A01-G1,S0007,NAW-A01,NAW,BU1,Synthetic
+A0443,Ashgate Labs,Technology,100-500,Greenfield,APAC-A04-G1,S0184,APAC-A04,APAC,BU1,Synthetic
+A0444,Selridge Media,Media,100-500,Greenfield,NAW-A04-G1,S0024,NAW-A04,NAW,BU1,Synthetic
+A0445,Marvane Labs,Technology,"500-1,000",Greenfield,NAE-A03-G1,S0057,NAE-A03,NAE,BU1,Synthetic
+A0446,Alwick Academy,Education,"500-1,000",Greenfield,APAC-A03-G2,S0179,APAC-A03,APAC,BU1,Synthetic
+A0447,Jormere Retail,Retail,100-500,Greenfield,APAC-A02-G2,S0173,APAC-A02,APAC,BU1,Synthetic
+A0448,Cortris Energy,Energy,"500-1,000",Greenfield,NAE-A04-G1,S0063,NAE-A04,NAE,BU1,Synthetic
+A0449,Ashwick University,Education,"500-1,000",Greenfield,CLA-A01-G2,S0093,CLA-A01,CLA,BU1,Synthetic
+A0450,Ulnova Logistics,Logistics,"1,000-5,000",Greenfield,NAE-A02-E1,S0049,NAE-A02,NAE,BU1,Synthetic
+A0451,Corwren Studios,Media,100-500,Greenfield,APAC-A01-G1,S0166,APAC-A01,APAC,BU1,Synthetic
+A0452,Pelgate Brands,Retail,"1,000-5,000",Greenfield,CLA-A01-G1,S0092,CLA-A01,CLA,BU1,Synthetic
+A0453,Normont Studios,Media,100-500,Greenfield,CLA-A06-E1,S0117,CLA-A06,CLA,BU1,Synthetic
+A0454,Dallyn Capital,Financial Services,100-500,Greenfield,EMEA-A01-G2,S0127,EMEA-A01,EMEA,BU1,Synthetic
+A0455,Bricore Financial,Financial Services,"1,000-5,000",Greenfield,APAC-A02-G2,S0173,APAC-A02,APAC,BU1,Synthetic
+A0456,Vernova Freight,Logistics,100-500,Greenfield,NAW-A03-G1,S0019,NAW-A03,NAW,BU1,Synthetic
+A0457,Ulwick Agency,Public Sector,"1,000-5,000",Greenfield,APAC-A01-G1,S0166,APAC-A01,APAC,BU1,Synthetic
+A0458,Jorora Financial,Financial Services,100-500,Greenfield,NAE-A02-G2,S0052,NAE-A02,NAE,BU1,Synthetic
+A0459,Isnova Media,Media,100-500,Greenfield,EMEA-A05-E2,S0147,EMEA-A05,EMEA,BU1,Synthetic
+A0460,Jorlyn Power,Energy,"500-1,000",Greenfield,NAE-A02-E2,S0050,NAE-A02,NAE,BU1,Synthetic
+A0461,Wynora Studios,Media,"500-1,000",Greenfield,NAW-A03-G1,S0019,NAW-A03,NAW,BU1,Synthetic
+A0462,Alridge Retail,Retail,"500-1,000",Greenfield,EMEA-A01-G2,S0127,EMEA-A01,EMEA,BU1,Synthetic
+A0463,Xansphere Studios,Media,100-500,Greenfield,APAC-A06-G1,S0195,APAC-A06,APAC,BU1,Synthetic
+A0464,Torvale Stores,Retail,100-500,Greenfield,EMEA-A01-G2,S0127,EMEA-A01,EMEA,BU1,Synthetic
+A0465,Margate Studios,Media,"1,000-5,000",Greenfield,NAE-A05-G1,S0069,NAE-A05,NAE,BU1,Synthetic
+A0466,Fencore Brands,Retail,100-500,Greenfield,EMEA-A04-G1,S0143,EMEA-A04,EMEA,BU1,Synthetic
+A0467,Wyncore Freight,Logistics,"1,000-5,000",Greenfield,EMEA-A02-G1,S0132,EMEA-A02,EMEA,BU1,Synthetic
+A0468,Calridge Financial,Financial Services,"500-1,000",Greenfield,CLA-A02-G1,S0098,CLA-A02,CLA,BU1,Synthetic
+A0469,Fensphere Services,Public Sector,"1,000-5,000",Greenfield,NAE-A08-G1,S0086,NAE-A08,NAE,BU1,Synthetic
+A0470,Dalvale Freight,Logistics,"1,000-5,000",Greenfield,NAE-A03-G2,S0058,NAE-A03,NAE,BU1,Synthetic
+A0471,Fenora Brands,Retail,100-500,Greenfield,CLA-A06-G2,S0120,CLA-A06,CLA,BU1,Synthetic
+A0472,Quinbrook Financial,Financial Services,100-500,Greenfield,NAW-A05-G1,S0029,NAW-A05,NAW,BU1,Synthetic
+A0473,Elfield Agency,Public Sector,"1,000-5,000",Greenfield,CLA-A04-G1,S0108,CLA-A04,CLA,BU1,Synthetic
+A0474,Corwren Software,Technology,"500-1,000",Greenfield,APAC-A06-G2,S0196,APAC-A06,APAC,BU1,Synthetic
+A0475,Wynlyn Transport,Logistics,"500-1,000",Greenfield,EMEA-A04-G1,S0143,EMEA-A04,EMEA,BU1,Synthetic
+A0476,Zelwren Freight,Logistics,"1,000-5,000",Greenfield,NAE-A07-G2,S0081,NAE-A07,NAE,BU1,Synthetic
+A0477,Wyncore Bancorp,Financial Services,100-500,Greenfield,NAW-A03-E2,S0018,NAW-A03,NAW,BU1,Synthetic
+A0478,Kelwren Learning,Education,"500-1,000",Greenfield,NAW-A04-G1,S0024,NAW-A04,NAW,BU1,Synthetic
+A0479,Jortris Academy,Education,"500-1,000",Greenfield,NAE-A04-G2,S0064,NAE-A04,NAE,BU1,Synthetic
+A0480,Ormont Medical,Healthcare,"1,000-5,000",Greenfield,NAW-A02-G1,S0013,NAW-A02,NAW,BU1,Synthetic
+A0481,Lumsphere Freight,Logistics,"500-1,000",Greenfield,NAW-A04-G1,S0024,NAW-A04,NAW,BU1,Synthetic
+A0482,Galvane Freight,Logistics,"500-1,000",Greenfield,EMEA-A05-G1,S0148,EMEA-A05,EMEA,BU1,Synthetic
+A0483,Corton Power,Energy,"500-1,000",Greenfield,NAW-A03-G1,S0019,NAW-A03,NAW,BU1,Synthetic
+A0484,Yorora Health,Healthcare,100-500,Greenfield,APAC-A06-G2,S0196,APAC-A06,APAC,BU1,Synthetic
+A0485,Algate Learning,Education,100-500,Greenfield,CLA-A05-G1,S0113,CLA-A05,CLA,BU1,Synthetic
+A0486,Halquist Power,Energy,100-500,Greenfield,NAE-A01-G1,S0046,NAE-A01,NAE,BU1,Synthetic
+A0487,Kelmont Agency,Public Sector,100-500,Greenfield,NAE-A01-G1,S0046,NAE-A01,NAE,BU1,Synthetic
+A0488,Zelora Learning,Education,100-500,Greenfield,NAE-A03-G2,S0058,NAE-A03,NAE,BU1,Synthetic
+A0489,Pelridge Software,Technology,"500-1,000",Greenfield,CLA-A05-G2,S0114,CLA-A05,CLA,BU1,Synthetic
+A0490,Lumstone Brands,Retail,"1,000-5,000",Greenfield,APAC-A01-G2,S0167,APAC-A01,APAC,BU1,Synthetic
+A0491,Pelora Works,Manufacturing,"1,000-5,000",Greenfield,EMEA-A04-G1,S0143,EMEA-A04,EMEA,BU1,Synthetic
+A0492,Halcore Stores,Retail,"500-1,000",Greenfield,NAE-A02-G1,S0051,NAE-A02,NAE,BU1,Synthetic
+A0493,Wynnova Bancorp,Financial Services,"500-1,000",Greenfield,EMEA-A07-G1,S0160,EMEA-A07,EMEA,BU1,Synthetic
+A0494,Elnova Power,Energy,100-500,Greenfield,APAC-A02-G1,S0172,APAC-A02,APAC,BU1,Synthetic
+A0495,Wynwren Energy,Energy,"1,000-5,000",Greenfield,APAC-A03-G1,S0178,APAC-A03,APAC,BU1,Synthetic
+A0496,Cormere Financial,Financial Services,"500-1,000",Greenfield,NAW-A06-G2,S0035,NAW-A06,NAW,BU1,Synthetic
+A0497,Briwick Studios,Media,"500-1,000",Greenfield,NAW-A03-G1,S0019,NAW-A03,NAW,BU1,Synthetic
+A0498,Keldex Transport,Logistics,100-500,Greenfield,CLA-A04-G1,S0108,CLA-A04,CLA,BU1,Synthetic
+A0499,Ashfield Care,Healthcare,100-500,Greenfield,NAE-A05-G1,S0069,NAE-A05,NAE,BU1,Synthetic
+A0500,Ralvale Power,Energy,100-500,Greenfield,EMEA-A03-G1,S0138,EMEA-A03,EMEA,BU1,Synthetic
+A0501,Istris Works,Manufacturing,"500-1,000",Greenfield,NAW-A07-G1,S0040,NAW-A07,NAW,BU1,Synthetic
+A0502,Quintris Retail,Retail,"500-1,000",Greenfield,NAW-A03-G1,S0019,NAW-A03,NAW,BU1,Synthetic
+A0503,Dalmere Utilities,Energy,"500-1,000",Greenfield,APAC-A06-G1,S0195,APAC-A06,APAC,BU1,Synthetic
+A0504,Pelquist Energy,Energy,"500-1,000",Greenfield,NAW-A06-G2,S0035,NAW-A06,NAW,BU1,Synthetic
+A0505,Calora Media,Media,"500-1,000",Greenfield,APAC-A06-G2,S0196,APAC-A06,APAC,BU1,Synthetic
+A0506,Vermere Health,Healthcare,100-500,Greenfield,EMEA-A05-G1,S0148,EMEA-A05,EMEA,BU1,Synthetic
+A0507,Wyntris Health,Healthcare,"1,000-5,000",Greenfield,NAW-A04-G1,S0024,NAW-A04,NAW,BU1,Synthetic
+A0508,Wynbrook Energy,Energy,"1,000-5,000",Greenfield,CLA-A04-G1,S0108,CLA-A04,CLA,BU1,Synthetic
+A0509,Fenmere Transport,Logistics,100-500,Greenfield,EMEA-A04-G1,S0143,EMEA-A04,EMEA,BU1,Synthetic
+A0510,Zeldex University,Education,100-500,Greenfield,CLA-A01-G1,S0092,CLA-A01,CLA,BU1,Synthetic
+A0511,Lumora Labs,Technology,100-500,Greenfield,NAW-A02-G1,S0013,NAW-A02,NAW,BU1,Synthetic
+A0512,Ulvale Retail,Retail,100-500,Greenfield,NAW-A03-G1,S0019,NAW-A03,NAW,BU1,Synthetic
+A0513,Yorgate Brands,Retail,100-500,Greenfield,APAC-A05-G1,S0190,APAC-A05,APAC,BU1,Synthetic
+A0514,Isvane Academy,Education,"1,000-5,000",Greenfield,NAE-A02-G1,S0051,NAE-A02,NAE,BU1,Synthetic
+A0515,Dorton Networks,Media,100-500,Greenfield,NAW-A05-G1,S0029,NAW-A05,NAW,BU1,Synthetic
+A0516,Ashwren Utilities,Energy,"500-1,000",Greenfield,APAC-A06-G1,S0195,APAC-A06,APAC,BU1,Synthetic
+A0517,Dalmont Logistics,Logistics,100-500,Greenfield,EMEA-A02-G2,S0133,EMEA-A02,EMEA,BU1,Synthetic
+A0518,Dornova Financial,Financial Services,"500-1,000",Greenfield,APAC-A02-G2,S0173,APAC-A02,APAC,BU1,Synthetic
+A0519,Dalstone Brands,Retail,"500-1,000",Greenfield,NAW-A01-E2,S0006,NAW-A01,NAW,BU1,Synthetic
+A0520,Iswren Capital,Financial Services,"500-1,000",Greenfield,APAC-A06-G2,S0196,APAC-A06,APAC,BU1,Synthetic
+A0521,Wyndex Systems,Technology,"1,000-5,000",Greenfield,EMEA-A04-G1,S0143,EMEA-A04,EMEA,BU1,Synthetic
+A0522,Dalmere Agency,Public Sector,"500-1,000",Greenfield,EMEA-A05-G1,S0148,EMEA-A05,EMEA,BU1,Synthetic
+A0523,Uldex Manufacturing,Manufacturing,"1,000-5,000",Greenfield,NAE-A05-G1,S0069,NAE-A05,NAE,BU1,Synthetic
+A0524,Dalora Brands,Retail,"500-1,000",Greenfield,EMEA-A03-E2,S0137,EMEA-A03,EMEA,BU1,Synthetic
+A0525,Ornova Health,Healthcare,"500-1,000",Greenfield,EMEA-A02-G1,S0132,EMEA-A02,EMEA,BU1,Synthetic
+A0526,Daldex Networks,Media,"1,000-5,000",Greenfield,CLA-A06-G2,S0120,CLA-A06,CLA,BU1,Synthetic
+A0527,Jormere Freight,Logistics,"500-1,000",Greenfield,NAW-A04-G1,S0024,NAW-A04,NAW,BU1,Synthetic
+A0528,Torwick Power,Energy,"500-1,000",Greenfield,EMEA-A07-G1,S0160,EMEA-A07,EMEA,BU1,Synthetic
+A0529,Lumcore Labs,Technology,"1,000-5,000",Greenfield,CLA-A03-G1,S0103,CLA-A03,CLA,BU1,Synthetic
+A0530,Zelsphere Stores,Retail,"500-1,000",Greenfield,EMEA-A07-G1,S0160,EMEA-A07,EMEA,BU1,Synthetic
+A0531,Xandex Energy,Energy,100-500,Greenfield,NAW-A05-G1,S0029,NAW-A05,NAW,BU1,Synthetic
+A0532,Belridge University,Education,"1,000-5,000",Greenfield,NAW-A05-G1,S0029,NAW-A05,NAW,BU1,Synthetic
+A0533,Selgate Networks,Media,"1,000-5,000",Greenfield,NAW-A07-G1,S0040,NAW-A07,NAW,BU1,Synthetic
+A0534,Marwick Learning,Education,100-500,Greenfield,NAE-A04-G1,S0063,NAE-A04,NAE,BU1,Synthetic
+A0535,Xanridge Brands,Retail,100-500,Greenfield,NAW-A02-G2,S0014,NAW-A02,NAW,BU1,Synthetic
+A0536,Cornova Bancorp,Financial Services,100-500,Greenfield,NAE-A02-E1,S0049,NAE-A02,NAE,BU1,Synthetic
+A0537,Orcore Stores,Retail,"1,000-5,000",Greenfield,NAW-A04-G1,S0024,NAW-A04,NAW,BU1,Synthetic
+A0538,Ulwren Health,Healthcare,100-500,Greenfield,EMEA-A02-G2,S0133,EMEA-A02,EMEA,BU1,Synthetic
+A0539,Iswren Authority,Public Sector,100-500,Greenfield,APAC-A04-G2,S0185,APAC-A04,APAC,BU1,Synthetic
+A0540,Verquist Health,Healthcare,"500-1,000",Greenfield,APAC-A02-G2,S0173,APAC-A02,APAC,BU1,Synthetic
+A0541,Pelnova Utilities,Energy,"500-1,000",Greenfield,NAE-A08-G1,S0086,NAE-A08,NAE,BU1,Synthetic
+A0542,Wynton Studios,Media,"1,000-5,000",Greenfield,CLA-A06-G1,S0119,CLA-A06,CLA,BU1,Synthetic
+A0543,Verstone Power,Energy,"1,000-5,000",Greenfield,EMEA-A02-E2,S0131,EMEA-A02,EMEA,BU1,Synthetic
+A0544,Ashsphere Studios,Media,"500-1,000",Greenfield,NAW-A03-G1,S0019,NAW-A03,NAW,BU1,Synthetic
+A0545,Xantris Financial,Financial Services,100-500,Greenfield,EMEA-A05-G2,S0149,EMEA-A05,EMEA,BU1,Synthetic
+A0546,Belora Services,Public Sector,"1,000-5,000",Greenfield,CLA-A04-G1,S0108,CLA-A04,CLA,BU1,Synthetic
+A0547,Ulstone Authority,Public Sector,"500-1,000",Greenfield,EMEA-A05-G2,S0149,EMEA-A05,EMEA,BU1,Synthetic
+A0548,Dorquist Brands,Retail,"500-1,000",Greenfield,APAC-A01-G2,S0167,APAC-A01,APAC,BU1,Synthetic
+A0549,Jorora Medical,Healthcare,100-500,Greenfield,CLA-A05-G2,S0114,CLA-A05,CLA,BU1,Synthetic
+A0550,Fengate Energy,Energy,"500-1,000",Greenfield,NAW-A01-G2,S0008,NAW-A01,NAW,BU1,Synthetic
+A0551,Galsphere Energy,Energy,100-500,Greenfield,NAE-A06-G1,S0074,NAE-A06,NAE,BU1,Synthetic
+A0552,Fenridge Manufacturing,Manufacturing,"500-1,000",Greenfield,NAE-A04-G1,S0063,NAE-A04,NAE,BU1,Synthetic
+A0553,Ulsphere Academy,Education,"1,000-5,000",Greenfield,NAW-A05-G1,S0029,NAW-A05,NAW,BU1,Synthetic
+A0554,Ralnova Studios,Media,"500-1,000",Greenfield,APAC-A04-G1,S0184,APAC-A04,APAC,BU1,Synthetic
+A0555,Selwren Services,Public Sector,100-500,Greenfield,NAE-A05-G1,S0069,NAE-A05,NAE,BU1,Synthetic
+A0556,Ashlyn Stores,Retail,"500-1,000",Greenfield,EMEA-A06-G1,S0154,EMEA-A06,EMEA,BU1,Synthetic
+A0557,Ralvane Care,Healthcare,"1,000-5,000",Greenfield,CLA-A01-G2,S0093,CLA-A01,CLA,BU1,Synthetic
+A0558,Vertris Industries,Manufacturing,"1,000-5,000",Greenfield,APAC-A03-G2,S0179,APAC-A03,APAC,BU1,Synthetic
+A0559,Ashquist Utilities,Energy,100-500,Greenfield,NAE-A08-G1,S0086,NAE-A08,NAE,BU1,Synthetic
+A0560,Zelwick Energy,Energy,100-500,Greenfield,NAE-A08-G1,S0086,NAE-A08,NAE,BU1,Synthetic
+A0561,Wyngate Retail,Retail,"1,000-5,000",Greenfield,EMEA-A01-G1,S0126,EMEA-A01,EMEA,BU1,Synthetic
+A0562,Galgate Media,Media,100-500,Greenfield,CLA-A05-G1,S0113,CLA-A05,CLA,BU1,Synthetic
+A0563,Quinwick Software,Technology,"1,000-5,000",Greenfield,EMEA-A01-G2,S0127,EMEA-A01,EMEA,BU1,Synthetic
+A0564,Haldex Utilities,Energy,"1,000-5,000",Greenfield,APAC-A02-G1,S0172,APAC-A02,APAC,BU1,Synthetic
+A0565,Yortris Brands,Retail,100-500,Greenfield,NAE-A05-G1,S0069,NAE-A05,NAE,BU1,Synthetic
+A0566,Alwick Utilities,Energy,100-500,Greenfield,EMEA-A05-G1,S0148,EMEA-A05,EMEA,BU1,Synthetic
+A0567,Fenquist Brands,Retail,"1,000-5,000",Greenfield,CLA-A01-G2,S0093,CLA-A01,CLA,BU1,Synthetic
+A0568,Jormont University,Education,"500-1,000",Greenfield,NAE-A04-G2,S0064,NAE-A04,NAE,BU1,Synthetic
+A0569,Dorfield Utilities,Energy,"500-1,000",Greenfield,EMEA-A04-G1,S0143,EMEA-A04,EMEA,BU1,Synthetic
+A0570,Calvale Authority,Public Sector,"500-1,000",Greenfield,EMEA-A02-G1,S0132,EMEA-A02,EMEA,BU1,Synthetic
+A0571,Fenvale University,Education,"1,000-5,000",Greenfield,APAC-A04-G1,S0184,APAC-A04,APAC,BU1,Synthetic
+A0572,Peldex Industries,Manufacturing,"500-1,000",Greenfield,NAE-A05-G1,S0069,NAE-A05,NAE,BU1,Synthetic
+A0573,Selvale Financial,Financial Services,100-500,Greenfield,EMEA-A05-G2,S0149,EMEA-A05,EMEA,BU1,Synthetic
+A0574,Lummere Authority,Public Sector,"1,000-5,000",Greenfield,EMEA-A01-G2,S0127,EMEA-A01,EMEA,BU1,Synthetic
+A0575,Isquist Energy,Energy,"500-1,000",Greenfield,APAC-A06-G2,S0196,APAC-A06,APAC,BU1,Synthetic
+A0576,Fenmere Learning,Education,"500-1,000",Greenfield,NAE-A03-G1,S0057,NAE-A03,NAE,BU1,Synthetic
+A0577,Zelquist Manufacturing,Manufacturing,100-500,Greenfield,CLA-A01-G1,S0092,CLA-A01,CLA,BU1,Synthetic
+A0578,Jorwren Freight,Logistics,"1,000-5,000",Greenfield,APAC-A06-G1,S0195,APAC-A06,APAC,BU1,Synthetic
+A0579,Tortris Brands,Retail,"500-1,000",Greenfield,APAC-A05-G1,S0190,APAC-A05,APAC,BU1,Synthetic
+A0580,Torvane Networks,Media,"500-1,000",Greenfield,EMEA-A06-G2,S0155,EMEA-A06,EMEA,BU1,Synthetic
+A0581,Lummere Software,Technology,"1,000-5,000",Greenfield,EMEA-A05-G2,S0149,EMEA-A05,EMEA,BU1,Synthetic
+A0582,Brilyn Medical,Healthcare,"500-1,000",Greenfield,CLA-A06-G2,S0120,CLA-A06,CLA,BU1,Synthetic
+A0583,Jorwick Labs,Technology,100-500,Greenfield,APAC-A05-G1,S0190,APAC-A05,APAC,BU1,Synthetic
+A0584,Galnova Transport,Logistics,"500-1,000",Greenfield,CLA-A01-G1,S0092,CLA-A01,CLA,BU1,Synthetic
+A0585,Briora Authority,Public Sector,100-500,Greenfield,NAE-A08-G1,S0086,NAE-A08,NAE,BU1,Synthetic
+A0586,Norbrook Freight,Logistics,100-500,Greenfield,NAE-A05-G1,S0069,NAE-A05,NAE,BU1,Synthetic
+A0587,Norwren Health,Healthcare,"1,000-5,000",Greenfield,CLA-A03-E1,S0101,CLA-A03,CLA,BU1,Synthetic
+A0588,Belcore Transport,Logistics,100-500,Greenfield,CLA-A01-G1,S0092,CLA-A01,CLA,BU1,Synthetic
+A0589,Tortris Power,Energy,100-500,Greenfield,NAE-A06-G2,S0075,NAE-A06,NAE,BU1,Synthetic
+A0590,Elnova Retail,Retail,100-500,Greenfield,EMEA-A03-G1,S0138,EMEA-A03,EMEA,BU1,Synthetic
+A0591,Lumsphere Studios,Media,"500-1,000",Greenfield,CLA-A03-E1,S0101,CLA-A03,CLA,BU1,Synthetic
+A0592,Pelvale Logistics,Logistics,"1,000-5,000",Greenfield,CLA-A04-D1,S0105,CLA-A04,CLA,BU1,Synthetic
+A0593,Galsphere Media,Media,100-500,Greenfield,NAE-A07-D1,S0077,NAE-A07,NAE,BU1,Synthetic
+A0594,Zelmont Utilities,Energy,"1,000-5,000",Greenfield,APAC-A02-G1,S0172,APAC-A02,APAC,BU1,Synthetic
+A0595,Xantris Care,Healthcare,"1,000-5,000",Greenfield,NAE-A06-G1,S0074,NAE-A06,NAE,BU1,Synthetic
+A0596,Eldex Systems,Technology,"1,000-5,000",Greenfield,APAC-A06-G2,S0196,APAC-A06,APAC,BU1,Synthetic
+A0597,Cordex Energy,Energy,100-500,Greenfield,EMEA-A03-G1,S0138,EMEA-A03,EMEA,BU1,Synthetic
+A0598,Selmere Transport,Logistics,100-500,Greenfield,EMEA-A05-G2,S0149,EMEA-A05,EMEA,BU1,Synthetic
+A0599,Torquist Utilities,Energy,100-500,Greenfield,NAW-A06-G2,S0035,NAW-A06,NAW,BU1,Synthetic
+A0600,Ismere Agency,Public Sector,"1,000-5,000",Greenfield,NAE-A07-G2,S0081,NAE-A07,NAE,BU1,Synthetic
+A0601,Galcore Health,Healthcare,"1,000-5,000",Greenfield,NAW-A04-G1,S0024,NAW-A04,NAW,BU1,Synthetic
+A0602,Norsphere Networks,Media,100-500,Greenfield,NAW-A02-G2,S0014,NAW-A02,NAW,BU1,Synthetic
+A0603,Alcore Retail,Retail,"1,000-5,000",Greenfield,NAW-A04-E2,S0023,NAW-A04,NAW,BU1,Synthetic
+A0604,Halquist Logistics,Logistics,100-500,Greenfield,EMEA-A05-G1,S0148,EMEA-A05,EMEA,BU1,Synthetic
+A0605,Belmere Power,Energy,"1,000-5,000",Greenfield,NAE-A07-G2,S0081,NAE-A07,NAE,BU1,Synthetic
+A0606,Keltris Medical,Healthcare,100-500,Greenfield,EMEA-A04-G1,S0143,EMEA-A04,EMEA,BU1,Synthetic
+A0607,Dalvane Energy,Energy,"500-1,000",Greenfield,CLA-A05-G2,S0114,CLA-A05,CLA,BU1,Synthetic
+A0608,Tordex Financial,Financial Services,"500-1,000",Greenfield,EMEA-A06-G2,S0155,EMEA-A06,EMEA,BU1,Synthetic
+A0609,Lumora Stores,Retail,"1,000-5,000",Greenfield,NAW-A01-G2,S0008,NAW-A01,NAW,BU1,Synthetic
+A0610,Marwren Bancorp,Financial Services,100-500,Greenfield,CLA-A03-G1,S0103,CLA-A03,CLA,BU1,Synthetic
+A0611,Orcore Media,Media,100-500,Greenfield,NAE-A05-G1,S0069,NAE-A05,NAE,BU1,Synthetic
+A0612,Torvane Capital,Financial Services,"500-1,000",Greenfield,EMEA-A05-G2,S0149,EMEA-A05,EMEA,BU1,Synthetic
+A0613,Ashfield Software,Technology,"500-1,000",Greenfield,CLA-A04-G1,S0108,CLA-A04,CLA,BU1,Synthetic
+A0614,Marwick Utilities,Energy,100-500,Greenfield,EMEA-A07-G1,S0160,EMEA-A07,EMEA,BU1,Synthetic
+A0615,Lumgate University,Education,"500-1,000",Greenfield,EMEA-A02-G1,S0132,EMEA-A02,EMEA,BU1,Synthetic
+A0616,Lumlyn Media,Media,"500-1,000",Greenfield,NAE-A04-D1,S0060,NAE-A04,NAE,BU1,Synthetic
+A0617,Briora Manufacturing,Manufacturing,"500-1,000",Greenfield,NAE-A02-G1,S0051,NAE-A02,NAE,BU1,Synthetic
+A0618,Peltris Services,Public Sector,"500-1,000",Greenfield,NAE-A05-G1,S0069,NAE-A05,NAE,BU1,Synthetic
+A0619,Ralquist Energy,Energy,"1,000-5,000",Greenfield,NAW-A02-G1,S0013,NAW-A02,NAW,BU1,Synthetic
+A0620,Corton Networks,Media,"1,000-5,000",Greenfield,NAE-A07-E2,S0079,NAE-A07,NAE,BU1,Synthetic
+A0621,Ralwick Manufacturing,Manufacturing,100-500,Greenfield,EMEA-A04-G1,S0143,EMEA-A04,EMEA,BU1,Synthetic
+A0622,Wynnova Financial,Financial Services,100-500,Greenfield,APAC-A04-G2,S0185,APAC-A04,APAC,BU1,Synthetic
+A0623,Marvane Authority,Public Sector,100-500,Greenfield,APAC-A06-G2,S0196,APAC-A06,APAC,BU1,Synthetic
+A0624,Verridge Energy,Energy,"500-1,000",Greenfield,APAC-A06-G2,S0196,APAC-A06,APAC,BU1,Synthetic
+A0625,Corsphere Stores,Retail,"500-1,000",Greenfield,EMEA-A03-G1,S0138,EMEA-A03,EMEA,BU1,Synthetic
+A0626,Galvale Works,Manufacturing,"1,000-5,000",Greenfield,NAE-A04-G1,S0063,NAE-A04,NAE,BU1,Synthetic
+A0627,Jorvane Systems,Technology,"1,000-5,000",Greenfield,NAW-A06-G1,S0034,NAW-A06,NAW,BU1,Synthetic
+A0628,Sellyn Power,Energy,100-500,Greenfield,EMEA-A06-E1,S0152,EMEA-A06,EMEA,BU1,Synthetic
+A0629,Alquist Capital,Financial Services,100-500,Greenfield,NAW-A06-G1,S0034,NAW-A06,NAW,BU1,Synthetic
+A0630,Yorlyn Logistics,Logistics,100-500,Greenfield,NAW-A03-E1,S0017,NAW-A03,NAW,BU1,Synthetic
+A0631,Lumtris Power,Energy,"500-1,000",Greenfield,NAW-A03-G1,S0019,NAW-A03,NAW,BU1,Synthetic
+A0632,Jortris Learning,Education,100-500,Greenfield,NAW-A01-G2,S0008,NAW-A01,NAW,BU1,Synthetic
+A0633,Daldex Logistics,Logistics,100-500,Greenfield,EMEA-A05-G1,S0148,EMEA-A05,EMEA,BU1,Synthetic
+A0634,Dorgate Industries,Manufacturing,"1,000-5,000",Greenfield,NAW-A05-G1,S0029,NAW-A05,NAW,BU1,Synthetic
+A0635,Torridge Labs,Technology,"500-1,000",Greenfield,NAE-A06-G2,S0075,NAE-A06,NAE,BU1,Synthetic
+A0636,Lummont Retail,Retail,"1,000-5,000",Greenfield,EMEA-A02-G1,S0132,EMEA-A02,EMEA,BU1,Synthetic
+A0637,Issphere University,Education,"500-1,000",Greenfield,APAC-A05-G1,S0190,APAC-A05,APAC,BU1,Synthetic
+A0638,Wyncore Care,Healthcare,"1,000-5,000",Greenfield,EMEA-A04-G1,S0143,EMEA-A04,EMEA,BU1,Synthetic
+A0639,Briton Labs,Technology,"500-1,000",Greenfield,APAC-A04-G1,S0184,APAC-A04,APAC,BU1,Synthetic
+A0640,Isvale Brands,Retail,100-500,Greenfield,CLA-A02-G1,S0098,CLA-A02,CLA,BU1,Synthetic
+A0641,Pelcore Medical,Healthcare,100-500,Greenfield,CLA-A05-G2,S0114,CLA-A05,CLA,BU1,Synthetic
+A0642,Jorcore Software,Technology,100-500,Greenfield,APAC-A01-G2,S0167,APAC-A01,APAC,BU1,Synthetic
+A0643,Ulvane Freight,Logistics,100-500,Greenfield,EMEA-A03-G1,S0138,EMEA-A03,EMEA,BU1,Synthetic
+A0644,Ulmere Financial,Financial Services,"500-1,000",Greenfield,NAW-A07-G1,S0040,NAW-A07,NAW,BU1,Synthetic
+A0645,Almont Power,Energy,"1,000-5,000",Greenfield,CLA-A06-G1,S0119,CLA-A06,CLA,BU1,Synthetic
+A0646,Zelgate Works,Manufacturing,"1,000-5,000",Greenfield,CLA-A03-G1,S0103,CLA-A03,CLA,BU1,Synthetic
+A0647,Calgate Software,Technology,"1,000-5,000",Greenfield,APAC-A05-G1,S0190,APAC-A05,APAC,BU1,Synthetic
+A0648,Quinmere Brands,Retail,100-500,Greenfield,NAW-A06-G1,S0034,NAW-A06,NAW,BU1,Synthetic
+A0649,Torton Networks,Media,"500-1,000",Greenfield,CLA-A05-G1,S0113,CLA-A05,CLA,BU1,Synthetic
+A0650,Kelbrook Authority,Public Sector,"500-1,000",Greenfield,EMEA-A03-G1,S0138,EMEA-A03,EMEA,BU1,Synthetic
+A0651,Kelvane Software,Technology,100-500,Greenfield,APAC-A06-G1,S0195,APAC-A06,APAC,BU1,Synthetic
+A0652,Cortris Studios,Media,"1,000-5,000",Greenfield,CLA-A03-D1,S0100,CLA-A03,CLA,BU1,Synthetic
+A0653,Galwren Brands,Retail,"500-1,000",Greenfield,CLA-A06-G2,S0120,CLA-A06,CLA,BU1,Synthetic
+A0654,Nortris Health,Healthcare,100-500,Greenfield,NAW-A02-G2,S0014,NAW-A02,NAW,BU1,Synthetic
+A0655,Torsphere Energy,Energy,"1,000-5,000",Greenfield,NAE-A03-G1,S0057,NAE-A03,NAE,BU1,Synthetic
+A0656,Jorwren Health,Healthcare,"500-1,000",Greenfield,NAE-A02-G2,S0052,NAE-A02,NAE,BU1,Synthetic
+A0657,Dormere Retail,Retail,"500-1,000",Greenfield,APAC-A05-G1,S0190,APAC-A05,APAC,BU1,Synthetic
+A0658,Quinstone Power,Energy,"500-1,000",Greenfield,APAC-A05-G1,S0190,APAC-A05,APAC,BU1,Synthetic
+A0659,Pelton Services,Public Sector,"500-1,000",Greenfield,CLA-A05-G2,S0114,CLA-A05,CLA,BU1,Synthetic
+A0660,Zelvane Authority,Public Sector,100-500,Greenfield,NAW-A05-G1,S0029,NAW-A05,NAW,BU1,Synthetic
+A0661,Bridex Industries,Manufacturing,100-500,Greenfield,CLA-A04-E1,S0106,CLA-A04,CLA,BU1,Synthetic
+A0662,Briridge Care,Healthcare,"1,000-5,000",Greenfield,NAE-A08-G1,S0086,NAE-A08,NAE,BU1,Synthetic
+A0663,Lumridge Manufacturing,Manufacturing,"1,000-5,000",Greenfield,APAC-A01-G1,S0166,APAC-A01,APAC,BU1,Synthetic
+A0664,Torsphere Works,Manufacturing,100-500,Greenfield,NAE-A08-G1,S0086,NAE-A08,NAE,BU1,Synthetic
+A0665,Galora Media,Media,"500-1,000",Greenfield,NAE-A08-G1,S0086,NAE-A08,NAE,BU1,Synthetic
+A0666,Brifield Learning,Education,100-500,Greenfield,APAC-A01-G2,S0167,APAC-A01,APAC,BU1,Synthetic
+A0667,Keldex Medical,Healthcare,"500-1,000",Greenfield,APAC-A04-G2,S0185,APAC-A04,APAC,BU1,Synthetic
+A0668,Corbrook Freight,Logistics,"1,000-5,000",Greenfield,CLA-A05-G2,S0114,CLA-A05,CLA,BU1,Synthetic
+A0669,Norora Industries,Manufacturing,100-500,Greenfield,NAW-A01-G2,S0008,NAW-A01,NAW,BU1,Synthetic
+A0670,Ashquist Works,Manufacturing,100-500,Greenfield,EMEA-A05-G2,S0149,EMEA-A05,EMEA,BU1,Synthetic
+A0671,Torfield Capital,Financial Services,100-500,Greenfield,CLA-A03-G1,S0103,CLA-A03,CLA,BU1,Synthetic
+A0672,Quinora Services,Public Sector,"1,000-5,000",Greenfield,NAE-A07-G2,S0081,NAE-A07,NAE,BU1,Synthetic
+A0673,Ultris Studios,Media,100-500,Greenfield,CLA-A01-G2,S0093,CLA-A01,CLA,BU1,Synthetic
+A0674,Belnova Health,Healthcare,"1,000-5,000",Greenfield,CLA-A02-G1,S0098,CLA-A02,CLA,BU1,Synthetic
+A0675,Lumnova Brands,Retail,100-500,Greenfield,NAW-A07-G1,S0040,NAW-A07,NAW,BU1,Synthetic
+A0676,Corbrook Retail,Retail,"1,000-5,000",Greenfield,EMEA-A07-G1,S0160,EMEA-A07,EMEA,BU1,Synthetic
+A0677,Ormere Agency,Public Sector,"1,000-5,000",Greenfield,CLA-A03-G1,S0103,CLA-A03,CLA,BU1,Synthetic
+A0678,Yortris Authority,Public Sector,100-500,Greenfield,NAW-A05-G1,S0029,NAW-A05,NAW,BU1,Synthetic
+A0679,Quinstone Studios,Media,100-500,Greenfield,APAC-A03-G1,S0178,APAC-A03,APAC,BU1,Synthetic
+A0680,Marton Care,Healthcare,"1,000-5,000",Greenfield,APAC-A04-G1,S0184,APAC-A04,APAC,BU1,Synthetic
+A0681,Selwren Transport,Logistics,100-500,Greenfield,CLA-A04-G1,S0108,CLA-A04,CLA,BU1,Synthetic
+A0682,Orvane Systems,Technology,"500-1,000",Greenfield,NAE-A03-G1,S0057,NAE-A03,NAE,BU1,Synthetic
+A0683,Caldex Freight,Logistics,"1,000-5,000",Greenfield,EMEA-A03-G1,S0138,EMEA-A03,EMEA,BU1,Synthetic
+A0684,Fenstone Services,Public Sector,"500-1,000",Greenfield,APAC-A06-G1,S0195,APAC-A06,APAC,BU1,Synthetic
+A0685,Elton Manufacturing,Manufacturing,"1,000-5,000",Greenfield,NAE-A07-G1,S0080,NAE-A07,NAE,BU1,Synthetic
+A0686,Yorbrook Manufacturing,Manufacturing,"500-1,000",Greenfield,EMEA-A05-D1,S0145,EMEA-A05,EMEA,BU1,Synthetic
+A0687,Calbrook Medical,Healthcare,100-500,Greenfield,NAE-A08-G1,S0086,NAE-A08,NAE,BU1,Synthetic
+A0688,Vervane Medical,Healthcare,100-500,Greenfield,NAE-A04-G2,S0064,NAE-A04,NAE,BU1,Synthetic
+A0689,Lumstone Software,Technology,100-500,Greenfield,NAE-A08-G1,S0086,NAE-A08,NAE,BU1,Synthetic
+A0690,Halton Capital,Financial Services,100-500,Greenfield,EMEA-A03-G1,S0138,EMEA-A03,EMEA,BU1,Synthetic
+A0691,Jorlyn Brands,Retail,100-500,Greenfield,EMEA-A02-G2,S0133,EMEA-A02,EMEA,BU1,Synthetic
+A0692,Marridge Health,Healthcare,"500-1,000",Greenfield,EMEA-A06-G2,S0155,EMEA-A06,EMEA,BU1,Synthetic
+A0693,Jordex Software,Technology,100-500,Greenfield,CLA-A01-G1,S0092,CLA-A01,CLA,BU1,Synthetic
+A0694,Jorquist Agency,Public Sector,"500-1,000",Greenfield,NAW-A05-G1,S0029,NAW-A05,NAW,BU1,Synthetic
+A0695,Galtris Financial,Financial Services,"500-1,000",Greenfield,CLA-A02-G1,S0098,CLA-A02,CLA,BU1,Synthetic
+A0696,Ulora Medical,Healthcare,"1,000-5,000",Greenfield,NAE-A03-G2,S0058,NAE-A03,NAE,BU1,Synthetic
+A0697,Lumwren Health,Healthcare,"1,000-5,000",Greenfield,EMEA-A05-G1,S0148,EMEA-A05,EMEA,BU1,Synthetic
+A0698,Kelwick Freight,Logistics,100-500,Greenfield,EMEA-A02-G1,S0132,EMEA-A02,EMEA,BU1,Synthetic
+A0699,Fenmere Utilities,Energy,"1,000-5,000",Greenfield,EMEA-A01-E1,S0124,EMEA-A01,EMEA,BU1,Synthetic
+A0700,Haltris Services,Public Sector,"1,000-5,000",Greenfield,EMEA-A05-E1,S0146,EMEA-A05,EMEA,BU1,Synthetic
+A0701,Fensphere Manufacturing,Manufacturing,"1,000-5,000",Greenfield,CLA-A06-G2,S0120,CLA-A06,CLA,BU1,Synthetic
+A0702,Belsphere Health,Healthcare,"500-1,000",Greenfield,CLA-A04-G1,S0108,CLA-A04,CLA,BU1,Synthetic
+A0703,Callyn Health,Healthcare,"1,000-5,000",Greenfield,APAC-A06-G2,S0196,APAC-A06,APAC,BU1,Synthetic
+A0704,Isfield Software,Technology,100-500,Greenfield,EMEA-A03-G1,S0138,EMEA-A03,EMEA,BU1,Synthetic
+A0705,Pelstone Labs,Technology,100-500,Greenfield,EMEA-A01-G1,S0126,EMEA-A01,EMEA,BU1,Synthetic
+A0706,Torton Capital,Financial Services,100-500,Greenfield,EMEA-A03-G1,S0138,EMEA-A03,EMEA,BU1,Synthetic
+A0707,Ordex Care,Healthcare,"500-1,000",Greenfield,NAW-A04-G1,S0024,NAW-A04,NAW,BU1,Synthetic
+A0708,Marbrook Retail,Retail,"1,000-5,000",Greenfield,NAE-A02-G2,S0052,NAE-A02,NAE,BU1,Synthetic
+A0709,Ortris Power,Energy,100-500,Greenfield,NAE-A04-G1,S0063,NAE-A04,NAE,BU1,Synthetic
+A0710,Wynmont University,Education,"1,000-5,000",Greenfield,NAW-A07-E1,S0038,NAW-A07,NAW,BU1,Synthetic
+A0711,Marvane University,Education,"500-1,000",Greenfield,APAC-A02-G1,S0172,APAC-A02,APAC,BU1,Synthetic
+A0712,Selgate Freight,Logistics,100-500,Greenfield,CLA-A04-G1,S0108,CLA-A04,CLA,BU1,Synthetic
+A0713,Xanwick Health,Healthcare,"1,000-5,000",Greenfield,NAE-A04-G1,S0063,NAE-A04,NAE,BU1,Synthetic
+A0714,Galvale Networks,Media,"1,000-5,000",Greenfield,APAC-A03-G2,S0179,APAC-A03,APAC,BU1,Synthetic
+A0715,Dalbrook University,Education,100-500,Greenfield,EMEA-A01-G2,S0127,EMEA-A01,EMEA,BU1,Synthetic
+A0716,Hallyn Health,Healthcare,"1,000-5,000",Greenfield,EMEA-A01-E1,S0124,EMEA-A01,EMEA,BU1,Synthetic
+A0717,Halbrook Authority,Public Sector,"1,000-5,000",Greenfield,NAW-A02-G2,S0014,NAW-A02,NAW,BU1,Synthetic
+A0718,Calnova Authority,Public Sector,100-500,Greenfield,APAC-A03-G2,S0179,APAC-A03,APAC,BU1,Synthetic
+A0719,Ortris Media,Media,100-500,Greenfield,APAC-A03-E1,S0176,APAC-A03,APAC,BU1,Synthetic
+A0720,Lumora Bancorp,Financial Services,"1,000-5,000",Greenfield,CLA-A03-G1,S0103,CLA-A03,CLA,BU1,Synthetic
+A0721,Fensphere Authority,Public Sector,100-500,Greenfield,NAE-A04-G1,S0063,NAE-A04,NAE,BU1,Synthetic
+A0722,Galmont Learning,Education,"1,000-5,000",Greenfield,NAW-A07-G1,S0040,NAW-A07,NAW,BU1,Synthetic
+A0723,Xannova Works,Manufacturing,"1,000-5,000",Greenfield,NAE-A04-G1,S0063,NAE-A04,NAE,BU1,Synthetic
+A0724,Raltris Agency,Public Sector,"1,000-5,000",Greenfield,EMEA-A02-G1,S0132,EMEA-A02,EMEA,BU1,Synthetic
+A0725,Ralsphere Academy,Education,"1,000-5,000",Greenfield,NAW-A06-G2,S0035,NAW-A06,NAW,BU1,Synthetic
+A0726,Albrook Brands,Retail,"500-1,000",Greenfield,APAC-A04-G2,S0185,APAC-A04,APAC,BU1,Synthetic
+A0727,Elgate Academy,Education,100-500,Greenfield,CLA-A02-G1,S0098,CLA-A02,CLA,BU1,Synthetic
+A0728,Corton Brands,Retail,100-500,Greenfield,EMEA-A07-E1,S0158,EMEA-A07,EMEA,BU1,Synthetic
+A0729,Lummere Industries,Manufacturing,100-500,Greenfield,NAE-A07-G2,S0081,NAE-A07,NAE,BU1,Synthetic
+A0730,Norwren Power,Energy,100-500,Greenfield,NAW-A03-G1,S0019,NAW-A03,NAW,BU1,Synthetic
+A0731,Fenlyn Transport,Logistics,"500-1,000",Greenfield,CLA-A04-G1,S0108,CLA-A04,CLA,BU1,Synthetic
+A0732,Selsphere Financial,Financial Services,"1,000-5,000",Greenfield,APAC-A05-G1,S0190,APAC-A05,APAC,BU1,Synthetic
+A0733,Lumgate Care,Healthcare,"1,000-5,000",Greenfield,EMEA-A05-G1,S0148,EMEA-A05,EMEA,BU1,Synthetic
+A0734,Marmont Retail,Retail,100-500,Greenfield,APAC-A06-G2,S0196,APAC-A06,APAC,BU1,Synthetic
+A0735,Lumnova Energy,Energy,"500-1,000",Greenfield,NAW-A06-G1,S0034,NAW-A06,NAW,BU1,Synthetic
+A0736,Isfield Financial,Financial Services,"500-1,000",Greenfield,APAC-A01-G2,S0167,APAC-A01,APAC,BU1,Synthetic
+A0737,Galvane Bancorp,Financial Services,"1,000-5,000",Greenfield,EMEA-A03-G1,S0138,EMEA-A03,EMEA,BU1,Synthetic
+A0738,Ulridge Utilities,Energy,100-500,Greenfield,EMEA-A06-G1,S0154,EMEA-A06,EMEA,BU1,Synthetic
+A0739,Iswick Stores,Retail,100-500,Greenfield,APAC-A05-G1,S0190,APAC-A05,APAC,BU1,Synthetic
+A0740,Dorstone Works,Manufacturing,"1,000-5,000",Greenfield,NAE-A04-G1,S0063,NAE-A04,NAE,BU1,Synthetic
+A0741,Corwren Learning,Education,"1,000-5,000",Greenfield,NAW-A05-G1,S0029,NAW-A05,NAW,BU1,Synthetic
+A0742,Kelsphere Media,Media,"1,000-5,000",Greenfield,APAC-A03-G1,S0178,APAC-A03,APAC,BU1,Synthetic
+A0743,Fensphere Power,Energy,"1,000-5,000",Greenfield,CLA-A05-G1,S0113,CLA-A05,CLA,BU1,Synthetic
+A0744,Normont Medical,Healthcare,"1,000-5,000",Greenfield,NAE-A05-G1,S0069,NAE-A05,NAE,BU1,Synthetic
+A0745,Ashwick Brands,Retail,"500-1,000",Greenfield,CLA-A04-G1,S0108,CLA-A04,CLA,BU1,Synthetic
+A0746,Yorcore Power,Energy,100-500,Greenfield,NAE-A04-G1,S0063,NAE-A04,NAE,BU1,Synthetic
+A0747,Kelvane Services,Public Sector,"500-1,000",Greenfield,NAW-A06-G1,S0034,NAW-A06,NAW,BU1,Synthetic
+A0748,Bribrook Bancorp,Financial Services,"500-1,000",Greenfield,APAC-A01-G2,S0167,APAC-A01,APAC,BU1,Synthetic
+A0749,Pelora Care,Healthcare,100-500,Greenfield,APAC-A05-G1,S0190,APAC-A05,APAC,BU1,Synthetic
+A0750,Xanridge Care,Healthcare,"500-1,000",Greenfield,CLA-A03-G1,S0103,CLA-A03,CLA,BU1,Synthetic
+A0751,Elwren Brands,Retail,"500-1,000",Greenfield,NAE-A07-E2,S0079,NAE-A07,NAE,BU1,Synthetic
+A0752,Yordex Freight,Logistics,100-500,Greenfield,NAW-A05-G1,S0029,NAW-A05,NAW,BU1,Synthetic
+A0753,Wynridge Stores,Retail,"500-1,000",Greenfield,NAE-A01-G1,S0046,NAE-A01,NAE,BU1,Synthetic
+A0754,Brinova Brands,Retail,"1,000-5,000",Greenfield,NAE-A02-G1,S0051,NAE-A02,NAE,BU1,Synthetic
+A0755,Zeltris Bancorp,Financial Services,100-500,Greenfield,EMEA-A06-G1,S0154,EMEA-A06,EMEA,BU1,Synthetic
+A0756,Jorwren Power,Energy,"500-1,000",Greenfield,NAW-A07-G1,S0040,NAW-A07,NAW,BU1,Synthetic
+A0757,Corbrook Labs,Technology,100-500,Greenfield,EMEA-A07-G1,S0160,EMEA-A07,EMEA,BU1,Synthetic
+A0758,Jorridge Utilities,Energy,100-500,Greenfield,NAW-A02-G2,S0014,NAW-A02,NAW,BU1,Synthetic
+A0759,Peltris Medical,Healthcare,100-500,Greenfield,APAC-A03-G1,S0178,APAC-A03,APAC,BU1,Synthetic
+A0760,Torridge Industries,Manufacturing,"1,000-5,000",Greenfield,EMEA-A07-G1,S0160,EMEA-A07,EMEA,BU1,Synthetic
+A0761,Islyn Studios,Media,100-500,Greenfield,EMEA-A06-G2,S0155,EMEA-A06,EMEA,BU1,Synthetic
+A0762,Xanstone Industries,Manufacturing,"500-1,000",Greenfield,NAW-A05-G1,S0029,NAW-A05,NAW,BU1,Synthetic
+A0763,Dorwren Services,Public Sector,100-500,Greenfield,EMEA-A04-G1,S0143,EMEA-A04,EMEA,BU1,Synthetic
+A0764,Zelmont Transport,Logistics,100-500,Greenfield,NAW-A07-G1,S0040,NAW-A07,NAW,BU1,Synthetic
+A0765,Ralbrook Academy,Education,"1,000-5,000",Greenfield,EMEA-A06-G1,S0154,EMEA-A06,EMEA,BU1,Synthetic
+A0766,Isvale Energy,Energy,100-500,Greenfield,NAE-A06-G2,S0075,NAE-A06,NAE,BU1,Synthetic
+A0767,Zelvale Learning,Education,"1,000-5,000",Greenfield,EMEA-A05-G1,S0148,EMEA-A05,EMEA,BU1,Synthetic
+A0768,Zelstone Logistics,Logistics,100-500,Greenfield,NAW-A06-G2,S0035,NAW-A06,NAW,BU1,Synthetic
+A0769,Dormont Networks,Media,100-500,Greenfield,NAW-A04-G1,S0024,NAW-A04,NAW,BU1,Synthetic
+A0770,Fenbrook Capital,Financial Services,"1,000-5,000",Greenfield,NAW-A01-G1,S0007,NAW-A01,NAW,BU1,Synthetic
+A0771,Pelbrook Medical,Healthcare,"1,000-5,000",Greenfield,CLA-A01-G2,S0093,CLA-A01,CLA,BU1,Synthetic
+A0772,Xanmere Freight,Logistics,100-500,Greenfield,CLA-A02-G1,S0098,CLA-A02,CLA,BU1,Synthetic
+A0773,Jorlyn Works,Manufacturing,100-500,Greenfield,CLA-A01-G1,S0092,CLA-A01,CLA,BU1,Synthetic
+A0774,Belnova Retail,Retail,100-500,Greenfield,NAE-A01-G1,S0046,NAE-A01,NAE,BU1,Synthetic
+A0775,Xancore Bancorp,Financial Services,"1,000-5,000",Greenfield,NAW-A07-D1,S0037,NAW-A07,NAW,BU1,Synthetic
+A0776,Halfield Agency,Public Sector,"1,000-5,000",Greenfield,NAE-A07-G1,S0080,NAE-A07,NAE,BU1,Synthetic
+A0777,Elquist Power,Energy,"1,000-5,000",Greenfield,NAE-A06-G2,S0075,NAE-A06,NAE,BU1,Synthetic
+A0778,Norsphere Energy,Energy,"500-1,000",Greenfield,CLA-A03-G1,S0103,CLA-A03,CLA,BU1,Synthetic
+A0779,Jorora Industries,Manufacturing,"500-1,000",Greenfield,APAC-A04-G1,S0184,APAC-A04,APAC,BU1,Synthetic
+A0780,Orton Works,Manufacturing,"500-1,000",Greenfield,NAE-A02-G2,S0052,NAE-A02,NAE,BU1,Synthetic
+A0781,Tordex University,Education,"500-1,000",Greenfield,NAW-A07-G1,S0040,NAW-A07,NAW,BU1,Synthetic
+A0782,Calwren Care,Healthcare,"500-1,000",Greenfield,NAW-A01-G2,S0008,NAW-A01,NAW,BU1,Synthetic
+A0783,Ashmont Stores,Retail,100-500,Greenfield,EMEA-A01-G2,S0127,EMEA-A01,EMEA,BU1,Synthetic
+A0784,Dalwick Energy,Energy,100-500,Greenfield,NAW-A02-G2,S0014,NAW-A02,NAW,BU1,Synthetic
+A0785,Calwren Energy,Energy,"1,000-5,000",Greenfield,CLA-A04-G1,S0108,CLA-A04,CLA,BU1,Synthetic
+A0786,Calbrook Software,Technology,"500-1,000",Greenfield,APAC-A06-G1,S0195,APAC-A06,APAC,BU1,Synthetic
+A0787,Pelcore Studios,Media,"500-1,000",Greenfield,APAC-A02-G2,S0173,APAC-A02,APAC,BU1,Synthetic
+A0788,Wynvale Authority,Public Sector,"1,000-5,000",Greenfield,CLA-A06-G2,S0120,CLA-A06,CLA,BU1,Synthetic
+A0789,Halfield Health,Healthcare,100-500,Greenfield,NAE-A01-G1,S0046,NAE-A01,NAE,BU1,Synthetic
+A0790,Lumcore Utilities,Energy,"1,000-5,000",Greenfield,EMEA-A01-G2,S0127,EMEA-A01,EMEA,BU1,Synthetic
+A0791,Dalnova Agency,Public Sector,"500-1,000",Greenfield,NAW-A06-G1,S0034,NAW-A06,NAW,BU1,Synthetic
+A0792,Orstone Capital,Financial Services,"1,000-5,000",Greenfield,APAC-A01-G2,S0167,APAC-A01,APAC,BU1,Synthetic
+A0793,Halmere Transport,Logistics,100-500,Greenfield,NAW-A03-G1,S0019,NAW-A03,NAW,BU1,Synthetic
+A0794,Belfield Services,Public Sector,"1,000-5,000",Greenfield,CLA-A05-G2,S0114,CLA-A05,CLA,BU1,Synthetic
+A0795,Elnova Agency,Public Sector,100-500,Greenfield,NAE-A01-E2,S0045,NAE-A01,NAE,BU1,Synthetic
+A0796,Dalcore Media,Media,100-500,Greenfield,CLA-A06-G1,S0119,CLA-A06,CLA,BU1,Synthetic
+A0797,Peldex Labs,Technology,100-500,Greenfield,CLA-A03-G1,S0103,CLA-A03,CLA,BU1,Synthetic
+A0798,Ashcore Logistics,Logistics,100-500,Greenfield,NAE-A06-G1,S0074,NAE-A06,NAE,BU1,Synthetic
+A0799,Fenbrook Freight,Logistics,"1,000-5,000",Greenfield,NAW-A07-G1,S0040,NAW-A07,NAW,BU1,Synthetic
+A0800,Tormont Freight,Logistics,100-500,Greenfield,NAE-A01-G1,S0046,NAE-A01,NAE,BU1,Synthetic
