@@ -65,8 +65,19 @@ _SHOULD = re.compile(r"\b(should|shall) (i|we)\b.*\b(implement\w*|apply|do (it|t
 _BOOK_REF = re.compile(r"\b(his|her|their|the seller'?s?|that seller'?s?|entire|whole|full)\b.*\bbook\b|\bbook\b", re.I)
 _PIPE = re.compile(r"\bpipeline\b|\bopportunit\w*\b|\bopps?\b|\bdeals?\b", re.I)
 _NEW_TERR = re.compile(r"\b(new|receiving|their|his|her|that)\b.*\bterritor(y|ies)\b|\bnew seller\b", re.I)
-_RANK = re.compile(r"\b(top|biggest|largest|highest|lowest|smallest|most|least|declin\w*|grow\w*|fastest|slowest|"
-                   r"worst|best|shrink\w*|drop\w*|which)\b", re.I)
+_RANK = re.compile(r"\b(top|biggest|largest|highest|lowest|smallest|most|least|declin\w*|grow\w*|grew|growth|fastest|"
+                   r"slowest|worst|best|shrink\w*|drop\w*|which|increas\w*|decreas\w*|jump\w*|yoy|rank\w*)\b|%", re.I)
+# measure cues (Denice / AWS feedback: "% growth is the key metric, not raw revenue")
+_PCT = re.compile(r"%|\bpercent\w*|\byoy\b|\by/y\b|year[\s-]*(over|on)[\s-]*year|\bvs\.? (last|prior) year|"
+                  r"\bgr[eo]w\w*|\bgrowth\b|\bincreas\w*|\bjump\w*|\bfastest\b|\bslowest\b|\brate\b", re.I)
+_DOWN = re.compile(r"\bdeclin\w*|\bshrink\w*|\bdrop\w*|\bfell\b|\bfall\w*|\bdecreas\w*|\bworst\b|\bslowest\b|"
+                   r"\blowest growth\b|\blost\b|\bdown the most\b", re.I)
+_DOLLARS = re.compile(r"\$|\bdollars?\b|\babsolute\b|\bamount\b|\bin revenue terms\b", re.I)
+_RECO = re.compile(r"\brecommend(ation)?s?\b(?!\s+(it|this|that|the)\b)|\bnext best actions?\b|\btop (actions|priorities)\b|"
+                   r"\bwhat should (i|we) (focus on|prioriti[sz]e|work on|do (first|next|now)|look at)\b|"
+                   r"\bwhere should (i|we) (focus|start)\b|\bwhat needs (my |our )?attention\b|\bmy priorities\b|"
+                   r"\baction items?\b|\bwhat do you suggest\b", re.I)
+_SWITCH = re.compile(r"\binstead\b|^\s*(by|rank by|sort by|order by|now by|what about by)\b", re.I)
 _LEVEL_WORDS = [("account", r"\baccounts?\b|\bcustomers?\b|\blogos?\b"), ("territory", r"\bterritor(y|ies)\b"),
                 ("area", r"\bareas?\b"), ("division", r"\bdivisions?\b")]
 
@@ -126,6 +137,8 @@ class RuleAdvisor:
                 return {"text": LATER_TEXT[phase], "suggestions": ["Brief me", "Are my territories pure?"]}
         if _SHOULD.search(msg) and not _WHERE.search(msg) and not _PURITY.search(msg):
             return self._should(msg, ctx, tk)
+        if _RECO.search(msg):
+            return self._recommend(msg, ctx, tk)
         if _is_impact(msg):
             return self._impact(msg, ctx, tk)
         if _UNDO.search(msg):
@@ -155,6 +168,10 @@ class RuleAdvisor:
             return self._brief(ctx, tk)
         if _RANK.search(msg) and any(re.search(p, msg, re.I) for _, p in _LEVEL_WORDS):
             return self._rank(msg, ctx, tk)
+        if ctx.get("last_ranked") and _SWITCH.search(msg):          # "by revenue instead", "by % growth"
+            return self._rank(msg, ctx, tk, level=ctx["last_ranked"]["level"])
+        if _RANK.search(msg) and _PCT.search(msg) and not resolve_entities(tk.data, msg, ("account", "seller")):
+            return self._rank(msg, ctx, tk, level=(ctx.get("last_ranked") or {}).get("level", "account"))
         ents = resolve_entities(tk.data, msg, ("division", "area", "territory", "account", "seller", "bu"))
         if ents:
             e = ents[0]
@@ -244,15 +261,15 @@ class RuleAdvisor:
             parent = tk.data.hierarchy.loc[tk.data.hierarchy["id"] == eid, "parent_id"].iloc[0]
         return self._drill({"id": parent, "name": tk.data.name_of(parent), "level": ""}, ctx, tk)
 
-    def _rank(self, msg, ctx, tk):
-        level = next(lvl for lvl, p in _LEVEL_WORDS if re.search(p, msg, re.I))
+    def _rank(self, msg, ctx, tk, level=None):
+        level = level or next(lvl for lvl, p in _LEVEL_WORDS if re.search(p, msg, re.I))
         low = msg.lower()
-        if re.search(r"declin|shrink|drop|worst|slowest|lowest growth", low):
-            metric, order = "yoy_pct", "asc"
-        elif re.search(r"grow|fastest|best", low):
-            metric, order = "yoy_pct", "desc"
-        elif "pipeline" in low:
+        if "pipeline" in low:
             metric, order = "open_pipeline", "desc"
+        elif _DOWN.search(msg):
+            metric, order = ("yoy_change" if _DOLLARS.search(msg) else "yoy_pct"), "asc"
+        elif _PCT.search(msg) or re.search(r"\bbest\b", low):
+            metric, order = ("yoy_change" if _DOLLARS.search(msg) else "yoy_pct"), "desc"
         elif re.search(r"smallest|lowest|least", low):
             metric, order = "fy26_ytd", "asc"
         else:
@@ -268,18 +285,24 @@ class RuleAdvisor:
             r = tk.call("rank", **args)
         if "error" in r:
             return {"text": r["error"], "_results": [r]}
-        label = {"yoy_pct": "YoY growth (Jan–Nov)", "open_pipeline": "open pipeline", "fy26_ytd": "FY26 Jan–Nov revenue"}[metric]
+        label = {"yoy_pct": "YoY growth % (Jan–Nov vs last year)", "yoy_change": "YoY change in $ (Jan–Nov vs last year)",
+                 "open_pipeline": "open pipeline", "fy26_ytd": "FY26 Jan–Nov revenue"}[metric]
         lines = [f"**{_plural(level).title()} in {r['within']} by {label}** ({'lowest' if order == 'asc' else 'highest'} first):"]
         for i, x in enumerate(r["rows"], 1):
-            lines.append(f"{i}. **{x['name']}** — {fmt_money(x['fy26_ytd'])}, {fmt_pct(x.get('yoy_pct'))} YoY, "
+            chg = f" ({_sgn(x['yoy_change'])})" if metric == "yoy_change" and x.get("yoy_change") is not None else ""
+            lines.append(f"{i}. **{x['name']}** — {fmt_pct(x.get('yoy_pct'))} YoY{chg}, {fmt_money(x['fy26_ytd'])} Jan–Nov, "
                          f"pipeline {fmt_money(x['open_pipeline'])}")
+        other = {"yoy_pct": "by revenue instead", "yoy_change": "by % growth instead", "fy26_ytd": "by % growth instead",
+                 "open_pipeline": "by % growth instead"}[metric]
+        lines.append(f"\n*Ranked by {label.split(' (')[0]}. Ask “{other}” to switch.*")
         if not r["rows"]:
             lines.append("No matching items.")
         sugg = [f"Drill into {r['rows'][0]['name']}"] if r["rows"] else []
         ctx["last_ranked"] = {"level": level, "metric": metric, "order": order,
                               "rows": [{"id": x["id"], "name": x["name"]} for x in r["rows"]]}
-        if r["rows"] and metric == "yoy_pct" and order == "asc":
+        if r["rows"] and metric in ("yoy_pct", "yoy_change") and order == "asc":
             sugg = [f"Who owns the top declining {level}?"] + sugg
+        sugg = sugg + [other[0].upper() + other[1:]]
         return {"text": "\n".join(lines), "focus": (r["within_level"], r["within_id"]), "_results": [r],
                 "suggestions": sugg + ["Are my territories pure?"]}
 
@@ -322,6 +345,26 @@ class RuleAdvisor:
         lines.append(f"\n_{rep['rules_label']}_")
         return {"text": "\n".join(lines), "_results": [rep, fixes], "proposals": props,
                 "suggestions": ["Show my changes", "Brief me"]}
+
+    def _recommend(self, msg, ctx, tk):
+        ents = resolve_entities(tk.data, msg, ("division", "area", "territory"))
+        within = ents[0]["id"] if ents else (ctx["focus"][1] if ctx.get("focus") and ctx["focus"][0] in
+                                             ("division", "area", "territory") else None)
+        r = tk.call("recommend_actions", **({"within_id": within} if within else {}), limit=3)
+        if "error" in r and within:
+            r = tk.call("recommend_actions", limit=3)
+        if "error" in r:
+            return {"text": r["error"], "_results": [r]}
+        if not r["actions"]:
+            return {"text": f"Nothing stands out in **{r['within']}** right now: no overloaded books, purity breaks with "
+                            f"a ready fix, under-covered fast growers or big-pipeline decliners.", "_results": [r],
+                    "suggestions": ["Which accounts are declining?", "Brief me"]}
+        lines = [f"**Top actions for you — {r['within']}** (ranked by revenue or pipeline at stake):"]
+        for a in r["actions"]:
+            lines.append(f"{a['rank']}. **{a['title']}** · *{a['kind_label']}*\n    {a['why']}")
+        lines.append("\nPick one and I'll show you why, or ask *“what should I focus on in <area>?”*. "
+                     "These are recommendations; you decide, and nothing changes until you apply a move.")
+        return {"text": "\n".join(lines), "_results": [r], "suggestions": [a["ask"] for a in r["actions"]]}
 
     def _last_receiving_territory(self, ctx, tk):
         if ctx.get("last_move_to"):

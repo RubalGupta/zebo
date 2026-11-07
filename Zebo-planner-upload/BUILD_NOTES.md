@@ -126,6 +126,29 @@ revenue + growth signals) with team overrides and Advisor suggestions; seller qu
   how will revenue be impacted for 2027" work. Impact also shows on every move card and for the draft plan.
   All factors illustrative. Full suite: 145 tests, OK (2 skipped: real-Streamlit AppTests).
 
+## 3e. Tester feedback round 1 (added 2026-11-06)
+
+Source: feedback session with a retired senior Sales Operations leader (AWS); notes in the project at
+`claude/feedback/2026-11-06_Denice_AWS_SalesOps_feedback.md`. Changes:
+
+- **% growth ranking fixed (high priority).** The rule Advisor only recognised "grow"/"fastest"; phrasings such as
+  "grew the most", "highest YoY", "largest % increase", "year over year", "jump" fell back to revenue and returned the
+  biggest account ($17.8M Isbrook Health) instead of the top % grower (Calmont Software, +39.2%). New measure cues
+  (`_PCT`, `_DOWN`, `_DOLLARS`), a $-change measure (`yoy_change`), a visible "Ranked by …" line and measure switching
+  ("by revenue instead", "by % growth instead"). Regression tests replay the tester's phrasings.
+- **Whole company first.** The cockpit opens on the company (VP) view.
+- **Territory-first labels.** The "View" picker reads "North America West · Division (Avery Underhill)"; people change,
+  territories don't. `Persona.actor` keeps the person for the plan's audit trail.
+- **Click to open.** Tables use Streamlit cell selection (click any cell; no checkbox column; row-selection fallback on
+  older Streamlit). An account opens straight away in a pop-up panel (`st.dialog`; inline fallback).
+- **Top actions for you** (`planning/recommend.py`, tool `recommend_actions`, Advisor intent "what should I focus on?",
+  "top actions", "recommendations"): ranked, explainable recommendations by $ at stake — rebalance overloaded books, fix
+  territory sales-motion mixes, step up coverage on fast growers in lighter motions, protect declining accounts that
+  still carry big pipeline. One per kind first, scope-enforced, every figure grounded, advice only; each card has a
+  "Show me why" follow-up.
+- Tests: **160 run, 158 passed, 2 skipped** (real-Streamlit AppTests skip where Streamlit is not installed). The pop-up
+  panel and cell-click behaviour are covered by the recording stub only; check them in the hosted app.
+
 ## 4. Known limitations
 - Synthetic data only; thresholds are illustrative and not business-validated.
 - The rule-based router understands a limited set of phrasings; anything else gets the honest fallback. Keyword

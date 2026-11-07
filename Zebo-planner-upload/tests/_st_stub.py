@@ -87,6 +87,8 @@ class Recorder:
             if name == "dataframe":
                 rows = self._inputs.get(f"select:{key}", []) if key else []
                 return types.SimpleNamespace(selection=types.SimpleNamespace(rows=rows))
+            if name == "dialog":              # decorator: the dialog body renders in place in the stub
+                return lambda f: f
             if name == "rerun":
                 raise Rerun()
             if name == "stop":

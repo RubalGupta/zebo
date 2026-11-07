@@ -317,3 +317,89 @@ class BriefingGrounding(AdvisorBase):
             self.persona = p
             r = self.adv.respond("brief me", {})
             self.assertTrue(r["grounding"]["all_traceable"], (p.id, r["grounding"]))
+
+
+@unittest.skipUnless(HAS_PD, "pandas required")
+class GrowthPercentRanking(AdvisorBase):
+    """Tester feedback (ex-AWS Sales Ops): % YoY growth is the key metric; the Advisor must not fall back to revenue."""
+
+    def setUp(self):
+        super().setUp()
+        from planning.scope import persona_by_id
+        self.persona = persona_by_id(self.d, "P-BU1")
+
+    def metric_of(self, q, ctx=None):
+        r = self.adv.respond(q, self.ctx if ctx is None else ctx)
+        ranks = [c["args"]["metric"] for c in r["tool_calls"] if c["tool"] == "rank"]
+        return (ranks[0] if ranks else None), r
+
+    def test_percent_growth_phrasings(self):
+        for q in ["Which account has the largest year over year growth?", "Which account has the highest YoY?",
+                  "Which customer grew the most?", "Which account has the largest percentage increase?",
+                  "What is the largest year-over-year growth in %?", "Biggest increase vs last year by account",
+                  "which account had the biggest jump", "Which territories grew the most in percentage?"]:
+            m, r = self.metric_of(q, {})
+            self.assertEqual(m, "yoy_pct", q)
+            self.assertIn("YoY growth %", r["text"], q)
+            self.assertTrue(r["grounding"]["all_traceable"], q)
+
+    def test_top_percent_grower_is_not_the_biggest_account(self):
+        _, by_pct = self.metric_of("Which customer grew the most?", {})
+        _, by_rev = self.metric_of("Biggest accounts", {})
+        self.assertNotEqual(by_pct["text"].split("\n")[1], by_rev["text"].split("\n")[1])
+
+    def test_switch_measure_and_dollars(self):
+        self.assertEqual(self.metric_of("Which customer grew the most?")[0], "yoy_pct")
+        self.assertEqual(self.metric_of("by revenue instead")[0], "fy26_ytd")
+        self.assertEqual(self.metric_of("by % growth instead")[0], "yoy_pct")
+        self.assertEqual(self.metric_of("Which accounts grew the most in dollars?", {})[0], "yoy_change")
+        self.assertEqual(self.metric_of("Which areas are declining?", {})[0], "yoy_pct")
+        self.assertEqual(self.metric_of("Top accounts by open pipeline", {})[0], "open_pipeline")
+        self.assertEqual(self.metric_of("Biggest accounts", {})[0], "fy26_ytd")
+
+
+@unittest.skipUnless(HAS_PD, "pandas required")
+class TopActions(AdvisorBase):
+    """'Recommend, don't just display' — ranked, explainable, grounded, advice-only."""
+
+    def setUp(self):
+        super().setUp()
+        from planning.scope import persona_by_id
+        self.persona = persona_by_id(self.d, "P-BU1")
+
+    def test_recommend_intent_ranks_three_grounded_actions(self):
+        for q in ["What should I focus on?", "Top actions", "What needs my attention?", "Any recommendations?"]:
+            r = self.adv.respond(q, {})
+            self.assertEqual(r["tool_calls"][0]["tool"], "recommend_actions", q)
+            self.assertIn("Top actions for you", r["text"])
+            self.assertEqual(len(r["suggestions"]), 3)
+            self.assertTrue(r["grounding"]["all_traceable"], (q, r["grounding"]))
+        self.assertEqual(self.store.moves(), [])                       # advice only
+
+    def test_actions_are_varied_ranked_and_scoped(self):
+        from planning.plan_store import effective_accounts
+        from planning.recommend import recommend_actions
+        from planning.scope import filter_scope, persona_by_id
+        A = effective_accounts(self.d, self.store)
+        r = recommend_actions(self.d, A, self.d.territories)
+        kinds = [a["kind"] for a in r["actions"]]
+        self.assertEqual(len(kinds), len(set(kinds)))                   # one of each kind first
+        stakes = [a["at_stake"] for a in r["actions"]]
+        self.assertEqual(stakes, sorted(stakes, reverse=True))
+        naw = persona_by_id(self.d, "P-NAW")
+        r2 = recommend_actions(self.d, filter_scope(naw, A), filter_scope(naw, self.d.territories))
+        ids = set(filter_scope(naw, A)["account_id"]) | set(filter_scope(naw, self.d.territories)["territory_id"]) \
+            | set(filter_scope(naw, self.d.territories)["owner_id"])
+        for a in r2["actions"]:
+            self.assertIn(a["entity_id"], ids)                          # never outside the viewer's scope
+
+    def test_follow_up_asks_are_answerable(self):
+        r = self.adv.respond("What should I focus on?", self.ctx)
+        for q in r["suggestions"]:
+            out = self.adv.respond(q, self.ctx)
+            self.assertNotIn("didn't catch", out["text"], q)
+            self.assertTrue(out["tool_calls"], q)
+
+    def test_fix_question_still_goes_to_purity(self):
+        r = self.adv.respond("Is Southern California Greenfield 1 pure? What should I do to fix it?", {})
+        self.assertEqual(r["tool_calls"][0]["tool"], "purity_report")

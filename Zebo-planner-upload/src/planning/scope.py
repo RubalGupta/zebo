@@ -15,10 +15,17 @@ ID_COL = {"bu": "bu_id", "division": "division_id", "area": "area_id", "territor
 @dataclass(frozen=True)
 class Persona:
     id: str
-    label: str
+    label: str          # territory-first, e.g. "North America West · Division"  (people change, territories don't)
     level: str          # bu | division | area
     scope_id: str
     seller_id: str
+    leader: str = ""    # the person currently leading that scope, shown second
+    role: str = ""      # e.g. "Division Leader"
+
+    @property
+    def actor(self) -> str:
+        """Who is acting, for the plan's audit trail: 'Avery Underhill (Division Leader)'."""
+        return f"{self.leader} ({self.role})" if self.leader else self.label
 
     def to_dict(self) -> dict:
         return {"id": self.id, "label": self.label, "level": self.level, "scope_id": self.scope_id}
@@ -29,15 +36,18 @@ def personas(data: PlanningData) -> list[Persona]:
     s = data.sellers.set_index("seller_id")["seller_name"]
     out = []
     bu = h[h["level"] == "bu"].iloc[0]
-    out.append(Persona(f"P-{bu['id']}", f"{s.get(bu['leader_id'], 'VP')} · VP Sales — {bu['name']} (all)", "bu",
-                       bu["id"], bu["leader_id"]))
+    lead = s.get(bu["leader_id"], "")
+    out.append(Persona(f"P-{bu['id']}", f"Whole company — {bu['name']}" + (f"  ({lead}, VP Sales)" if lead else ""),
+                       "bu", bu["id"], bu["leader_id"], lead, "VP Sales"))
     for _, r in h[h["level"] == "division"].iterrows():
-        out.append(Persona(f"P-{r['id']}", f"{s.get(r['leader_id'], '')} · Division Leader — {r['name']}", "division",
-                           r["id"], r["leader_id"]))
+        lead = s.get(r["leader_id"], "")
+        out.append(Persona(f"P-{r['id']}", f"{r['name']} · Division" + (f"  ({lead})" if lead else ""), "division",
+                           r["id"], r["leader_id"], lead, "Division Leader"))
     for _, r in h[h["level"] == "area"].iterrows():
         div = h.loc[h["id"] == r["parent_id"], "name"].iloc[0]
-        out.append(Persona(f"P-{r['id']}", f"{s.get(r['leader_id'], '')} · Area Manager — {r['name']} ({div})", "area",
-                           r["id"], r["leader_id"]))
+        lead = s.get(r["leader_id"], "")
+        out.append(Persona(f"P-{r['id']}", f"{r['name']} · Area in {div}" + (f"  ({lead})" if lead else ""), "area",
+                           r["id"], r["leader_id"], lead, "Area Manager"))
     return out
 
 

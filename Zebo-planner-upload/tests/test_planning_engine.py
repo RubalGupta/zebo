@@ -154,3 +154,15 @@ class Engine(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class PersonaLabels(unittest.TestCase):
+    def test_labels_lead_with_territory_not_person(self):
+        from planning.data import load
+        from planning.scope import personas
+        ps = personas(load())
+        self.assertTrue(ps[0].label.startswith("Whole company"))
+        div = next(p for p in ps if p.level == "division")
+        self.assertTrue(div.label.startswith("North America West · Division"), div.label)
+        self.assertIn(div.leader, div.label)                         # person shown second
+        self.assertEqual(div.actor, f"{div.leader} (Division Leader)")

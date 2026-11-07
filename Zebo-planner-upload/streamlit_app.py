@@ -30,7 +30,8 @@ from planning.config import DEFAULT_RULES, LABEL  # noqa: E402
 from planning.data import PlanningDataError, load  # noqa: E402
 from planning.impact import account_move_impact  # noqa: E402
 from planning.plan_store import PlanStore, effective_accounts  # noqa: E402
-from planning.scope import CHILD, filter_scope, persona_by_id, personas  # noqa: E402
+from planning.recommend import recommend_actions  # noqa: E402
+from planning.scope import CHILD, ID_COL, filter_scope, persona_by_id, personas  # noqa: E402
 
 st.set_page_config(page_title="Zebo Planner", page_icon="🧭", layout="wide",
                    initial_sidebar_state="expanded")
@@ -71,6 +72,15 @@ h4 {{ margin: .2rem 0 .4rem !important; color: {INK}; }}
 .nb-kpi .v {{ font-size:1.35rem; font-weight:700; color:{INK}; font-variant-numeric:tabular-nums; line-height:1.25; }}
 .nb-kpi .s {{ font-size:.76rem; color:{MUTED}; }}
 .nb-kpi .s.up {{ color:#0a8f6c; font-weight:600; }} .nb-kpi .s.down {{ color:{WARN}; font-weight:600; }}
+.nb-act {{ background:#ffffff; border:1px solid #e1e6f2; border-radius:14px; padding:.75rem .9rem .6rem; min-height:8.6rem;
+           box-shadow:0 2px 10px rgba(10,31,68,.05); }}
+.nb-act .k {{ font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:{ORANGE}; }}
+.nb-act .n {{ display:inline-flex; align-items:center; justify-content:center; width:1.35rem; height:1.35rem; border-radius:50%;
+             background:{INK}; color:#fff; font-size:.72rem; font-weight:700; margin-right:.35rem; }}
+.nb-act .t {{ font-weight:700; color:{INK}; font-size:.95rem; margin:.3rem 0 .25rem; line-height:1.3; }}
+.nb-act .w {{ font-size:.8rem; color:{MUTED}; line-height:1.4; }}
+.nb-acts-h {{ font-weight:700; color:{INK}; font-size:1rem; margin:.2rem 0 .45rem; }}
+.nb-acts-h span {{ font-weight:500; color:{MUTED}; font-size:.8rem; margin-left:.4rem; }}
 .nb-insights {{ background:#f4f7ff; border:1px solid #e1e6f2; border-radius:14px; padding:.7rem .9rem .55rem;
   margin:.2rem 0 .9rem; position:relative; overflow:hidden; }}
 .nb-insights::before {{ content:""; position:absolute; left:0; right:0; top:0; height:3px;
@@ -164,7 +174,7 @@ else:
         ss.plan_dir = tempfile.mkdtemp(prefix="zebo_plan_")
     STORE = PlanStore(ss.plan_dir)
 PERSONAS = personas(DATA)
-DEFAULT_PERSONA = next((p.id for p in PERSONAS if p.level == "division"), PERSONAS[0].id)
+DEFAULT_PERSONA = next((p.id for p in PERSONAS if p.level == "bu"), PERSONAS[0].id)   # whole company first
 ss.setdefault("persona_id", DEFAULT_PERSONA)
 ss.setdefault("messages", [])
 ss.setdefault("ctx", {"focus": None})
@@ -235,7 +245,7 @@ def apply_move(ev: dict, reason: str) -> None:
         mv = STORE.add_move(account_id=fresh["account_id"], from_territory_id=fresh["from_territory_id"],
                             to_territory_id=fresh["to_territory_id"], from_owner_id=fresh["from_owner_id"],
                             to_owner_id=fresh["to_owner_id"], reason=reason, verdict=fresh["verdict"],
-                            score=fresh["score"], by=persona().label)
+                            score=fresh["score"], by=persona().actor)
     except ValueError as exc:
         st.error(str(exc))
         return
@@ -283,11 +293,38 @@ def insights(lines: list[str], actions: list[tuple[str, str]] | None = None, key
                 ask(prompt, from_workspace=True)
 
 
+def top_actions(within_level: str, within_id: str, key: str) -> None:
+    """'Top actions for you': ranked recommendations for the current view, each with a 'Show me why' follow-up."""
+    moves = STORE.moves()
+    ck = (ss.persona_id, within_level, within_id, len(moves), moves[-1]["move_id"] if moves else None)
+    cache = ss.setdefault("_todo_cache", {})
+    if ck not in cache:                       # recompute only when the view or the draft plan changes
+        accts, terrs = scoped_accounts(), scoped_territories()
+        if within_level != "bu":
+            col = ID_COL[within_level]
+            accts, terrs = accts[accts[col] == within_id], terrs[terrs[col] == within_id]
+        cache.clear()
+        cache[ck] = recommend_actions(DATA, accts, terrs, limit=3)
+    r = cache[ck]
+    if not r["actions"]:
+        return
+    st.markdown(f'<div class="nb-acts-h">🎯 Top actions for you<span>ranked by revenue or pipeline at stake · '
+                f'advice only, you decide</span></div>', unsafe_allow_html=True)
+    cols = st.columns(len(r["actions"]))
+    for c, a in zip(cols, r["actions"]):
+        with c:
+            st.markdown(f'<div class="nb-act"><div class="k"><span class="n">{a["rank"]}</span>{esc(a["kind_label"])}</div>'
+                        f'<div class="t">{esc(a["title"])}</div><div class="w">{esc(a["why"])}</div></div>',
+                        unsafe_allow_html=True)
+            if st.button("Show me why", key=f"{key}_{a['rank']}", width="stretch"):
+                ask(a["ask"], from_workspace=True)
+
+
 # ------------------------------------------------------------------ sidebar
 with st.sidebar:
     st.markdown("### 🧭 Norbae AI")
     st.caption("Zebo Planner")
-    st.selectbox("Viewing as", [p.id for p in PERSONAS], key="persona_id", on_change=on_persona_change,
+    st.selectbox("View", [p.id for p in PERSONAS], key="persona_id", on_change=on_persona_change,
                  format_func=lambda pid: next(p.label for p in PERSONAS if p.id == pid))
     st.radio("Planning steps", [k for k, _, _ in STEPS], key="step", format_func=lambda k: STEP_LABEL[k])
     n_moves = len([m for m in STORE.moves() if m["account_id"] in set(scoped_accounts()["account_id"])])
@@ -313,7 +350,7 @@ if ss.pending_prompt:
 
 P = persona()
 st.markdown(f'<div class="nb-top"><p class="nb-title">FY27 Planning · {esc(DATA.name_of(P.scope_id))}</p>'
-            f'<span class="nb-chip">{esc(P.label.split(" · ")[1] if " · " in P.label else P.label)}</span>'
+            f'<span class="nb-chip">{esc(DATA.name_of(P.scope_id) + " · " + (P.role or P.level))}</span>'
             f'<span class="nb-chip demo">Demo data</span></div>'
             f'<p class="nb-sub">FY26 actuals Jan–{MONTHS[DATA.ytd_months]} (December not closed) · {esc(LABEL)}</p>',
             unsafe_allow_html=True)
@@ -385,6 +422,41 @@ def account_card(aid: str) -> None:
         ask(f"Where should {d['name']} go?", from_workspace=True)
 
 
+def clickable_table(df: pd.DataFrame, key: str, **kw) -> list[int]:
+    """A table where clicking ANY cell picks that row (tester feedback: a highlight that does nothing is confusing).
+    Uses Streamlit's cell selection (no checkbox column); falls back to row selection on older Streamlit."""
+    try:
+        ev = st.dataframe(df, key=key, on_select="rerun", selection_mode="single-cell", **kw)
+    except Exception:  # Streamlit without cell selection
+        ev = st.dataframe(df, key=key, on_select="rerun", selection_mode="single-row", **kw)
+    sel = getattr(ev, "selection", None)
+    cells = list(getattr(sel, "cells", []) or [])
+    if cells:
+        c = cells[0]
+        return [int(c[0] if isinstance(c, (list, tuple)) else c.get("row"))]
+    return list(getattr(sel, "rows", []) or [])
+
+
+def _account_dialog_body(aid: str) -> None:
+    account_card(aid)
+
+
+try:   # a pop-up panel opens right where you click; inline fallback if this Streamlit has no dialogs
+    account_dialog = st.dialog("Account details", width="large")(_account_dialog_body)
+except Exception:
+    account_dialog = None
+
+
+def open_account(aid: str) -> None:
+    """Show an account immediately: as a pop-up when available, else inline at the top of the page."""
+    ss.selected_account = aid
+    ss.ctx["focus"] = ("account", aid)
+    if callable(account_dialog):
+        account_dialog(aid)
+    else:
+        account_card(aid)
+
+
 def accounts_table(df: pd.DataFrame, key: str):
     tmap = DATA.territories.set_index("territory_id")
     view = pd.DataFrame({
@@ -393,16 +465,14 @@ def accounts_table(df: pd.DataFrame, key: str):
         "Owner": df["owner_name"], "FY26 Jan–Nov": df["fy26_ytd"], "YoY %": df["yoy_pct"],
         "Open pipeline": df["open_pipeline"], "Industry": df["industry"], "Signal": df["signal"], "Moved": df["moved"],
     })
-    ev = st.dataframe(view, hide_index=True, width="stretch", height=380, key=key, on_select="rerun",
-                      selection_mode="single-row", column_config={
-                          "FY26 Jan–Nov": st.column_config.NumberColumn(format="dollar"),
-                          "Open pipeline": st.column_config.NumberColumn(format="dollar"),
-                          "YoY %": st.column_config.NumberColumn(format="%.1f%%")})
-    return ev, view
+    rows = clickable_table(view, key, hide_index=True, width="stretch", height=380, column_config={
+        "FY26 Jan–Nov": st.column_config.NumberColumn(format="dollar"),
+        "Open pipeline": st.column_config.NumberColumn(format="dollar"),
+        "YoY %": st.column_config.NumberColumn(format="%.1f%%")})
+    return rows, view
 
 
-def selected_row(event, view):
-    rows = getattr(getattr(event, "selection", None), "rows", []) or []
+def selected_row(rows, view):
     return view.iloc[rows[0]] if rows else None
 
 
@@ -442,6 +512,7 @@ if step == "business":
                 lines.append(f"Territory purity: {pr['critical']} critical and {pr['mixed']} mixed territories need attention.")
                 acts.append(("Fix purity", "are my territories pure?"))
         acts.append(("Top pipeline accounts", "top accounts by open pipeline"))
+        top_actions(focus[0], focus[1], key=f"todo_{focus[1]}")
         insights(lines, acts[:4], key=f"ins_{focus[1]}")
         kpi_tiles([("FY26 Jan–Nov", fmt_money(s["fy26_ytd"]), f"{fmt_pct(s['yoy_pct'])} YoY", tone(s["yoy_pct"])),
                    ("Open pipeline", fmt_money(s["open_pipeline"]), "all stages", ""),
@@ -461,15 +532,14 @@ if step == "business":
                 ).properties(height=min(40 + 24 * min(len(kids), 15), 420))
                 st.altair_chart(chart, width="stretch")
             with c2:
-                st.caption(f"Select a row to drill into a {child}.")
+                st.caption(f"Click any {child} to open it.")
                 cols = ["name", "fy26_ytd", "yoy_pct", "open_pipeline"] + [c3 for c3 in ("motion", "owner", "accounts") if c3 in kids]
-                ev = st.dataframe(kids[cols], hide_index=True, width="stretch", key=f"kids_{focus[1]}", on_select="rerun",
-                                  selection_mode="single-row", height=min(40 + 35 * min(len(kids), 11), 420),
-                                  column_config={"name": st.column_config.TextColumn(child.title()),
-                                                 "fy26_ytd": st.column_config.NumberColumn("FY26 Jan–Nov", format="dollar"),
-                                                 "open_pipeline": st.column_config.NumberColumn("Pipeline", format="dollar"),
-                                                 "yoy_pct": st.column_config.NumberColumn("YoY %", format="%.1f%%")})
-                rows = getattr(getattr(ev, "selection", None), "rows", []) or []
+                rows = clickable_table(kids[cols], f"kids_{focus[1]}", hide_index=True, width="stretch",
+                                       height=min(40 + 35 * min(len(kids), 11), 420),
+                                       column_config={"name": st.column_config.TextColumn(child.title()),
+                                                      "fy26_ytd": st.column_config.NumberColumn("FY26 Jan–Nov", format="dollar"),
+                                                      "open_pipeline": st.column_config.NumberColumn("Pipeline", format="dollar"),
+                                                      "yoy_pct": st.column_config.NumberColumn("YoY %", format="%.1f%%")})
                 if rows:
                     pick = kids.iloc[rows[0]]
                     ss.ctx["focus"] = (pick["level"], pick["id"])
@@ -505,14 +575,13 @@ elif step == "accounts":
     if g3.toggle("Moved in draft plan"):
         sub = sub[sub["moved"]]
     st.caption(md(f"{len(sub)} accounts · FY26 Jan–Nov {fmt_money(sub['fy26_ytd'].sum())} · open pipeline "
-                  f"{fmt_money(sub['open_pipeline'].sum())} · select a row to open the account"))
-    ev, view = accounts_table(sub.sort_values("fy26_ytd", ascending=False), "acct_table")
+                  f"{fmt_money(sub['open_pipeline'].sum())} · click any account to open it"))
+    rows, view = accounts_table(sub.sort_values("fy26_ytd", ascending=False), "acct_table")
     st.download_button("Download CSV", view.to_csv(index=False), "accounts_in_scope.csv", "text/csv")
-    row = selected_row(ev, view)
+    row = selected_row(rows, view)
     if row is not None:
-        ss.selected_account = row["ID"]
-        ss.ctx["focus"] = ("account", row["ID"])
-        account_card(row["ID"])
+        ss.pop("acct_table", None)        # clear the click so closing the panel doesn't reopen it
+        open_account(row["ID"])
 
 elif step == "moves":
     ids = list(A.sort_values("account_name")["account_id"])
@@ -556,7 +625,7 @@ elif step == "moves":
                        f"{m['by'].split(' · ')[0]}, {m['at'][:16].replace('T', ' ')} UTC"))
         if c2.button("Revert", key=f"rev_{m['move_id']}"):
             try:
-                STORE.revert(m["move_id"], P.label)
+                STORE.revert(m["move_id"], P.actor)
                 st.rerun()
             except ValueError as exc:
                 st.error(str(exc))

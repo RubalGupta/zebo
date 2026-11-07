@@ -24,12 +24,12 @@ class CockpitScript(unittest.TestCase):
     def tearDown(self):
         self.dirs.__exit__(None, None, None)
 
-    def test_opens_on_advisor_briefing_scoped_to_division(self):
+    def test_opens_on_whole_company_briefing(self):
         log, state, _ = _st_stub.run(APP)
-        self.assertEqual(state["persona_id"], "P-NAW")
+        self.assertEqual(state["persona_id"], "P-BU1")            # tester feedback: whole-company view first
         first = state["messages"][0]
         self.assertEqual(first["role"], "assistant")
-        self.assertIn("North America West", first["text"])
+        self.assertIn("Enterprise Solutions", first["text"])
         self.assertTrue(first["grounding"]["all_traceable"])
         self.assertIn(("popover", "🤖 Advisor"), log)          # floating agent launcher
         self.assertIn(("text_input", "Ask the Advisor"), log)
@@ -44,6 +44,7 @@ class CockpitScript(unittest.TestCase):
 
     def test_scope_is_enforced_in_chat(self):
         state = _st_stub.State()
+        state["persona_id"] = "P-NAW"                              # a division leader can't see EMEA
         _st_stub.run(APP, inputs={"advisor_q": "show me EMEA"}, press=("Send",), state=state)
         self.assertIn("outside your access", state["messages"][-1]["text"])
 
@@ -64,6 +65,22 @@ class CockpitScript(unittest.TestCase):
         self.assertIn("A0091", plan)
         self.assertIn("Align to Deep motion", plan)
         self.assertEqual(fy27_fingerprint(), before)
+
+    def test_top_actions_panel_and_show_me_why(self):
+        log, state, _ = _st_stub.run(APP)
+        html = " ".join(l for k, l in log if k == "markdown")
+        self.assertIn("Top actions for you", html)
+        self.assertIn(("button", "Show me why"), log)
+        _st_stub.run(APP, press=("todo_BU1_1",), state=state)
+        self.assertEqual(state["messages"][-2]["role"], "user")          # the action asked the Advisor
+        self.assertTrue(state["messages"][-1]["tool_calls"])
+
+    def test_clicking_an_account_opens_it(self):
+        state = _st_stub.State()
+        state["step"] = "accounts"
+        log, state, _ = _st_stub.run(APP, inputs={"select:acct_table": [0]}, state=state)
+        self.assertEqual(state["ctx"]["focus"][0], "account")
+        self.assertIn(("button", "Plan a move for this account"), log)   # account details shown right away
 
     def test_hosted_mode_gives_each_session_a_private_plan(self):
         os.environ["NORBAE_PER_SESSION_PLAN"] = "1"

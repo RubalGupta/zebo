@@ -15,13 +15,14 @@ from planning.advice import evaluate_move, purity_fix, purity_report, suggest_ta
 from planning.analysis import account_detail, entity_in_scope, entity_level, summarize
 from planning.config import DEFAULT_RULES, PlanningRules
 from planning.data import PlanningData
+from planning.recommend import recommend_actions
 from planning.impact import moves_impact
 from planning.plan_store import PlanStore, effective_accounts
 from planning.scope import ID_COL, Persona, filter_scope
 
 MAX_TOOL_CALLS_PER_TURN = 5
 ID_RE = re.compile(r"^[A-Z0-9-]{2,16}$")
-METRICS = {"fy26_ytd", "yoy_pct", "open_pipeline", "weighted_pipeline", "fy25_total", "declining_accounts", "accounts"}
+METRICS = {"fy26_ytd", "yoy_pct", "yoy_change", "open_pipeline", "weighted_pipeline", "fy25_total", "declining_accounts", "accounts"}
 
 
 class ToolError(Exception):
@@ -51,6 +52,9 @@ class PlanningToolkit:
                            "params": {"account_id": "id"}},
         "seller_book": {"description": "Accounts owned by one seller (AE) in scope, with territory load vs capacity and motion misfits.",
                         "params": {"seller_id": "id"}},
+        "recommend_actions": {"description": "Top recommended planning actions in scope (overloaded books, purity fixes, "
+                                             "under-covered fast growers, declining accounts with big pipeline), ranked by $ at stake.",
+                              "params": {"within_id": "id?", "limit": "int?"}},
         "decline_drivers": {"description": "Who leads a division/area/territory and which sellers and accounts drive its revenue decline (Jan–Nov $ change).",
                             "params": {"within_id": "id", "limit": "int?"}},
         "pipeline_summary": {"description": "Open pipeline for a seller's book, an account, a territory, an area or a division: totals, by stage, near-term late-stage, top opportunities.",
@@ -161,11 +165,12 @@ class PlanningToolkit:
             df = sub.copy()
             if metric in ("accounts", "declining_accounts"):
                 raise ToolError("That metric applies to groups, not single accounts")
+            df["yoy_change"] = df["fy26_ytd"] - df["fy25_ytd"]
             df = df.dropna(subset=[metric]) if metric == "yoy_pct" else df
             df = df.sort_values(metric, ascending=(order == "asc")).head(limit or 5)
             rows = [{"id": r.account_id, "name": r.account_name, "motion": r.motion, "owner": r.owner_name,
                      "fy26_ytd": r.fy26_ytd, "yoy_pct": None if pd.isna(r.yoy_pct) else r.yoy_pct,
-                     "open_pipeline": r.open_pipeline} for r in df.itertuples()]
+                     "yoy_change": float(r.yoy_change), "open_pipeline": r.open_pipeline} for r in df.itertuples()]
         else:
             order_levels = ["bu", "division", "area", "territory"]
             if order_levels.index(level) <= order_levels.index(base_level):
@@ -174,7 +179,7 @@ class PlanningToolkit:
             for gid, g in sub.groupby(ID_COL[level]):
                 f25, f26 = g["fy25_ytd"].sum(), g["fy26_ytd"].sum()
                 groups.append({"id": gid, "name": self.data.name_of(gid), "accounts": len(g), "fy26_ytd": f26,
-                               "yoy_pct": (f26 / f25 - 1) * 100 if f25 > 0 else None,
+                               "yoy_pct": (f26 / f25 - 1) * 100 if f25 > 0 else None, "yoy_change": float(f26 - f25),
                                "open_pipeline": g["open_pipeline"].sum(), "weighted_pipeline": g["weighted_pipeline"].sum(),
                                "fy25_total": g["fy25_total"].sum(), "declining_accounts": int((g["yoy_pct"] <= -15).sum())})
             groups = [x for x in groups if x.get(metric) is not None]
@@ -254,6 +259,22 @@ class PlanningToolkit:
             if len(fixes) >= (limit or 3):
                 break
         return {"fixes": fixes, "misfit_total": len(rep["misfits"])}
+
+    def _t_recommend_actions(self, within_id: str | None = None, limit: int = 3) -> dict[str, Any]:
+        accts, terrs = self.scoped, self.scoped_territories
+        where = self.data.name_of(self.persona.scope_id)
+        if within_id:
+            lvl = entity_level(self.data, within_id)
+            self._scope_check(lvl, within_id)
+            if lvl not in ("bu", "division", "area", "territory"):
+                raise ToolError("Recommendations apply to the company, a division, an area or a territory")
+            if lvl != "bu":
+                accts = accts[accts[ID_COL[lvl]] == within_id]
+                terrs = terrs[terrs[ID_COL[lvl]] == within_id]
+            where = self.data.name_of(within_id)
+        out = recommend_actions(self.data, accts, terrs, self.rules, limit or 3)
+        out["within"] = where
+        return out
 
     def _t_decline_drivers(self, within_id: str, limit: int = 3) -> dict[str, Any]:
         lvl = entity_level(self.data, within_id)
